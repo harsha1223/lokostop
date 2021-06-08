@@ -1,0 +1,120 @@
+#line_compare {
+  margin-left: 67px;
+  height: 0;
+  margin-top: 15px;
+  width: 1037px;
+  border: 1px solid #08e5a9;
+}
+.product_display_comparing {
+  height: auto;
+  width: 1251px;
+  margin-top: 32px;
+  margin-left: 32px;
+  display: flex;
+}
+.contact_details_compare {
+  width: 243px;
+  height: 39px;
+  margin-top: 170px;
+  font: normal normal 200 13px/20px Poppins;
+  text-align: end;
+  color: #3d3d3d;
+}
+.compare_box {
+  width: 921px;
+  height: auto;
+  margin-left: 87px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.product_details_compare_list {
+  margin-left: 15px;
+  margin-top: 20px;
+  width: 276px;
+  height: 405px;
+  display: grid;
+  grid-template-rows: 278px 129px;
+  position: relative;
+}
+.specification_box {
+  width: 1270px;
+  height: auto;
+  margin-left: 32px;
+  display: flex;
+  margin-top: 60px;
+}
+.specification_box_one {
+  width: 253px;
+  border: 1px solid #dddddd;
+  height: auto;
+}
+.specification_box_one p {
+  width: 253px;
+  height: 19px;
+  text-align: center;
+  font: normal normal bold 13px/20px Poppins;
+  margin-top: 0;
+  color: #1d1d1d;
+}
+.specification_box_one ul {
+  list-style: none;
+  width: 253px;
+  padding: 0;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.specification_box_one ul li {
+  font: normal normal normal 13px/20px Poppins;
+  color: #7d7d7d;
+  margin-bottom: 30px;
+}
+.product_specification_box {
+  height: auto;
+  width: 920px;
+  display: flex;justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 97px;
+}
+.particular_product_specification {
+  height: auto;
+  width: 253px;
+}
+.button_box {
+  display: flex;
+  flex-direction: column;
+  height: 76px;
+  width: 155px;
+  margin-top: 47px;
+  margin-left: 46px;
+}
+.add_to_cart_compare {
+    width: 155px;
+    display: flex;cursor: pointer;
+    height: 32px;
+    border: 0.1px solid #021fb2;
+    background: #021fb2;outline: none;
+}
+.add_to_cart_compare p {
+    width: auto;
+    margin: 0;
+    padding-left: 8px;
+    height: 20px;
+    text-align: center;
+    font: normal normal normal 15px/20px Segoe UI;
+    padding-top: 4px;
+    color: #ffffff;
+}
+#remove_button{
+    width: 155px;
+    height: 32px;
+    cursor: pointer;
+    margin-top: 18px;
+    font: normal normal normal 15px/20px Segoe UI;
+    letter-spacing: 0px;
+    color: #1D1D1D;
+    border: 1px solid #BDBDBD;outline: none;
+}

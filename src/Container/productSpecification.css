@@ -1,0 +1,43 @@
+.line03Box {
+  width: 165px;
+  border: 1px solid #dbdde4;
+  height: 0;
+  margin: 0;
+}
+.line04Box {
+  border: 1px solid #5d5d5d;
+  width: 123px;
+  height: 0;
+  margin: 0;
+}
+.line05Box {
+  width: 845px;
+  border: 1px solid #dbdde4;
+  height: 0;
+  margin: 0;
+}
+.specification_outer_box {
+  width: 1030px;
+  height: auto;
+  margin-left: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.particularSpecification {
+  height: auto;
+  display: flex;
+  width: auto;
+  margin: 12px;
+}
+.particularSpecification h6 {
+  font: normal normal normal 13px/20px Poppins;
+  color: #3d3d3d;margin: 0;
+}
+.particularSpecification p{
+    font: normal normal normal 13px/20px Poppins;
+letter-spacing: 0px;margin: 0;
+color: #7D7D7D;
+margin-left: 30px;
+}

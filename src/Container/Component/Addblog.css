@@ -1,0 +1,38 @@
+.Heading_add_blog {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font: normal normal bold 24px/35px Poppins;
+  color: #1d1d1d;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.button_box_blog {
+  width: auto;
+  height: auto;
+  margin-top: 16px;
+  margin-bottom: 18px;
+  display: flex;
+  margin-left: 260px;
+}
+.cancelBlog {
+  width: 170px;
+  height: 38px;
+  background-color: white;
+  border: 2px solid #3d3d3d;
+  font: normal normal normal 12px/18px Poppins;
+  font-weight: 600;
+  cursor: pointer;
+  color: #3d3d3d;
+}
+.shareblog {
+  width: 168px;
+  height: 38px;
+  background-color: #1D1D1D;
+  box-shadow: 0px 3px 6px #00000029;
+  font: normal normal normal 12px/18px Poppins;
+color: #FFFFFF;cursor: pointer;
+outline: none;
+border: 0.1px solid black;
+margin-left: 31px;
+}

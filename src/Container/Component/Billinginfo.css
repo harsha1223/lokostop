@@ -1,0 +1,231 @@
+.billinginfobox {
+  width: 1238px;
+  height: auto;
+  border: 1px solid #08e5a9;
+  margin-left: 64px;
+  margin-top: 5%;
+}
+.details_billing {
+  height: auto;
+  width: 100%;
+  display: flex;
+}
+.detail_add_billing {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  padding-bottom: 3%;
+  justify-content: space-evenly;
+}
+.first_bill_box {
+  width: 279px;
+  height: 236px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.second_bill_box {
+  width: 572px;
+  flex-direction: column;
+  height: auto;
+  display: flex;
+}
+.head_bill_reciever {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font: normal normal normal 12px/18px Poppins;
+  color: #3d3d3d;
+}
+#input_box {
+  width: 100%;
+  border: 1px solid #08e5a9;
+  height: 38px;
+  padding: 10px;
+  font: normal normal normal 12px/18px Poppins;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 4%;
+}
+#input_box::placeholder {
+  color: #9d9d9d;
+}
+.check_box {
+  width: 100%;
+  height: auto;
+  border: black;
+}
+.containerCheck {
+  display: block;
+  position: relative;
+  color: #3d3d3d;
+  cursor: pointer;
+  font: normal normal normal 12px/18px Poppins;
+  -webkit-user-select: none;
+  padding-left: 1.977vw;
+  margin-top: 1%;
+}
+.containerCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+}
+.containerCheck:hover input ~ .checkMark {
+  background-color: #ccc;
+}
+.containerCheck input:checked ~ .checkMark {
+  background-color: black;
+}
+.checkMark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.containerCheck input:checked ~ .checkMark::after {
+  display: block;
+}
+.containerCheck .checkMark::after {
+  left: 0.5vw;
+  top: 0.1vw;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.insidebox_secondbill {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 2.2%;
+  margin-top: -1px;
+  justify-content: space-between;
+}
+#second_input_box {
+  width: 279px;
+  border: 1px solid #08e5a9;
+  height: 38px;
+  padding: 10px;
+  font: normal normal normal 12px/18px Poppins;
+  cursor: pointer;
+  outline: none;
+}
+#second_input_box::placeholder {
+  color: #9d9d9d;
+}
+.dropdown_box {
+  width: 279px;
+  border: 1px solid #08e5a9;
+  height: 38px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+#country_name {
+  width: 100%;
+  font: normal normal normal 12px/18px Poppins;
+  border: none;
+  outline: none;
+  color: #9d9d9d;
+  cursor: pointer;
+}
+#country_name option {
+  color: black;
+}
+.finaladdress {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #08e5a9;
+  padding: 2%;
+}
+.finaladdress p {
+  margin-bottom: 0.2%;
+  font: normal normal normal 12px/18px Poppins;
+  color: #5d5d5d;
+  width: 100%;
+  height: auto;
+}
+.save_cont_billing {
+  width: 168px;
+  height: 38px;
+  font: normal normal normal 12px/18px Poppins;
+  background: white;
+  outline: none;
+  color: #08e5a9;
+  border: 2px solid #08e5a9;
+  margin-left: 36%;
+  cursor: pointer;
+  margin-top: 5%;
+}
+.third_bill_box {
+    width: 319px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+.inside_box_third{
+    width: 100%;
+    height: auto;
+    margin-top: 4%;
+    justify-content: space-between;
+    display: flex;
+}
+.para1_insidethird{
+    margin: 0;
+    text-align: right;
+    height: auto;
+    font: normal normal normal 15px/23px Poppins;
+    width: 52%;
+    color: #3D3D3D;
+}
+.para2_insidethird{
+    width: 44%;
+    font: normal normal normal 15px/23px Poppins;
+    color: #3D3D3D;
+    height: auto;
+}
+.discountbox{
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 4%;
+}
+.discountcode{
+    width: 64%;
+    border: 1px solid #08E5A9;
+    padding: 6px;
+    height: auto;
+    font: normal normal normal 15px/23px Poppins;
+    outline: none;
+    cursor: pointer;
+}
+.applycode{
+    text-decoration: underline;
+    font: normal normal normal 15px/23px Poppins;
+    margin-top: 2.5%;
+    margin-left: 4%;
+    width: auto;
+    cursor: pointer;
+    height: auto;
+    color: #5D5D5D;
+}
+#bill_line{
+    width: 274px;
+    height: 0;
+    border: 1px solid #BDBDBD;
+    margin-top: 6%;
+}
