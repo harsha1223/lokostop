@@ -5,7 +5,7 @@ function Header03() {
     return (
         <div className="Header_three">
             <div className="header_three_left">
-                <p style={{marginTop:'11px'}}>Brands:</p>
+                <p style={{marginTop:'0.805vw'}}>Brands:</p>
                 <div className="small_logo_box">
                     <div className="small_box_inside_box">
                         

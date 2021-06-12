@@ -55,7 +55,7 @@ function Footer() {
                         <li>My favorites</li>
                     </ul>
                 </div>
-                <p className='copyright'>Copyright <RiCopyrightLine id="copyrighticon" /> <b style={{color:'#021FB2', cursor:'pointer'}}>Sidhuelectronics</b> . All rights reserved</p>
+                <p className='copyright'>Copyright <RiCopyrightLine id="copyrighticon" /> <b style={{color:'#021FB2', cursor:'pointer'}}>lokostop</b> . All rights reserved</p>
             </div>
             <div className="area_3">
                 <div className="paymentmethod">

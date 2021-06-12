@@ -114,7 +114,7 @@ function Home() {
                     </div>
                     <div className="discount_box_in_compare">
                         <p className="discount_text_product"> Discount:</p>
-                        <p className="how_much_discount" style={{paddingBottom:'26px'}}>10% off</p>
+                        <p className="how_much_discount" style={{paddingBottom:'1.903vw'}}>10% off</p>
                     </div>
                     <div className="save_box">
                         <p className="save_text">You save:</p>
@@ -134,8 +134,8 @@ function Home() {
                     <div className="buttons_compare">
                         <button className="cart_button" >ADD TO CART <BiCart style={{
                             // color: 'white',
-                            marginLeft: '13px',
-                            marginTop: '7px',
+                            marginLeft: '0.952vw',
+                            marginTop: '0.512vw',
                             fontSize: '1.3vw'
                         }} /></button>
                         <button className="compare_button">COMPARE</button>
@@ -223,7 +223,7 @@ function Home() {
             <div className="images_box">
                 <div className="image_1_container">
                     <div className="image_1_upper">
-                        <p className='image1_para1' style={{marginTop:'53px'}}>Radisson Hotel</p>
+                        <p className='image1_para1' style={{marginTop:'3.880vw'}}>Radisson Hotel</p>
                         <p className="image1_para2">Punjab</p>
                         <div className="image_1_client_image">
                             <img src="https://images.unsplash.com/photo-1611095973763-414019e72400?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
@@ -235,21 +235,21 @@ function Home() {
                 <div className="image_3_outer_box">
                     <div className="images_3">
                         <div className="hover_item">
-                            <p className='image1_para1' style={{ marginTop: '4px', color: 'white' }}>Radisson Hotel</p>
+                            <p className='image1_para1' style={{ marginTop: '0.293vw', color: 'white' }}>Radisson Hotel</p>
                             <p className="image1_para2" style={{ marginTop: '0', color: 'white' }}>Punjab</p>
                         </div>
                         <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
                     </div>
                     <div className="images_3">
                         <div className="hover_item">
-                            <p className='image1_para1' style={{ marginTop: '4px', color: 'white' }}>Radisson Hotel</p>
+                            <p className='image1_para1' style={{ marginTop: '0.293vw', color: 'white' }}>Radisson Hotel</p>
                             <p className="image1_para2" style={{ marginTop: '0', color: 'white' }}>Punjab</p>
                         </div>
                         <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
                     </div>
                     <div className="images_3">
                         <div className="hover_item">
-                            <p className='image1_para1' style={{ marginTop: '4px', color: 'white' }}>Radisson Hotel</p>
+                            <p className='image1_para1' style={{ marginTop: '0.293vw', color: 'white' }}>Radisson Hotel</p>
                             <p className="image1_para2" style={{ marginTop: '0', color: 'white' }}>Punjab</p>
                         </div>
                         <img src="https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
@@ -258,10 +258,10 @@ function Home() {
                 </div>
                 <div className="image_2">
                     <p className="image_2_1"><img src="https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
-                    <p style={{ marginTop: "25px" }} className="image_2_1"><img src="https://images.unsplash.com/photo-1596036435403-cdb01867592d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
+                    <p style={{ marginTop: "1.830vw" }} className="image_2_1"><img src="https://images.unsplash.com/photo-1596036435403-cdb01867592d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
                 </div>
             </div>
-            <div style={{ marginTop: "40px" }} className="video_container">
+            <div style={{ marginTop: "2.928vw" }} className="video_container">
                 <img src="https://images.unsplash.com/photo-1556740772-1a741367b93e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3Ryb25pY3MlMjBzaG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
             </div>
             <div className="find_by_category_box">
@@ -285,15 +285,15 @@ function Home() {
 
             <div className="slide_box">
                 <div className="slider_box_one">
-                    <img style={{ width: "491px" }} src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                    <img style={{ width: "400px" }} src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWljcm93YXZlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                    <img style={{ width: "507px" }} src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                    <img style={{ width: "368px" }} src="https://images.unsplash.com/photo-1542372358-5d022764bd6c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdhc2hpbmclMjBtYWNoaW5lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img style={{ width: "35.944vw" }} src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img style={{ width: "29.283vw" }} src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWljcm93YXZlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img style={{ width: "37.116vw" }} src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img style={{ width: "26.940vw" }} src="https://images.unsplash.com/photo-1542372358-5d022764bd6c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdhc2hpbmclMjBtYWNoaW5lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
                 </div>
                 <div className="slider_box_one">
-                    <img style={{ width: "364px" }} src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                    <img style={{ width: "800px" }} src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                    <img style={{ width: "445px" }} src="https://images.unsplash.com/photo-1575571536958-38aa1227786a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img style={{ width: "26.647vw" }} src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img style={{ width: "58.565vw" }} src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <img style={{ width: "32.577vw" }} src="https://images.unsplash.com/photo-1575571536958-38aa1227786a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
 
                 </div>
             </div>

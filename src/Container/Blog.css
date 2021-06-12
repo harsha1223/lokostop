@@ -1,29 +1,30 @@
 #line_blogs {
-  margin-left: -72px;
+  margin-left: -5.271vw;
   height: 0;
-  margin-top: 15px;
-  width: 1163px;
-  border: 1px solid #08e5a9;
+  margin-top: 1.098vw;
+  width: 85.139vw;
+  border: 0.073vw solid #08e5a9;
 }
 .blog_main {
-  width: 1303px;
+  width: 95.388vw;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 32px;
-  margin-top: 26px;
+  margin-left: 2.343vw;
+  margin-top: 1.903vw;
 }
 .blogcard {
-  width: 276px;margin-top: 38px;
+  width: 20.205vw;
+  margin-top: 2.782vw;
   height: auto;
   box-shadow: 0px 3px 6px #00000029;
 }
 .imagebox {
-  width: 276px;
+  width: 20.205vw;
   cursor: pointer;
   position: relative;
-  height: 208px;
+  height: 15.227vw;
 }
 .image_blog {
   width: 100%;
@@ -32,69 +33,73 @@
 .blogpara {
   position: absolute;
   margin: 0;
-  top: 176px;
-  border-radius: 13px;
-  left: 106px;
+  top: 12.884vw;
+  border-radius: 0.952vw;
+  left: 7.76vw;
   cursor: pointer;
   background: #ffffff;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1.171vw;
+  padding-right: 1.171vw;
   text-decoration: underline;
-  font: normal normal normal 10px/16px Poppins;
+  font: normal normal normal 0.732vw/1.171vw Poppins;
   color: #3d3d3d;
   transition: opacity 0.2s, visibility 0.2s;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 0.146vw;
+  padding-bottom: 0.146vw;
   visibility: hidden;
 }
 .imagebox:hover .blogpara {
   visibility: visible;
 }
 .blogHeading {
-  width: 256px;
-  margin-top: 10px;
-  margin-left: 10px;
+  width: 18.741vw;
+  margin-top: 0.732vw;
+  margin-left: 0.732vw;
   height: auto;
   text-align: left;
-  font: italic normal bold 15px/23px Poppins;
+  font: italic normal bold 1.098vw/1.684vw Poppins;
   color: #3d3d3d;
 }
 .name_time {
-  margin-top: 20px;margin-left: 10px;
-  display: flex;justify-content: space-between;
-  width: 256px;
-  height: 15px;
+  margin-top: 1.464vw;
+  margin-left: 0.732vw;
+  display: flex;
+  justify-content: space-between;
+  width: 18.741vw;
+  height: 1.098vw;
 }
-.name_time p{
-    width: auto;
-    font: normal normal normal 10px/16px Poppins;
-height: 15px;
-margin-top: 0;
-color: #3D3D3D;
+.name_time p {
+  width: auto;
+  font: normal normal normal 0.732vw/1.171vw Poppins;
+  height: 1.098vw;
+  margin-top: 0;
+  color: #3d3d3d;
 }
-.load_more_blogs{
-    width: 145px;
-    height: 40px;
-    background: #08E5A9;
-    border: #08E5A9;
-    margin-left: 610px;outline: none;
-    cursor: pointer;font: normal normal normal 13px/20px Poppins;
-    color: #1D1D1D;
-    margin-top: 30px;
-}
-.add_blog{
-  margin-left: 32px;
-  margin-top: 31px;
-  width: 1302px;
-height: 65px;
-border: 1px solid #08E5A9;
-background: #FFFFFF ;
-cursor: pointer;
-outline: none;
-font: normal normal normal 12px/18px Poppins;
-color: #3D3D3D;
-}
-.add_blog:hover{
+.load_more_blogs {
+  width: 10.615vw;
+  height: 2.928vw;
   background: #08e5a9;
-  font: normal normal normal 14px/18px Poppins;
+  border: #08e5a9;
+  margin-left: 44.656vw;
+  outline: none;
+  cursor: pointer;
+  font: normal normal normal 0.952vw/1.464vw Poppins;
+  color: #1d1d1d;
+  margin-top: 2.196vw;
+}
+.add_blog {
+  margin-left: 2.343vw;
+  margin-top: 2.269vw;
+  width: 95.315vw;
+  height: 4.758vw;
+  border: 0.073vw solid #08e5a9;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
+  color: #3d3d3d;
+}
+.add_blog:hover {
+  background: #08e5a9;
+  font: normal normal normal 1.025vw/1.318vw Poppins;
 }

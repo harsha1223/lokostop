@@ -30,7 +30,7 @@ function Header01() {
                 <div className="Header_one_centre">
                     <div className="centre_first_part">
                         <div className="Selected1">
-                            <p style={{marginTop:'10px'}}>All categories</p> <IoIosArrowDown id="ArrowIcon1" />
+                            <p style={{marginTop:'0.732vw'}}>All categories</p> <IoIosArrowDown id="ArrowIcon1" />
                         </div>
                         <div className="dropdown_list_categories">
                             <div className="dropdown_list_items">Category 1 </div>
@@ -47,7 +47,7 @@ function Header01() {
                         <input type="text" placeholder="Enter your search key..." />
                     </div>
                     <div className="centre_third_part">
-                        <p style={{marginTop:'12px'}}>Search</p><FiSearch id='search' />
+                        <p style={{marginTop:'0.878vw'}}>Search</p><FiSearch id='search' />
                     </div>
                 </div>
                 <div className="Header_one_right">
