@@ -19,7 +19,7 @@ function Compare() {
                 <hr id="line_compare"></hr>
             </div>
             <div className="product_display_comparing">
-                <p className="contact_details_compare" style={{marginTop:'160px'}}> Connect to shop: +91-9809890982</p>
+                <p className="contact_details_compare" style={{marginTop:'11.713vw'}}> Connect to shop: +91-9809890982</p>
                 <div className="compare_box">
                     <Product/>
                     <Product/>
@@ -66,8 +66,8 @@ function Compare() {
                                 <p>ADD TO CART</p>
                                 <BiCart style={{
                                     color: 'white',
-                                    marginLeft: '6px',
-                                    marginTop: '5px',
+                                    marginLeft: '0.439vw',
+                                    marginTop: '0.366vw',
                                     fontSize: '1.3vw'
                                 }} />
                             </button>
@@ -95,8 +95,8 @@ function Compare() {
                                 <p>ADD TO CART</p>
                                 <BiCart style={{
                                     color: 'white',
-                                    marginLeft: '6px',
-                                    marginTop: '5px',
+                                    marginLeft: '0.439vw',
+                                    marginTop: '0.366vw',
                                     fontSize: '1.3vw'
                                 }} />
                             </button>
@@ -115,8 +115,8 @@ function Compare() {
                                 <p>ADD TO CART</p>
                                 <BiCart style={{
                                     color: 'white',
-                                    marginLeft: '6px',
-                                    marginTop: '5px',
+                                    marginLeft: '0.439vw',
+                                    marginTop: '0.366vw',
                                     fontSize: '1.3vw'
                                 }} />
                             </button>

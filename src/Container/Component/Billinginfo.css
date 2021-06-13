@@ -1,8 +1,8 @@
 .billinginfobox {
-  width: 1238px;
+  width: 90.630vw;
   height: auto;
-  border: 1px solid #08e5a9;
-  margin-left: 64px;
+  border: 0.073vw solid #08e5a9;
+  margin-left: 4.685vw;
   margin-top: 5%;
 }
 .details_billing {
@@ -20,14 +20,14 @@
   justify-content: space-evenly;
 }
 .first_bill_box {
-  width: 279px;
-  height: 236px;
+  width: 20.425vw;
+  height: 17.277vw;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 }
 .second_bill_box {
-  width: 572px;
+  width: 41.874vw;
   flex-direction: column;
   height: auto;
   display: flex;
@@ -36,15 +36,15 @@
   width: 100%;
   height: auto;
   text-align: center;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
 }
 #input_box {
   width: 100%;
-  border: 1px solid #08e5a9;
-  height: 38px;
-  padding: 10px;
-  font: normal normal normal 12px/18px Poppins;
+  border: 0.073vw solid #08e5a9;
+  height: 2.782vw;
+  padding: 0.732vw;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   cursor: pointer;
   outline: none;
   margin-bottom: 4%;
@@ -62,7 +62,7 @@
   position: relative;
   color: #3d3d3d;
   cursor: pointer;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   -webkit-user-select: none;
   padding-left: 1.977vw;
   margin-top: 1%;
@@ -78,8 +78,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 18px;
-  width: 18px;
+  height: 1.318vw;
+  width: 1.318vw;
   background-color: #eee;
 }
 .containerCheck:hover input ~ .checkMark {
@@ -99,10 +99,10 @@
 .containerCheck .checkMark::after {
   left: 0.5vw;
   top: 0.1vw;
-  width: 6px;
-  height: 11px;
+  width: 0.439vw;
+  height: 0.805vw;
   border: solid white;
-  border-width: 0 2px 2px 0;
+  border-width: 0 0.146vw 0.146vw 0;
   transform: rotate(45deg);
 }
 .insidebox_secondbill {
@@ -110,15 +110,15 @@
   height: auto;
   display: flex;
   margin-bottom: 2.2%;
-  margin-top: -1px;
+  margin-top: -0.073vw;
   justify-content: space-between;
 }
 #second_input_box {
-  width: 279px;
-  border: 1px solid #08e5a9;
-  height: 38px;
-  padding: 10px;
-  font: normal normal normal 12px/18px Poppins;
+  width: 20.425vw;
+  border: 0.073vw solid #08e5a9;
+  height: 2.782vw;
+  padding: 0.732vw;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   cursor: pointer;
   outline: none;
 }
@@ -126,16 +126,16 @@
   color: #9d9d9d;
 }
 .dropdown_box {
-  width: 279px;
-  border: 1px solid #08e5a9;
-  height: 38px;
-  padding: 10px;
+  width: 20.425vw;
+  border: 0.073vw solid #08e5a9;
+  height: 2.782vw;
+  padding: 0.732vw;
   cursor: pointer;
   outline: none;
 }
 #country_name {
   width: 100%;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   border: none;
   outline: none;
   color: #9d9d9d;
@@ -149,30 +149,30 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid #08e5a9;
+  border: 0.073vw solid #08e5a9;
   padding: 2%;
 }
 .finaladdress p {
   margin-bottom: 0.2%;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #5d5d5d;
   width: 100%;
   height: auto;
 }
 .save_cont_billing {
-  width: 168px;
-  height: 38px;
-  font: normal normal normal 12px/18px Poppins;
+  width: 12.299vw;
+  height: 2.782vw;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   background: white;
   outline: none;
   color: #08e5a9;
-  border: 2px solid #08e5a9;
+  border: 0.146vw solid #08e5a9;
   margin-left: 36%;
   cursor: pointer;
   margin-top: 5%;
 }
 .third_bill_box {
-    width: 319px;
+    width: 23.353vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -188,13 +188,13 @@
     margin: 0;
     text-align: right;
     height: auto;
-    font: normal normal normal 15px/23px Poppins;
+    font: normal normal normal 1.098vw/1.684vw Poppins;
     width: 52%;
     color: #3D3D3D;
 }
 .para2_insidethird{
     width: 44%;
-    font: normal normal normal 15px/23px Poppins;
+    font: normal normal normal 1.098vw/1.684vw Poppins;
     color: #3D3D3D;
     height: auto;
 }
@@ -206,16 +206,16 @@
 }
 .discountcode{
     width: 64%;
-    border: 1px solid #08E5A9;
-    padding: 6px;
+    border: 0.073vw solid #08E5A9;
+    padding: 0.439vw;
     height: auto;
-    font: normal normal normal 15px/23px Poppins;
+    font: normal normal normal 1.098vw/1.684vw Poppins;
     outline: none;
     cursor: pointer;
 }
 .applycode{
     text-decoration: underline;
-    font: normal normal normal 15px/23px Poppins;
+    font: normal normal normal 1.098vw/1.684vw Poppins;
     margin-top: 2.5%;
     margin-left: 4%;
     width: auto;
@@ -224,8 +224,8 @@
     color: #5D5D5D;
 }
 #bill_line{
-    width: 274px;
+    width: 20.059vw;
     height: 0;
-    border: 1px solid #BDBDBD;
+    border: 0.073vw solid #BDBDBD;
     margin-top: 6%;
 }

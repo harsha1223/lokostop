@@ -2,33 +2,34 @@
   height: auto;
   width: auto;
   display: flex;
-  margin-top: 25px;
-  margin-left: 32px;
-  margin-right: 64px;
+  margin-top: 1.83vw;
+  margin-left: 2.343vw;
+  margin-right: 4.685vw;
 }
 .filterbox {
   height: auto;
-  width: 272px;
+  width: 19.912vw;
   display: flex;
-  flex-direction: column;border: 1px solid #BDBDBD;
+  flex-direction: column;
+  border: 0.073vw solid #bdbdbd;
 }
 .filtersHeading {
-  margin-top: 16px;
+  margin-top: 1.171vw;
   width: 100%;
   text-align: center;
   margin-bottom: 0;
   height: auto;
-  font: normal normal normal 13px/20px Poppins;
+  font: normal normal normal 0.952vw/1.464vw Poppins;
   font-weight: 600;
   color: #3d3d3d;
 }
 .parafilter {
   width: 90%;
-  margin-left: 12px;
-  margin-top: 8px;
+  margin-left: 0.878vw;
+  margin-top: 0.586vw;
   height: auto;
   text-align: center;
-  font: normal normal 200 13px/20px Poppins;
+  font: normal normal 200 0.952vw/1.464vw Poppins;
   color: #9d9d9d;
 }
 .filterCategories {
@@ -42,16 +43,16 @@
   height: auto;
   width: auto;
   text-align: center;
-  font: normal normal 200 12px/18px Poppins;
+  font: normal normal 200 0.878vw/1.318vw Poppins;
   color: #5d5d5d;
-  padding: 6px;
+  padding: 0.439vw;
   background: #dddddd 0% 0% no-repeat padding-box;
-  border-radius: 13px;
+  border-radius: 0.952vw;
   cursor: pointer;
 }
 .ParticularSection {
-  width: 950px;
-  margin-left: 29px;
+  width: 69.546vw;
+  margin-left: 2.123vw;
   height: auto;
 }
 .headParticular {
@@ -62,47 +63,48 @@
   justify-content: space-between;
 }
 .headParticular p {
-  font: italic normal normal 20px/30px Poppins;
+  font: italic normal normal 1.464vw/2.196vw Poppins;
   font-weight: bold;
   height: auto;
   width: auto;
   margin: 0;
-  letter-spacing: 0px;
   color: #3d3d3d;
 }
 .headParticular hr {
   width: 75%;
-  margin-top: 13px;
-  border: 1px solid #08e5a9;
+  margin-top: 0.952vw;
+  border: 0.073vw solid #08e5a9;
   height: 0;
-  margin-left: 19px;
+  margin-left: 1.391vw;
 }
 .dropSort {
-    height: auto;
-    width: 200px;
-    margin-top: 14px;
-    display: flex;
-    margin-left: 740px;
+  height: auto;
+  width: 14.641vw;
+  margin-top: 1.025vw;
+  display: flex;
+  margin-left: 54.173vw;
 }
 .dropSort p {
-    font: normal normal normal 13px/20px Poppins;
-    width: auto;
-    height: auto;
-    color: #7d7d7d;
-    margin: 0;
+  font: normal normal normal 0.952vw/1.464vw Poppins;
+  width: auto;
+  height: auto;
+  color: #7d7d7d;
+  margin: 0;
 }
-.sortIndividual{
-    font: normal normal normal 13px/20px Poppins;
-    margin-left: 5px;
-    border: none;
-    outline: none;width: auto;font-weight: 500;
-    cursor: pointer;
+.sortIndividual {
+  font: normal normal normal 0.952vw/1.464vw Poppins;
+  margin-left: 0.366vw;
+  border: none;
+  outline: none;
+  width: auto;
+  font-weight: 500;
+  cursor: pointer;
 }
-.individualcategorybox{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 23px;
+.individualcategorybox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 1.684vw;
 }

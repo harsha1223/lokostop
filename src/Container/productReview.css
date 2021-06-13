@@ -1,16 +1,16 @@
 .line06Box {
-  width: 339px;
-  border: 1px solid #dbdde4;
+  width: 24.817vw;
+  border: 0.073vw solid #dbdde4;
   height: 0;
   margin: 0;
 }
 .review_outer_box {
-    width: 1149px;
-    height: 436px;
-    margin-bottom: 40px;
-    margin-left: 27px;
-    margin-top: 32px;
-    border: 1px solid #cdcdcd;
+    width: 84.114vw;
+    height: 31.918vw;
+    margin-bottom: 2.928vw;
+    margin-left: 1.977vw;
+    margin-top: 2.343vw;
+    border: 0.073vw solid #cdcdcd;
     display: flex;
     overflow: auto;
     flex-direction: column;
@@ -27,78 +27,77 @@
     background: #cbcbcb;border-radius: 9px;
 }
 .read_review {
-  margin-left: 35px;
-  margin-top: 19px;
+  margin-left: 2.562vw;
+  margin-top: 1.391vw;
   width: auto;
   height: auto;
-  font: normal normal normal 15px/23px Poppins;
+  font: normal normal normal 1.098vw/1.684vw Poppins;
   margin-bottom: 0;
   color: #3d3d3d;
 }
 .review_star {
-  width: 159px;
-  height: 26px;
-  margin-left: 441px;
-  margin-right: 10px;
+  width: 11.640vw;
+  height: 1.903vw;
+  margin-left: 32.284vw;
+  margin-right: 0.732vw;
   display: flex;
   justify-content: space-between;
 }
 #star_feature_next {
-  width: 27px;
-  height: 26px;
+  width: 1.977vw;
+  height: 1.903vw;
   color: #cdcdcd;
   cursor: pointer;
 }
 .write_review {
-  width: 898px;
+  width: 65.739vw;
   height: auto;
   display: flex;
-  margin-left: 141px;
-  margin-top: 14px;
+  margin-left: 10.322vw;
+  margin-top: 1.025vw;
 }
 .customer_review {
-  width: 720px;
+  width: 52.709vw;
   display: flex;
-  height: 101px;
-  border: 1px solid #cdcdcd;
+  height: 7.394vw;
+  border: 0.073vw solid #cdcdcd;
 }
 .write_customer_review {
-  margin-top: 10px;
-  margin-left: 16px;
-  width: 645px;
+  margin-top: 0.732vw;
+  margin-left: 1.171vw;
+  width: 47.218vw;
   height: auto;
-  font: normal normal normal 15px/23px Poppins;
-  letter-spacing: 0px;
+  font: normal normal normal 1.098vw/1.684vw Poppins;
   color: #adadad;
 }
 .count_attach {
-  width: 44px;
+  width: 3.221vw;
   display: flex;
   height: auto;
   flex-direction: column;
-  margin-left: 8px;    margin-top: 4px;
+  margin-left: 0.586vw;    margin-top: 0.586vw;
 }
 .attach{
     font-size: 1.5vw;
     color: #ADADAD;
     cursor: pointer;
-    margin-left: 28px;
+    margin-left: 2.050vw;
 }
 .review_button {
-  width: 140px;
-  height: 40px;
-  margin-left: 16px;
+  width: 10.249vw;
+  height: 2.928vw;
+  margin-left: 1.171vw;
   color: white;
   background: #021fb2;
   border-color: none;
-  font: normal normal normal 15px/23px Poppins;
+  font: normal normal normal 1.098vw/1.684vw Poppins;
   outline: none;
   cursor: pointer;
 }
 .no_count{
-    font: normal normal normal 15px/23px Poppins;
+    font: normal normal normal 1.098vw/1.684vw Poppins;
     color: #ADADAD;
-    margin-top: 53px;
+    margin-top: 3.880vw;
     margin-bottom: 0;
 }
 .commentBox{
@@ -112,12 +111,12 @@
     border: none;
 }
 .showReview {
-    width: 720px;
+    width: 52.709vw;
     height: auto;
     border: 0.073vw solid #cdcdcd;
-    margin-top: 19px;
-    margin-left: 141px;
-    padding-bottom: 10px;
+    margin-top: 1.391vw;
+    margin-left: 10.322vw;
+    padding-bottom: 0.732vw;
     display: flex;
     flex-direction: column;
 }
@@ -125,8 +124,8 @@
     height: auto;
     display: flex;
     width: auto;
-    margin-top: 12px;
-    margin-left: 12px;
+    margin-top: 0.878vw;
+    margin-left: 0.878vw;
 }
 
 .reviewShow {
@@ -135,15 +134,15 @@
     margin-bottom: 0;
     margin-top: 0.732vw;
     margin-left: 3.807vw;
-    font: normal normal normal 10px/16px Poppins;
+    font: normal normal normal 0.732vw/1.171vw Poppins;
     color: #8d8d8d;
 }
 
 .reviewImage {
-    margin-top: 9px;
-    margin-left: 17px;
-    width: 686px;
-    height: 77px;
+    margin-top: 0.659vw;
+    margin-left: 1.245vw;
+    width: 50.220vw;
+    height: 5.637vw;
 }
 .reviewImage img {
     height: 100%;
@@ -153,9 +152,9 @@
 }
 .roundCircle {
     border-radius: 100%;
-    width: 38px;
-    height: 38px;
-    border: 1px solid #707070;
+    width: 2.782vw;
+    height: 2.782vw;
+    border: 0.073vw solid #707070;
 }
 .roundCircle img {
     height: 100%;
@@ -164,7 +163,7 @@
 }
 
 .personName {
-    width: 258px;
+    width: 18.887vw;
     height: auto;
     margin-left: 0.878vw;
     font: normal normal normal 1.098vw/1.684vw Poppins;

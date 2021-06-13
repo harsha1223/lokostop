@@ -38,7 +38,7 @@ function Section() {
                         <Product></Product>
                         <Product/>
                     </div>
-                    <button className="load_more_blogs" style={{marginLeft:'410px'}}>Load more</button>
+                    <button className="load_more_blogs" style={{marginLeft:'30.015vw'}}>Load more</button>
 
                 </div>
             </div>

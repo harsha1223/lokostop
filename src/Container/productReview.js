@@ -28,10 +28,10 @@ function productReview() {
                 <div className="line_for_review_define_box">
                     <hr className="line06Box" />
                     <hr className="line04Box" />
-                    <hr className='line05Box' style={{ width: '630px' }}></hr>
+                    <hr className='line05Box' style={{ width: '46.120vw' }}></hr>
                 </div>
                 <div className="review_outer_box">
-                    <p className='read_review' style={{marginTop:'16px'}}>Read reviews here</p>
+                    <p className='read_review' style={{marginTop:'1.171vw'}}>Read reviews here</p>
                     <div className="review_star">
                         <FaRegStar id='star_feature_next' />
                         <FaRegStar id='star_feature_next' />

@@ -2,37 +2,37 @@
   text-align: center;
   width: 100%;
   height: auto;
-  font: normal normal bold 24px/35px Poppins;
+  font: normal normal bold 1.757vw/2.562vw Poppins;
   color: #1d1d1d;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin-top: 0.366vw;
+  margin-bottom: 0;
 }
 .button_box_blog {
   width: auto;
   height: auto;
-  margin-top: 16px;
-  margin-bottom: 18px;
+  margin-top: 1.171vw;
+  margin-bottom: 1.318vw;
   display: flex;
-  margin-left: 260px;
+  margin-left: 19.034vw;
 }
 .cancelBlog {
-  width: 170px;
-  height: 38px;
+  width: 12.299vw;
+  height: 2.782vw;
   background-color: white;
   border: 2px solid #3d3d3d;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   font-weight: 600;
   cursor: pointer;
   color: #3d3d3d;
 }
 .shareblog {
-  width: 168px;
-  height: 38px;
+  width: 12.299vw;
+  height: 2.782vw;
   background-color: #1D1D1D;
   box-shadow: 0px 3px 6px #00000029;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
 color: #FFFFFF;cursor: pointer;
 outline: none;
-border: 0.1px solid black;
-margin-left: 31px;
+border: 0.007vw solid black;
+margin-left: 2.269vw;
 }

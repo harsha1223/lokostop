@@ -1,88 +1,88 @@
 .No_of_product {
   width: auto;
   height: auto;
-  margin-left: 64px;
-  margin-top: 7px;
-  font: normal normal normal 15px/23px Poppins;
+  margin-left: 4.685vw;
+  margin-top: 0.512vw;
+  font: normal normal normal 1.098vw/1.684vw Poppins;
   color: #3d3d3d;
 }
 .total_items_cart {
-  width: 1238px;
+  width: 90.630vw;
   height: auto;
-  border: 1px solid #08e5a9;
-  margin-left: 64px;
+  border: 0.073vw solid #08e5a9;
+  margin-left: 4.685vw;
 }
 .total_head_no {
   background: #08e5a9 0% 0% no-repeat padding-box;
   width: 100%;
-  height: 43px;
+  height: 3.148vw;
   display: flex;
 }
 .total_head_no p {
-  font: normal normal normal 15px/23px Poppins;
+  font: normal normal normal 1.098vw/1.684vw Poppins;
   font-weight: 500;width: auto;
   color: #ffffff;
-  padding: 10px;
+  padding: 0.732vw;
 }
 .tble_box {
   width: 96%;
   height: auto;
   flex-direction: row;
-  margin-top: 8px;
-  margin-left: 51px;
+  margin-top: 0.586vw;
+  margin-left: 3.734vw;
   display: flex;
 }
 .col_names {
   width: 100%;
   height: auto;
-  margin-right: 25px;
+  margin-right: 1.830vw;
 }
 .table_heading {
   display: flex;
   margin: 0;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   width: 100%;
   padding: 0;
   padding-bottom: 0.5%;
-  border-bottom: 2px solid #e5d7d7;
+  border-bottom: 0.146vw solid #e5d7d7;
 }
 .product_image {
-  width: 103px;
+  width: 7.540vw;
   height: auto;
   margin-left: 1%;
   text-align: center;
 }
 .product_Name {
-  width: 208px;
+  width: 15.227vw;
   height: auto;
   margin-left: 1%;
 }
 .product_avail {
-  width: 230px;
+  width: 16.837vw;
   height: auto;
   text-align: center;
   margin-left: 0.5%;
 }
 .product_code {
-  width: 140px;
+  width: 10.249vw;
   height: auto;
   text-align: center;
   margin-left: 0.5%;
 }
 .product_price {
-  width: 140px;
+  width: 10.249vw;
   height: auto;
   text-align: center;
   margin-left: 0.5%;
 }
 .product_quantity {
-  width: 140px;
+  width: 10.249vw;
   height: auto;
   text-align: center;
 }
 .product_subtotal {
-  width: 140px;
+  width: 10.249vw;
   height: auto;
   text-align: center;
   margin-left: 0.5%;
@@ -93,11 +93,11 @@
   margin-left: 1%;
   color: #3d3d3d;
   width: 99.4%;
-  height: 118px;
+  height: 8.638vw;
   padding: 0;
 }
 .product_image1 {
-  width: 103px;
+  width: 7.540vw;
   height: auto;
 }
 .product_image1 img {
@@ -105,7 +105,7 @@
   height: 100%;
 }
 .product_Name1 {
-  width: 208px;
+  width: 15.227vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -115,12 +115,12 @@
 .product_para_1 {
   height: auto;
   width: 100%;
-  font: normal normal bold 12px/18px Poppins;
+  font: normal normal bold 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   margin: 0;
 }
 .product_para_2 {
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   width: 100%;
   height: auto;
@@ -129,41 +129,41 @@
 }
 .product_para_3 {
   text-decoration: underline;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   width: 100%;
   cursor: pointer;
   height: auto;
 }
 .product_avail1 {
-  width: 230px;
+  width: 16.837vw;
   height: auto;
   text-align: center;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #00680a;
   padding-top: 4%;
 }
 .product_code1 {
-  width: 140px;
+  width: 10.249vw;
   height: auto;
   text-align: center;
   margin-left: 0.5%;
-  font: normal normal bold 12px/18px Poppins;
+  font: normal normal bold 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   padding-top: 4%;
 }
 .product_price1 {
-  width: 140px;
+  width: 10.249vw;
   height: auto;
   text-align: center;
   margin-left: 0.5%;
   padding-top: 4%;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   font-weight: 500;
   color: #3d3d3d;
 }
 .product_quantity1 {
-  width: 140px;
+  width: 10.249vw;
   display: flex;
   height: auto;
   justify-content: space-evenly;
@@ -177,7 +177,7 @@
   font-size: 1.1vw;
 }
 .product_quant_para {
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   font-weight: 600;
 }
@@ -186,7 +186,7 @@
   font-size: 1.2vw;
 }
 .product_subtotal1 {
-  width: 140px;
+  width: 10.249vw;
   height: auto;
   text-align: center;
   display: flex;
@@ -195,7 +195,7 @@
   justify-content: space-evenly;
 }
 .product__sub_para {
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   font-weight: 600;
 }
@@ -207,35 +207,35 @@
 .button_box_1 {
   display: flex;
   width: auto;
-  height: 38px;
+  height: 2.782vw;
   justify-content: space-between;
   margin-top: 2%;margin-bottom: 2%;
 }
 #continue_shopping {
-  width: 170px;
+  width: 12.445vw;
   height: 100%;
   background: #08e5a9 0% 0% no-repeat padding-box;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   font-weight: medium;
-  border: 0.1px solid white;
+  border: 0.007vw solid white;
   cursor: pointer;
   outline: none;
   color: #ffffff;
 }
 #cartUpdate {
-  width: 170px;
+  width: 12.445vw;
   height: 100%;
   cursor: pointer;
   outline: none;
   background: #e6ff00 0% 0% no-repeat padding-box;
-  font: normal normal normal 12px/18px Poppins;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   font-weight: medium;
-  border: 0.1px solid white;
+  border: 0.007vw solid white;
 }
 .buttons_cart_continue{
-  height: 38px;
-  width: 391px;
+  height: 2.782vw;
+  width: 28.624vw;
   display: flex;
   justify-content: space-between;
   margin-top: 4%;

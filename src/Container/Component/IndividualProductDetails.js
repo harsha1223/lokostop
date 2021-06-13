@@ -18,15 +18,15 @@ function IndividualProductDetails() {
                         <img className="similar_particular_image" src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
                         <img className="similar_particular_image" src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
                     </div>
-                    <IoIosArrowDown id="upIconNew" style={{ marginTop: '23px' }}></IoIosArrowDown>
+                    <IoIosArrowDown id="upIconNew" style={{ marginTop: '1.684vw' }}></IoIosArrowDown>
                 </div>
                 <div className="product_big_image_cart_compare">
                     <img className='big_image' src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
-                    <div className="buttons_compare" style={{ marginTop: '14px', marginLeft: '16px' }}>
+                    <div className="buttons_compare" style={{ marginTop: '1.025vw', marginLeft: '1.171vw' }}>
                         <button className="cart_button" >ADD TO CART <BiCart style={{
                             // color: 'white',
-                            marginLeft: '13px',
-                            marginTop: '7px',
+                            marginLeft: '0.952vw',
+                            marginTop: '0.512vw',
                             fontSize: '1.3vw'
                         }} /></button>
                         <button className="compare_button">COMPARE</button>
@@ -76,18 +76,18 @@ function IndividualProductDetails() {
                         </div>
                         <div className="save_box">
                             <p className="color_text"> Qty:</p>
-                            <select className="dropdown_colors" style={{ width: '51px' }}>
+                            <select className="dropdown_colors" style={{ width: '3.734vw' }}>
                                 <option value="WH">01</option>
                                 <option value="BL">02</option>
                             </select>
                         </div>
                     </div>
                     <div className="save_box">
-                        <p className="delivery_text" style={{ width: '95px', marginLeft: '0' }}> Product Code:</p>
+                        <p className="delivery_text" style={{ width: '6.955vw', marginLeft: '0' }}> Product Code:</p>
                         <p className="time_delivery">ADBDF1232S</p>
                     </div>
                     <div className="pay_via">
-                        <p className="save_text" style={{ marginLeft: '-13px',marginTop:'14px' }}>Pay via:</p>
+                        <p className="save_text" style={{ marginLeft: '-0.952vw',marginTop:'1.025vw' }}>Pay via:</p>
                         <div className="logo2pay">
                         <ul>
                             <li><img src='data:image/png;base64,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' alt="HR" /></li>
@@ -98,7 +98,7 @@ function IndividualProductDetails() {
                         </div>
                     </div>
                 
-                <div className="Free_box" style={{width:'637px',height:'133px',margin:'0px',display:'flex',flexWrap:'wrap'}}>
+                <div className="Free_box" style={{width:'46.633vw',height:'9.736vw',margin:'0',display:'flex',flexWrap:'wrap'}}>
                 <div className="Free_Shipping">
                     <FaShippingFast id="shipping_Icon" />
                     <div className="shipping_text">

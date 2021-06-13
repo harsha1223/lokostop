@@ -22,7 +22,7 @@ function FindByCategory() {
                 <div className="category_Search">
                     <div className="centre_first_part">
                         <div className="Selected1">
-                            <p style={{marginTop:'11px'}}>All categories</p> <IoIosArrowDown id="ArrowIcon1" />
+                            <p style={{marginTop:'0.805vw'}}>All categories</p> <IoIosArrowDown id="ArrowIcon1" />
                         </div>
                         <div className="dropdown_list_categories">
                             <div className="dropdown_list_items">Category 1 </div>
@@ -37,7 +37,7 @@ function FindByCategory() {
                     </div>
                     <div className="centre_first_part">
                         <div className="Selected_brand">
-                            <p style={{marginTop:'11px'}}>Brand</p> <IoIosArrowDown id="ArrowIcon1" />
+                            <p style={{marginTop:'0.805vw'}}>Brand</p> <IoIosArrowDown id="ArrowIcon1" />
                         </div>
                         <div className="dropdown_list_categories">
                             <div className="dropdown_list_items">Brand 1 </div>
@@ -54,7 +54,7 @@ function FindByCategory() {
                         <input type="text" placeholder="Budget (approximate)" />
                     </div>
                     <div className="find_icon">
-                        <p style={{marginTop:'11px'}}>Find</p><FiSearch id='search' />
+                        <p style={{marginTop:'0.805vw'}}>Find</p><FiSearch id='search' />
                     </div>
 
                 </div>

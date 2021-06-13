@@ -14,11 +14,11 @@ function Product() {
                         <div id="div_first" className="add_to_cart_inner_box" >
                             <BiGitCompare className="Compare_Icon" />
                             <div className="add_to_cart_text_icon">
-                                <p style={{marginTop:'6px'}}>ADD TO CART</p>
+                                <p style={{marginTop:'0.439vw'}}>ADD TO CART</p>
                                 <BiCart style={{
                                     color: 'white',
-                                    marginLeft: '13px',
-                                    marginTop: '7px',
+                                    marginLeft: '0.952vw',
+                                    marginTop: '0.512vw',
                                     fontSize: '1.3vw'
                                 }} />
                             </div>
