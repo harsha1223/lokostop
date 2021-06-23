@@ -1,13 +1,13 @@
 .outerComingPage {
   width: 100vw;
-  height: 46.486vw;
+  height: 50vw;
   display: flex;
   position: relative;
   flex-wrap: wrap;
 }
 .outerComingPage img {
   width: 50vw;
-  height: 24.133vw;
+  height: 25.4vw;
   opacity: 1;
 }
 .details_of_comingSoon {
@@ -46,7 +46,7 @@
   color: #ffffff;
   height: auto;
   margin-left: 0;
-  margin-top: 10.761vw;
+  margin-top: 12.761vw;
   margin-bottom: 0;
   font: normal normal bold 6.223vw/4.466vw Poppins;
   text-align: center;
@@ -84,7 +84,7 @@
 }
 .SocialMedia_links {
   margin-left: 37.701vw;
-  margin-top: 11.786vw;
+  margin-top: 13.786vw;
   width: 21.816vw;
 }
 .SocialMedia_links ul {

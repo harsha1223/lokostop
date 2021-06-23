@@ -1,4 +1,3 @@
-import React from 'react'
 import {Link} from 'react-router-dom'
 import Footer from './Component/Footer/Footer'
 import Header from './Component/Header/Header'
@@ -10,9 +9,14 @@ import Product from './Component/Product';
 
 import IndividualProductDetails from './Component/IndividualProductDetails';
 import Header01 from './Component/Header/Header01';
-function IndividualProduct() {
-    return (
-        <div>
+
+
+import React, { Component } from 'react'
+
+export class IndividualProduct extends Component {
+    render() {
+        return (
+            <div>
             <Header01></Header01>
             <Header />
             <IndividualProductDetails/>
@@ -66,7 +70,8 @@ function IndividualProduct() {
             </div>
             <Footer />
         </div>
-    )
+        )
+    }
 }
 
 export default IndividualProduct

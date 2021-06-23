@@ -1,4 +1,3 @@
-import React from 'react'
 import './productReview.css'
 import { Link } from 'react-router-dom'
 import Footer from './Component/Footer/Footer'
@@ -11,9 +10,13 @@ import Product from './Component/Product';
 import IndividualProductDetails from './Component/IndividualProductDetails';
 import ShowReview from './Component/ShowReview'
 import Header01 from './Component/Header/Header01'
-function productReview() {
-    return (
-        <div>
+
+import React, { Component } from 'react'
+
+export class productReview extends Component {
+    render() {
+        return (
+            <div>
             <Header01></Header01>
             <Header />
             <IndividualProductDetails />
@@ -86,7 +89,8 @@ function productReview() {
             </div>
             <Footer />
         </div>
-    )
+        )
+    }
 }
 
 export default productReview

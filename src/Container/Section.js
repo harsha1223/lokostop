@@ -1,12 +1,15 @@
-import React from 'react'
 import Footer from './Component/Footer/Footer'
 import Header from './Component/Header/Header'
 import Header01 from './Component/Header/Header01'
 import Product from './Component/Product'
 import './Section.css'
-function Section() {
-    return (
-        <div>
+
+import React, { Component } from 'react'
+
+export class Section extends Component {
+    render() {
+        return (
+            <div>
             <Header01></Header01>
             <Header></Header>
             <div className="sectionBox">
@@ -44,7 +47,8 @@ function Section() {
             </div>
             <Footer></Footer>
         </div>
-    )
+        )
+    }
 }
 
 export default Section

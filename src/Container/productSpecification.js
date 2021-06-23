@@ -1,4 +1,3 @@
-import React from 'react'
 import {Link} from 'react-router-dom'
 import Footer from './Component/Footer/Footer'
 import Header from './Component/Header/Header'
@@ -9,9 +8,13 @@ import PopularCategories from './Component/PopularCategories';
 import Product from './Component/Product';
 import IndividualProductDetails from './Component/IndividualProductDetails';
 import Header01 from './Component/Header/Header01';
-function productSpecification() {
-    return (
-        <div>
+
+import React, { Component } from 'react'
+
+export class productSpecification extends Component {
+    render() {
+        return (
+            <div>
             <Header01></Header01>
             <Header />
             <IndividualProductDetails/>
@@ -62,7 +65,8 @@ function productSpecification() {
             </div>
             <Footer />
         </div>
-    )
+        )
+    }
 }
 
 export default productSpecification

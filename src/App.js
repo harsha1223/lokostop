@@ -18,11 +18,16 @@ import Section from './Container/Section' ;
 import ComingSoon from './Container/ComingSoon';
 import 'semantic-ui-css/semantic.min.css';
 import Cart from './Container/Cart';
+import paymentCart from './Container/paymentCart';
+import PaymentDebit from './Container/PaymentDebit';
+import PaymentNet from './Container/PaymentNet';
+import PaymentWallet from './Container/PaymentWallet';
+import PaymentCash from './Container/PaymentCash';
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <ScrollToTop /> */}
+        
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/blogs" component={Blog}></Route>
@@ -35,6 +40,11 @@ function App() {
           <Route path='/ComingSoon' component = {ComingSoon}></Route>
           <Route path='/Section' component ={Section}></Route>
           <Route path='/cart' component={Cart}></Route>
+          <Route path='/payment' component ={paymentCart}></Route>
+          <Route path='/paymentDebit' component={PaymentDebit}></Route>
+          <Route path='/paymentNet' component={PaymentNet}></Route>
+          <Route path='/paymentWallet' component = {PaymentWallet}></Route>
+          <Route path = '/PaymentCash' component={PaymentCash}></Route>
         </Switch>
       </Router>
     </div>
