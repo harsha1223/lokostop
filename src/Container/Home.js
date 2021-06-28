@@ -10,6 +10,11 @@ import PopularCategories from './Component/PopularCategories';
 import Product from './Component/Product';
 import Header01 from './Component/Header/Header01';
 import React, { Component } from 'react'
+import NewArrival from './Component/NewArrival';
+import PopularBox from './Component/PopularBox';
+import FeatureBox from './Component/FeatureBox';
+import ClientImage from './Component/ClientImage';
+import SixImageSlider from './Component/Slider/SixImageSlider';
 
 export class Home extends Component {
     render() {
@@ -20,6 +25,10 @@ export class Home extends Component {
                 <div className="video_container">
                     <img src="https://images.unsplash.com/photo-1556740772-1a741367b93e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3Ryb25pY3MlMjBzaG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
                 </div>
+                {/* <video className='video_container' muted="true" autoplay playsinline loop  >
+                    <source src="https://giant.gfycat.com/VerifiableTerrificHind.mp4" type="video/mp4" />
+                    <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm" />
+                </video> */}
                 <div className="Free_box">
                     <div className="Free_Shipping">
                         <FaShippingFast id="shipping_Icon" />
@@ -50,33 +59,7 @@ export class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="new_Arrivals">
-                    <p className="new_Arrival_text">New Arrivals</p>
-                    <hr id="line_1"></hr>
-                    <div className="list_names">
-                        <ul>
-                            <li>Washing Machines</li>
-                            <li>Mobile Phones</li>
-                            <li>Kitchen Appliances</li>
-                            <li>Laptop & Printer</li>
-                        </ul>
-                    </div>
-                    <div id="arrow_box">
-                        <IoIosArrowBack id="Arrow_forward" />
-                        <IoIosArrowForward id="Arrow_backward" />
-                    </div>
-                </div>
-                <div className="new_arrival_box">
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-
-                </div>
+                <NewArrival />
                 <div className="most_view_box">
                     <p className="most_viewd_text">Most Viewed Products</p>
                     <hr id="line_view"></hr>
@@ -219,83 +202,13 @@ export class Home extends Component {
                 </div>
                 <p className="para_client">We provide our clients with bulk buying for their desired amount. See what our biggest clients have to say about us below.</p>
                 <button className="start_buying">Start bulk buying<IoIosArrowForward id="Arrow_buying" /></button>
-                <div className="images_box">
-                    <div className="image_1_container">
-                        <div className="image_1_upper">
-                            <p className='image1_para1' style={{ marginTop: '3.880vw' }}>Radisson Hotel</p>
-                            <p className="image1_para2">Punjab</p>
-                            <div className="image_1_client_image">
-                                <img src="https://images.unsplash.com/photo-1611095973763-414019e72400?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                            </div>
-                            <p className="image_1_para3">"These are going to be reviews of our clients for our store, and this can be written in the size of 25 and with black font."</p>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
-                    </div>
-                    <div className="image_3_outer_box">
-                        <div className="images_3">
-                            <div className="hover_item">
-                                <p className='image1_para1' style={{ marginTop: '0.293vw', color: 'white' }}>Radisson Hotel</p>
-                                <p className="image1_para2" style={{ marginTop: '0', color: 'white' }}>Punjab</p>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
-                        </div>
-                        <div className="images_3">
-                            <div className="hover_item">
-                                <p className='image1_para1' style={{ marginTop: '0.293vw', color: 'white' }}>Radisson Hotel</p>
-                                <p className="image1_para2" style={{ marginTop: '0', color: 'white' }}>Punjab</p>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
-                        </div>
-                        <div className="images_3">
-                            <div className="hover_item">
-                                <p className='image1_para1' style={{ marginTop: '0.293vw', color: 'white' }}>Radisson Hotel</p>
-                                <p className="image1_para2" style={{ marginTop: '0', color: 'white' }}>Punjab</p>
-                            </div>
-                            <img src="https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
-                        </div>
-
-                    </div>
-                    <div className="image_2">
-                        <p className="image_2_1"><img src="https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
-                        <p style={{ marginTop: "1.830vw" }} className="image_2_1"><img src="https://images.unsplash.com/photo-1596036435403-cdb01867592d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
-                    </div>
-                </div>
-                <div style={{ marginTop: "2.928vw" }} className="video_container">
+                <ClientImage/>
+                <div style={{ marginTop: '3%' }} className="video_container">
                     <img src="https://images.unsplash.com/photo-1556740772-1a741367b93e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3Ryb25pY3MlMjBzaG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" />
                 </div>
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text">Featured Products</p>
-                    <hr id="line_category"></hr>
-                </div>
-                <div className="new_arrival_box">
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                </div>
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text">Popular categories</p>
-                    <hr id="line_category"></hr>
-                </div>
-                <div className="new_arrival_box">
-                    <PopularCategories /><PopularCategories /><PopularCategories /><PopularCategories />
-                </div>
-
-
-                <div className="slide_box">
-                    <div className="slider_box_one">
-                        <img style={{ width: "35.944vw" }} src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                        <img style={{ width: "29.283vw" }} src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWljcm93YXZlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                        <img style={{ width: "37.116vw" }} src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                        <img style={{ width: "26.940vw" }} src="https://images.unsplash.com/photo-1542372358-5d022764bd6c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdhc2hpbmclMjBtYWNoaW5lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                    </div>
-                    <div className="slider_box_one">
-                        <img style={{ width: "26.647vw" }} src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                        <img style={{ width: "58.565vw" }} src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                        <img style={{ width: "32.577vw" }} src="https://images.unsplash.com/photo-1575571536958-38aa1227786a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-
-                    </div>
-                </div>
+                <FeatureBox/>
+                <PopularBox/>
+                <SixImageSlider/>
                 <Footer></Footer>
             </div>
         )

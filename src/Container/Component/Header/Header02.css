@@ -13,9 +13,9 @@
     border: 0.007vw solid #08e5a9;
   }
   .nav {
-    margin-left: 21.449vw;
+    margin-left: 25.449vw;
     margin-top: 2.269vw;
-    height: 1.245vw;
+    height: auto;
   }
   .nav ul {
     display: flex;
@@ -56,7 +56,7 @@
     display: grid;
     grid-template-rows: 1.318vw 1.464vw;
     margin-top: 1.684vw;
-    margin-left: 12.445vw;
+    margin-left: 15.445vw;
   }
   .mobile_part {
     display: flex;

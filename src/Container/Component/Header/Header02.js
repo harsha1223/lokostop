@@ -9,7 +9,7 @@ function Header02() {
                 <div className="nav">
                     <ul>
                         <Link to="/"><li>Home</li></Link>
-                        <a href="#"><li>New Arrivals</li></a>
+                        {/* <a href="#"><li>New Arrivals</li></a> */}
                         <Link to='/aboutUs'><li>About us</li></Link>
                         <a href="#"><li>Send query</li></a>
                         <a href="#"><li>Complaint</li></a>

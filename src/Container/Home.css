@@ -946,23 +946,36 @@
 }
 .slide_box{
   width: 100vw;
-  height: auto;
+  height: 50vw;
   margin-top: 4.246vw;
   display: flex;
   flex-direction: column;
 }
 .slider_box_one{
-  width: 100vw;
+  width: 150%;
   height: 23.353vw;
-  overflow: hidden;
-  cursor: pointer;
+  overflow: hidden; transition-duration: 2s;
+  position: absolute;
   display: flex;
   cursor: pointer;
+}
+.slider_box_one:hover{
+  right: -19vw;
 }
 .slider_box_one img{
   height: 100%;
   cursor: pointer;
 }
-.slider_box_one:hover .slider_box_one img{
-  left: -35.944vw;
+.slider_box_two{
+  width: 150%;
+  height: 23.353vw;
+  margin-top: 23.5vw;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  right: -22vw;
+  cursor: pointer; transition-duration: 2s;
+}
+.slider_box_two:hover{
+  left: -3vw;
 }

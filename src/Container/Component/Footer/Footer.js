@@ -18,22 +18,22 @@ function Footer() {
                     <div className="box_one_area_2">
                         <p>INFORMATION</p>
                         <ul>
-                            <li>Delivery</li>
+                            {/* <li>Delivery</li> */}
                             <li>About us</li>
                             <li>Secure Payment</li>
-                            <li>Contact us</li>
-                            <li>Sitemap</li>
-                            <li>Stores</li>
+                            <li>Send Query</li>
+                            {/* <li>Sitemap</li>
+                            <li>Stores</li> */}
                         </ul>
                     </div>
                     <div className="box_one_area_2">
                         <p>CUSTOM LINKS</p>
                         <ul>
-                            <li>Legal Notice</li>
-                            <li> Latest Products</li>
-                            <li>Write to us</li>
-                            <li>Inquire product</li>
-                            <li>Query</li>
+                            <li>New Arrivals</li>
+                            <li>Popular Categories</li>
+                            <li>Featured Products</li>
+                            <li>Best Selling</li>
+                            {/* <li>Query</li> */}
                         </ul>
                     </div>
                     <div className="box_one_area_2">
@@ -74,8 +74,15 @@ function Footer() {
                         <p>FOLLOW US ON</p>
                         <div className="social">
                             <ul>
-                                <a href="" target="#"><li style={{ background: '#3B5998', color: 'white' }}><FaFacebookF /></li></a>
-                                <li className="instagram"><FaInstagram /></li>
+                                <a href="https://www.facebook.com/" target="#"><li> 
+                                <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg" alt="" />
+                                </li></a>
+                                <a href="https://www.instagram.com/accounts/login/" target='#'>
+                                <li>
+                                    <img src="https://www.logo.wine/a/logo/Instagram/Instagram-Logo.wine.svg" alt="" />
+                                </li>
+                                </a>
+                                
                             </ul>
                         </div>
                     </div>

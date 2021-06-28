@@ -3,8 +3,8 @@
   width: auto;
   display: flex;
   margin-top: 1.83vw;
-  margin-left: 2.343vw;
-  margin-right: 4.685vw;
+  margin-left: 1.343vw;
+  margin-right: 0;
 }
 .filterbox {
   height: auto;
@@ -51,7 +51,7 @@
   cursor: pointer;
 }
 .ParticularSection {
-  width: 69.546vw;
+  width: 76.546vw;
   margin-left: 2.123vw;
   height: auto;
 }

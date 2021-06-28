@@ -12,6 +12,7 @@ import Header01 from './Component/Header/Header01';
 
 
 import React, { Component } from 'react'
+import PopularBox from './Component/PopularBox';
 
 export class IndividualProduct extends Component {
     render() {
@@ -61,13 +62,7 @@ export class IndividualProduct extends Component {
                 <Product />
             </div>
             <FindByCategory />
-            <div className="find_by_category_box">
-                <p className="most_viewd_text">Popular categories</p>
-                <hr id="line_category"></hr>
-            </div>
-            <div className="new_arrival_box">
-                <PopularCategories /><PopularCategories /><PopularCategories /><PopularCategories />
-            </div>
+            <PopularBox/>
             <Footer />
         </div>
         )

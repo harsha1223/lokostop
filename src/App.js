@@ -23,6 +23,7 @@ import PaymentDebit from './Container/PaymentDebit';
 import PaymentNet from './Container/PaymentNet';
 import PaymentWallet from './Container/PaymentWallet';
 import PaymentCash from './Container/PaymentCash';
+import ProfileIndividual from './Container/ProfileIndividual';
 function App() {
   return (
     <div className="App">
@@ -44,7 +45,8 @@ function App() {
           <Route path='/paymentDebit' component={PaymentDebit}></Route>
           <Route path='/paymentNet' component={PaymentNet}></Route>
           <Route path='/paymentWallet' component = {PaymentWallet}></Route>
-          <Route path = '/PaymentCash' component={PaymentCash}></Route>
+          <Route path='/PaymentCash' component={PaymentCash}></Route>
+          <Route path='/profileIndividual' component={ProfileIndividual}></Route>
         </Switch>
       </Router>
     </div>
