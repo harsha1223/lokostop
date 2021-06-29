@@ -20,6 +20,22 @@
   width: 100%;
   display: flex;
 }
+.nav-link{
+  margin-top: 10%;
+  padding: 1vw;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
+  color: #3d3d3d;
+  border-radius: none;
+}
+.nav{
+  height: 100%;
+  width: 15vw;
+    background: #DDDDDD;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color:#3d3d3d;;
+  background-color: white;border-radius: none;
+}
 .paymethod {
   width: 29%;
   height: 100%;
@@ -146,7 +162,7 @@
   color: #5d5d5d;
 }
 #payline {
-  width: 10vw;
+  width: 21vw;
   color: #5d5d5d;
 }
 .paymntbox_card {

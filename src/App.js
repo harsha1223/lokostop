@@ -16,10 +16,6 @@ import ComingSoon from './Container/ComingSoon/ComingSoon';
 import 'semantic-ui-css/semantic.min.css';
 import Cart from './Container/Cart/Cart';
 import paymentCart from './Container/Cart/paymentCart';
-import PaymentDebit from './Container/Cart/PaymentDebit';
-import PaymentNet from './Container/Cart/PaymentNet';
-import PaymentWallet from './Container/Cart/PaymentWallet';
-import PaymentCash from './Container/Cart/PaymentCash';
 import ProfileIndividual from './Container/Profile/ProfileIndividual';
 import sendQuery from './Container/Query/sendQuery';
 function App() {
@@ -38,10 +34,6 @@ function App() {
           <Route path='/Section' component ={Section}></Route>
           <Route path='/cart' component={Cart}></Route>
           <Route path='/payment' component ={paymentCart}></Route>
-          <Route path='/paymentDebit' component={PaymentDebit}></Route>
-          <Route path='/paymentNet' component={PaymentNet}></Route>
-          <Route path='/paymentWallet' component = {PaymentWallet}></Route>
-          <Route path='/PaymentCash' component={PaymentCash}></Route>
           <Route path='/profileIndividual' component={ProfileIndividual}></Route>
           <Route path='/sendquery' component={sendQuery}></Route>
         </Switch>
