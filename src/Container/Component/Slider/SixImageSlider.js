@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function SixImageSlider() {
-    return (
-        <div>
+export class SixImageSlider extends Component {
+    render() {
+        return (
             <div className="slide_box">
                     <div className="slider_box_one">
                         <img style={{ width: "35.944vw" }} src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
@@ -18,8 +18,8 @@ function SixImageSlider() {
 
                     </div>
                 </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default SixImageSlider

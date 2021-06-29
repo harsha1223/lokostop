@@ -1,9 +1,10 @@
-import React from 'react'
 import {  FaRegHeart } from "react-icons/fa";
 import { BiGitCompare, BiCart } from "react-icons/bi";
-function Product() {
-    return (
-        <div>
+import React, { Component } from 'react'
+
+export class Product extends Component {
+    render() {
+        return (
             <div className="product_details_list">
                     <div className="image_box">
                         <img src="https://images.unsplash.com/photo-1583172747862-afcb755ebd13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="RELOAD" />
@@ -38,8 +39,8 @@ function Product() {
                     </div>
 
                 </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Product
