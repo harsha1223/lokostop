@@ -108,3 +108,38 @@
   justify-content: space-evenly;
   margin-top: 1.684vw;
 }
+.filter {
+  margin-top: 4%;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  font: normal normal 200 0.878vw/1.318vw Poppins;
+  color: #9d9d9d;
+}
+.accordion-button {
+  color: #9d9d9d;
+  box-shadow: none;
+  font: normal normal 200 0.878vw/1.318vw Poppins;
+}
+.accordion-button:not(.collapsed) {
+  color: #9d9d9d;
+  background-color: white;
+  font: normal normal 200 0.878vw/1.318vw Poppins;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.suboptions {
+  height: auto;
+  width: 100%;
+}
+.form-check-input:checked {
+  background-color: lightgrey;
+  border: grey;
+  box-shadow: none;
+}
+.form-check-input[type=checkbox] {
+  border-radius: 0;
+  box-shadow: none;
+}
+.form-check-label{
+  font: normal normal 200 0.778vw/1.318vw Poppins;
+}
