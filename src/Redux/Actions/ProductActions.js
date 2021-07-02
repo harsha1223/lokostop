@@ -1,13 +1,13 @@
 import * as actionTypes from '../Constants/ProductConstants'
 import api from '../../Apis/api'
 
-export const getAllProducts = () => {
+export const getAllProducts = () => async(dispatch) => {
     try{
         dispatch({ type: actionTypes.GET_PRODUCTS_REQUEST})
-        const {data} = await api.get('/products/get')
+        const {data} = await api.post('/product/get')
         dispatch({
             type: actionTypes.GET_PRODUCTS_SUCCESS,
-            payload: data
+            payload: data.data
         })
     }catch(error){
         dispatch({

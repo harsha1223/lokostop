@@ -11,9 +11,9 @@ export class Header02 extends Component {
             <div className="navbar">
                 <ul>
                     <Link to="/"><li>
-                        <div class="drop">
-                            <button class="dropbtn1">Home</button>
-                            <div class="dropdown-content1">
+                        <div className="drop">
+                            <button className="dropbtn1">Home</button>
+                            <div className="dropdown-content1">
                                 <Link to="#">Washing Machine</Link>
                                 <Link to="#">Link 2</Link>
                                 <Link to="#">Link 3</Link>

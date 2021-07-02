@@ -16,7 +16,17 @@ import CategoryBox from '../Component/Boxes/CategoryBox';
 import MostViewedBox from '../Component/Boxes/MostViewedBox';
 import TopClients from '../Component/Boxes/TopClients';
 
-export class Home extends Component {
+import {connect} from 'react-redux'
+import {getAllProducts} from '../../Redux/Actions/ProductActions'
+
+class Home extends Component {
+    state = {
+        products:[]
+    }
+    async componentDidMount(){
+        await this.props.getAllProducts()
+        this.setState({products: this.props.products})
+    }
     render() {
         return (
             <div>
@@ -69,4 +79,10 @@ export class Home extends Component {
     }
 }
 
-export default Home
+const mapStateToProps = state =>{
+    return {
+        products: state.getProducts.products,
+        loading: state.getProducts.loading
+    }
+}
+export default connect(mapStateToProps, {getAllProducts})(Home)

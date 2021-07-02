@@ -35,7 +35,7 @@ function App() {
           <Route path="/productindividual" component={IndividualProduct}></Route>
           <Route path='/aboutUs' component={AboutUs}></Route>
           <Route path='/ComingSoon' component = {ComingSoon}></Route>
-          <Route path='/Section' component ={Section}></Route>
+          <Route path='/section' component ={Section}></Route>
           <Route path='/cart' component={Cart}></Route>
           <Route path='/payment' component ={paymentCart}></Route>
           <Route path='/paymentDebit' component={PaymentDebit}></Route>
