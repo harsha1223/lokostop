@@ -18,6 +18,8 @@ import Cart from './Container/Cart/Cart';
 import paymentCart from './Container/Cart/paymentCart';
 import ProfileIndividual from './Container/Profile/ProfileIndividual';
 import sendQuery from './Container/Query/sendQuery';
+import Loader from './Container/Loader/Loader';
+
 function App() {
   return (
     <div className="App">
@@ -36,7 +38,8 @@ function App() {
           <Route path='/payment' component ={paymentCart}></Route>
           <Route path='/profileIndividual' component={ProfileIndividual}></Route>
           <Route path='/sendquery' component={sendQuery}></Route>
-        </Switch>
+          <Route path="/loader" component={Loader}></Route>
+        </Switch> 
       </Router>
     </div>
   );
