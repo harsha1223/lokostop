@@ -18,6 +18,7 @@ import TopClients from '../Component/Boxes/TopClients';
 
 import {connect} from 'react-redux'
 import {getAllProducts} from '../../Redux/Actions/ProductActions'
+import {getFooterDetails} from '../../Redux/Actions/StorefrontActions'
 
 class Home extends Component {
     state = {
@@ -25,6 +26,8 @@ class Home extends Component {
     }
     async componentDidMount(){
         await this.props.getAllProducts()
+        await this.props.getFooterDetails()
+        console.log(this.props.footerDetails)
         this.setState({products: this.props.products})
     }
     render() {
@@ -73,7 +76,7 @@ class Home extends Component {
                 <FeatureBox />
                 <PopularBox />
                 <SixImageSlider />
-                <Footer></Footer>
+                <Footer />
             </div>
         )
     }
@@ -82,7 +85,8 @@ class Home extends Component {
 const mapStateToProps = state =>{
     return {
         products: state.getProducts.products,
-        loading: state.getProducts.loading
+        loading: state.getProducts.loading,
+        footerDetails: state.getFooter.footerDetails
     }
 }
-export default connect(mapStateToProps, {getAllProducts})(Home)
+export default connect(mapStateToProps, {getAllProducts, getFooterDetails})(Home)

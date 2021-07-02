@@ -13,7 +13,7 @@ axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 //   delete axios.defaults.headers.common["token"];
 // }
 export default axios.create({
-  baseURL: "https://api.lokostop.in/",
+  baseURL: "https://big-cms.herokuapp.com/",
   headers: {
     Accept: "applications/json",    
   },

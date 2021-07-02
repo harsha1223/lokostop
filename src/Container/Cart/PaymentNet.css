@@ -26,6 +26,7 @@
 #bankimage{
     height: 5vw;
     width: 10vw;
+    margin-top: -5vw;
     margin-left: 0.878vw;
 }
 #banklogo{
@@ -34,11 +35,13 @@
 #bankimage1{
     height: 5.051vw;
     width: 9vw;
+    margin-top: -5vw;
     margin-left: 0.878vw;
 }
 #bankimage2{
     height: 3vw;
     width: 10vw;
+    margin-top: -3vw;
     margin-left: 0.878vw;
 }
 #banklogo1{
