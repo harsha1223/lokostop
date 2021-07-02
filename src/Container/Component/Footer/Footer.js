@@ -1,8 +1,16 @@
 import './Footer.css'; import { FaPhoneAlt, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { RiCopyrightLine } from "react-icons/ri";
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
+
 
 export class Footer extends Component {
+    state = {
+        footerDetails: []
+    }
+    componentDidMount(){
+        this.setState({footerDetails: this.props.footerDetails})
+    }
     render() {
         return (
             <footer className='footer'>
@@ -56,7 +64,7 @@ export class Footer extends Component {
                             <li>My favorites</li>
                         </ul>
                     </div>
-                    <p className='copyright'>Copyright <RiCopyrightLine id="copyrighticon" /> <b style={{ color: '#021FB2', cursor: 'pointer' }}>lokostop</b> . All rights reserved</p>
+                    <p className='copyright' dangerouslySetInnerHTML={{__html: this.state.footerDetails.FooterCopyrightText}}></p>
                 </div>
                 <div className="area_3">
                     <div className="paymentmethod">
@@ -94,4 +102,9 @@ export class Footer extends Component {
     }
 }
 
-export default Footer
+const mapStateToProps = state =>{
+    return {       
+        footerDetails: state.getFooter.footerData
+    }
+}
+export default connect(mapStateToProps)(Footer)

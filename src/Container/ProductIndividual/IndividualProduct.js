@@ -10,8 +10,18 @@ import PopularBox from '../Component/Boxes/PopularBox';
 import { FaRegStar } from "react-icons/fa";
 import ShowReview from './ShowReview'
 import { IoIosArrowBack, IoIosArrowForward, IoIosAttach } from "react-icons/io";
+import {connect} from 'react-redux'
+import {getAllProducts, getSingleProduct} from '../../Redux/Actions/ProductActions'
 
-export class IndividualProduct extends Component {
+class IndividualProduct extends Component {
+    state ={
+        productDetails: {}
+    }
+    async componentDidMount(){
+        await this.props.getSingleProduct("60dc25e2037caf0022d603b8")
+        this.setState({productDetails: this.props.productDetails})
+        console.log(this.state.productDetails)
+    }
     render() {
         return (
             <div>
@@ -109,5 +119,10 @@ export class IndividualProduct extends Component {
         )
     }
 }
+const mapStateToProps = state =>{
+    return {
+        productDetails: state.getProductDetails.product
+    }
+}
+export default connect(mapStateToProps, {getSingleProduct})(IndividualProduct)
 
-export default IndividualProduct
