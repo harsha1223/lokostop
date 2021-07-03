@@ -9,24 +9,24 @@ export class Header01 extends Component {
         return (
             <div className="Header_one" >
                 <div className="Header_one_left">
-                    <div className="dropdown">
-                        <button className="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <FiMenu id="MenuIcon" />&nbsp;&nbsp; Browse categories
                         </button>
-                        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
-                                <ul className="dropdown-menu dropdown-submenu">
+                        <ul class="dropdown-menu" s aria-labelledby="dropdownMenuButton1">
+                            <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
+                                <ul class="dropdown-menu dropdown-submenu">
                                     <li>
-                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                     </li>
                                     <li>
-                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                     </li>
                                     <li>
-                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                     </li>
                                     <li>
-                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                        <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                     </li>
                                     <li></li>
                                 </ul>
@@ -38,24 +38,24 @@ export class Header01 extends Component {
                 
                 <div className="Header_one_centre">
                     <div className="centre_first_part">
-                        <div className="dropdown">
-                            <button style={{ marginTop: '1.5%' }} className="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="dropdown">
+                            <button style={{ marginTop: '1.5%' }} class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 All categories
                             </button>
-                            <ul className="dropdown-menu"  aria-labelledby="dropdownMenuButton1">
-                                <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
-                                    <ul className="dropdown-menu dropdown-submenu">
+                            <ul class="dropdown-menu" s aria-labelledby="dropdownMenuButton1">
+                                <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
+                                    <ul class="dropdown-menu dropdown-submenu">
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li></li>
                                     </ul>
@@ -75,7 +75,7 @@ export class Header01 extends Component {
                 <div className="Header_one_right">
                     <div className="Favorites"><IoIosHeart id='Heart' /><span id="count">0</span><p>Favorites</p></div>
                     <Link to='/Cart'><div style={{ color: '#1D1D1D' }} className="cart"><FiShoppingCart id='Cart' /><span id="count">0</span><p>Cart</p></div></Link>
-                    <div className="image_user"><img style={{ cursor: 'pointer' }} src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&q=60"></img></div>
+                    <div className="image_user"><img style={{ cursor: 'pointer' }} src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></div>
                 </div>
             </div>
         )
