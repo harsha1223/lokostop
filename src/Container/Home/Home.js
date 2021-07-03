@@ -15,7 +15,7 @@ import VideoContainer from '../Component/Slider/VideoContainer';
 import CategoryBox from '../Component/Boxes/CategoryBox';
 import MostViewedBox from '../Component/Boxes/MostViewedBox';
 import TopClients from '../Component/Boxes/TopClients';
-
+import Loader from '../Loader/Loader'
 import {connect} from 'react-redux'
 import {getAllProducts} from '../../Redux/Actions/ProductActions'
 import {getFooterDetails} from '../../Redux/Actions/StorefrontActions'
@@ -24,13 +24,16 @@ class Home extends Component {
     state = {
         products:[]
     }
-    async componentDidMount(){
-        await this.props.getAllProducts()
-        await this.props.getFooterDetails()
+    componentDidMount(){
+        this.props.getAllProducts()
+        this.props.getFooterDetails()
         this.setState({products: this.props.products})
     }
     render() {
-        return (
+        if(this.props.loading || this.props.footerLoading){
+            return <Loader />
+        }
+        else return (
             <div>
                 <Header01></Header01>
                 <Header></Header>
@@ -85,6 +88,7 @@ const mapStateToProps = state =>{
     return {
         products: state.getProducts.products,
         loading: state.getProducts.loading,
+        footerLoading: state.getFooter.loading,
         productDetails: state.getProductDetails.product
     }
 }

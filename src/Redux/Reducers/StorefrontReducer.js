@@ -1,11 +1,11 @@
 import * as actionTypes from '../Constants/StorefrontConstants'
 
-export const getFooterReducer = (state = { footerData: []}, action) => {
+export const getFooterReducer = (state = { footerData: {}}, action) => {
     switch(action.type){
         case actionTypes.GET_FOOTER_REQUEST:
             return{
                 loading: true,
-                footerData: []
+                footerData: { }
             }
         case actionTypes.GET_FOOTER_SUCCESS:
             return {

@@ -6,10 +6,15 @@ import {connect} from 'react-redux'
 
 export class Footer extends Component {
     state = {
-        footerDetails: []
+        footerDetails: {
+            Footer: {
+                FooterCopyrightText: 'Copyright © <a href="https://lokostop.in">Lokostop</a> 2021. All rights reserved.',
+                AcceptedPaymentMethodsImage: ""
+            }
+        }
     }
     componentDidMount(){
-        this.setState({footerDetails: this.props.footerDetails})
+        this.setState({footerDetails: this.props.footerData.Footer? this.props.footerData: this.state.footerDetails})     
     }
     render() {
         return (
@@ -64,7 +69,7 @@ export class Footer extends Component {
                             <li>My favorites</li>
                         </ul>
                     </div>
-                    <p className='copyright' dangerouslySetInnerHTML={{__html: this.state.footerDetails.FooterCopyrightText}}></p>
+                    <p className='copyright' dangerouslySetInnerHTML={{__html: this.state.footerDetails.Footer.FooterCopyrightText}}></p>
                 </div>
                 <div className="area_3">
                     <div className="paymentmethod">
@@ -104,7 +109,8 @@ export class Footer extends Component {
 
 const mapStateToProps = state =>{
     return {       
-        footerDetails: state.getFooter.footerData
+        footerData: state.getFooter.footerData,
+        footerLoading: state.getFooter.loading
     }
 }
 export default connect(mapStateToProps)(Footer)
