@@ -3,6 +3,7 @@ import { IoIosArrowDown, IoIosArrowForward, IoIosHeart } from "react-icons/io";
 import { FiMenu, FiSearch, FiShoppingCart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react'
+import './Header03.css'
 
 export class Header01 extends Component {
     render() {
