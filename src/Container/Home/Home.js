@@ -18,7 +18,7 @@ import TopClients from '../Component/Boxes/TopClients';
 import Loader from '../Loader/Loader'
 import {connect} from 'react-redux'
 import {getAllProducts} from '../../Redux/Actions/ProductActions'
-import {getFooterDetails} from '../../Redux/Actions/StorefrontActions'
+import {getFooterDetails, getProductTabs} from '../../Redux/Actions/StorefrontActions'
 
 class Home extends Component {
     state = {
@@ -27,7 +27,9 @@ class Home extends Component {
     componentDidMount(){
         this.props.getAllProducts()
         this.props.getFooterDetails()
+        this.props.getProductTabs()
         this.setState({products: this.props.products})
+        console.log(this.props.allProductRows)
     }
     render() {
         if(this.props.loading || this.props.footerLoading){
@@ -89,7 +91,8 @@ const mapStateToProps = state =>{
         products: state.getProducts.products,
         loading: state.getProducts.loading,
         footerLoading: state.getFooter.loading,
-        productDetails: state.getProductDetails.product
+        productDetails: state.getProductDetails.product,
+        allProductRows: state.getProductTabs.productGrid
     }
 }
-export default connect(mapStateToProps, {getAllProducts, getFooterDetails})(Home)
+export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getProductTabs})(Home)
