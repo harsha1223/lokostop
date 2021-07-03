@@ -30,7 +30,7 @@ function App() {
           <Route path="/blogs" component={Blog}></Route>
           <Route path="/compare" component={Compare}></Route>
           <Route path="/blogIndividual" component={BlogMain}></Route>
-          <Route path="/productindividual" component={IndividualProduct}></Route>
+          <Route path="/product/:id" component={IndividualProduct}></Route>
           <Route path='/aboutUs' component={AboutUs}></Route>
           <Route path='/ComingSoon' component = {ComingSoon}></Route>
           <Route path='/section' component ={Section}></Route>

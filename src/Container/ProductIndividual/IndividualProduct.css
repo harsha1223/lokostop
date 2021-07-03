@@ -12,6 +12,10 @@
   margin-top: 2.928vw;
   display: flex;
 }
+.productnavnew{
+  color: rgb(157, 157, 157);
+  font: normal normal normal 1vw / 2.1vw Poppins;
+}
 .similar_product_images {
   height: 30.015vw;
   width: 5.417vw;

@@ -29,15 +29,15 @@ class IndividualProduct extends Component {
                 <Header />
                 <IndividualProductDetails />
                 <div className="review_main_with_specification">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs " id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button style={{ color: ' #9d9d9d', font: ' normal normal normal 1vw/2vw Poppins' }} class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+                            <button style={{ color: ' #9d9d9d', font: ' normal normal normal 1vw/2.14vw Poppins' }} class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button style={{ color: ' #9d9d9d', font: ' normal normal normal 1vw/2vw Poppins' }} class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Specifications</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button style={{ color: ' #9d9d9d', font: ' normal normal normal 1vw/2vw Poppins' }} class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Reviews</button>
+                            <button style={{ color: ' #9d9d9d', font: ' normal normal normal 1vw/2.3vw Poppins' }} class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Reviews</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">

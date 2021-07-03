@@ -78,7 +78,7 @@
   padding-left: 0;
 }
 .box_one_area_2 ul li {
-  margin-left: 0;
+  margin-left: 0;animation-timing-function: linear;
   cursor: pointer;
   padding-bottom: 1.171vw;
   text-align: left;
@@ -112,7 +112,7 @@
 .second_box_profile ul li {
   padding-right: 1.464vw;
   width: auto;
-  cursor: pointer;
+  cursor: pointer;animation-timing-function: linear;
   height: 1.537vw;
   font: normal normal normal 0.878vw/1.464vw Poppins;
   padding-top: 1.464vw;
