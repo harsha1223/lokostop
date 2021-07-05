@@ -9,7 +9,7 @@ import { IoAddCircleOutline, IoCloseCircleSharp } from "react-icons/io5";
 import { BiLogOut } from "react-icons/bi";
 import PopularBox from '../Component/Boxes/PopularBox';
 import Footer from '../Component/Footer/Footer'
-import ComplaintPop from './ComplaintPop';
+import Complaint from './Complaint';
 export class ProfileIndividual extends Component {
     render() {
         return (
@@ -88,8 +88,6 @@ export class ProfileIndividual extends Component {
                                                 <IoCloseCircleSharp id="closeIcon" />
                                             </td>
                                         </tr>
-
-
                                         <div className="button_box_1new">
                                             <button id="continue_shopping"> Continue Shopping</button>
                                             <button id="cartUpdate">Update Cart</button>
@@ -98,40 +96,7 @@ export class ProfileIndividual extends Component {
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                <div>
-                                    <p className='complaintshead'>My Complaints</p>
-                                    <div className="tble_box1complaint">
-                                        <table className="col_names1">
-                                            <tr className="table_headingnew">
-                                                <td className="product_imagecomplaint">S.No</td>
-                                                <td className="product_Namecomplaint">Complaint Heading</td>
-                                                <td className="product_availnewcomplaint">Complaint ID</td>
-                                                <td className="product_codenewcomplaint">Status</td>
-                                                <td className="product_pricenewcomplaint">Replied</td>
-                                            </tr>
-                                            <tr className="table_heading1">
-                                                <td className="product_image1complaint">1</td>
-                                                <td className="product_Name1complaint">
-                                                    My LG washing machine is not working properly
-                                                </td>
-                                                <td className="product_avail1newcomplaint">8273791MG</td>
-                                                <td className="product_code1complaint">Sent</td>
-                                                <td className="product_price1newcomplaint">
-                                                    <div className="save_box">
-                                                        <select className="dropdown_colors1" >
-                                                            <option value="WH">Yes</option>
-                                                            <option value="BL">No</option>
-                                                        </select>
-                                                    </div>
-                                                </td>
-                                                <td className="product_quantity1newcomplaint">
-                                                    View Details
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                   <ComplaintPop/>
-                                </div>
+                                <Complaint/>
                             </div>
                         </div>
                     </div>

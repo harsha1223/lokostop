@@ -36,7 +36,7 @@ function App() {
           <Route path='/section' component ={Section}></Route>
           <Route path='/cart' component={Cart}></Route>
           <Route path='/payment' component ={paymentCart}></Route>
-          <Route path='/profileIndividual' component={ProfileIndividual}></Route>
+          <Route path='/profile' component={ProfileIndividual}></Route>
           <Route path='/sendquery' component={sendQuery}></Route>
           <Route path="/loader" component={Loader}></Route>
         </Switch> 

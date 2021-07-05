@@ -23,7 +23,7 @@ export class Header02 extends Component {
                     {/* <a href="#"><li>New Arrivals</li></a> */}
                     <Link to='/aboutUs'><li>About us</li></Link>
                     <Link to='/sendquery'><li>Send query</li></Link>
-                    <a href="#"><li>Complaint</li></a>
+                    <Link to='/profile'><li>Complaint</li></Link>
                     <Link to="/blogs"><li>Blogs</li></Link>
                 </ul>
             </div>

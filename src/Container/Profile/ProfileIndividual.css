@@ -7,7 +7,7 @@
 }
 .firstboxprofile {
   width: 22.255vw;
-  height: auto;
+  height: 59%;
   border: 1px solid #08e5a9;
   padding: 1%;
   display: flex;
@@ -96,7 +96,7 @@
 .navcolor{
     background-color: white;
     margin-bottom: 5%;
-    width: 100%;
+    width: 98%;
 }
 .pillval{
     text-align: left;
@@ -307,4 +307,18 @@
     border: white;
     margin-left: 29vw;
     margin-top: 3vw;
+}
+.table_heading2 {
+    display: flex;
+    margin-top: 1.2%;
+    margin-left: 1%;
+    color: #3d3d3d;
+    width: 99.4%;
+    height: auto;
+    padding: 0;
+}
+.mailId{
+    width:98%;
+    margin-top: 4%; font: normal normal normal 0.98vw/1.318vw Poppins;
+    text-align: right;
 }
