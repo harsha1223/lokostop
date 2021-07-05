@@ -15,11 +15,23 @@ import {getAllProducts, getSingleProduct} from '../../Redux/Actions/ProductActio
 
 class IndividualProduct extends Component {
     state ={
-        productDetails: {}
+        productDetails: {
+            name: "--",
+            price: "--",
+            baseImage: {
+                image: ""
+            },
+            categories: [
+                {
+                    name: "--",
+                    _d: "--"
+                }
+            ]
+        }
     }
     async componentDidMount(){
         await this.props.getSingleProduct("60dc25e2037caf0022d603b8")
-        this.setState({productDetails: this.props.productDetails})
+        this.setState({productDetails: this.props.productDetails?this.props.productDetails:this.state.productDetails})
         console.log(this.state.productDetails)
     }
     render() {
@@ -27,7 +39,7 @@ class IndividualProduct extends Component {
             <div>
                 <Header01></Header01>
                 <Header />
-                <IndividualProductDetails />
+                <IndividualProductDetails productDetails={this.state.productDetails} />
                 <div className="review_main_with_specification">
                     <ul class="nav nav-tabs " id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
