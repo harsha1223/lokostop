@@ -13,30 +13,26 @@ export class IndividualProductDetails extends Component {
           <hr id="line_product"></hr>
         </div>
         <div className="individualproduct_detail_outer_box">
+            {this.props.productDetails.additionalImages.length > 0 ?
           <div className="similar_product_images">
             <IoIosArrowUp id="upIconNew" />
             <div className="similar_image_three_image_box">
-              <img
-                className="similar_particular_image"
-                src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt="RELOAD"
-              />
-              <img
-                className="similar_particular_image"
-                src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt="RELOAD"
-              />
-              <img
-                className="similar_particular_image"
-                src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                alt="RELOAD"
-              />
-            </div>
+            {this.props.productDetails.additionalImages.map((image,key)=>{
+              return <img
+              key={key}
+              className="similar_particular_image"
+              src={"https://api.lokostop.in/"+image.image}
+              alt="RELOAD"
+            />
+            })}
+          </div>
+            
             <IoIosArrowDown
-              id="upIconNew"
-              style={{ marginTop: "1.684vw" }}
+            id="upIconNew"
+            style={{ marginTop: "1.684vw" }}
             ></IoIosArrowDown>
           </div>
+            : ""}
           <div className="product_big_image_cart_compare">
             <img
               className="big_image"

@@ -3,6 +3,9 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import React, { Component } from 'react'
 
 export class NewArrival extends Component {
+    componentDidMount(){
+        console.log(this.props.products)
+    }
     render() {
         return (
             <div>
@@ -24,14 +27,7 @@ export class NewArrival extends Component {
                 </div>
                 <div className="new_arrival_box">
                     <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-                    <Product />
-
+                   
                 </div>
             </div>
         )

@@ -12,12 +12,14 @@ import ShowReview from './ShowReview'
 import { IoIosArrowBack, IoIosArrowForward, IoIosAttach } from "react-icons/io";
 import {connect} from 'react-redux'
 import {getAllProducts, getSingleProduct} from '../../Redux/Actions/ProductActions'
+import Loader from '../Loader/Loader';
 
 class IndividualProduct extends Component {
     state ={
         productDetails: {
             name: "--",
             price: "--",
+            additionalImages: [],
             baseImage: {
                 image: ""
             },
@@ -35,6 +37,9 @@ class IndividualProduct extends Component {
         console.log(this.state.productDetails)
     }
     render() {
+        if(this.props.productLoading){
+            return <Loader />
+        }
         return (
             <div>
                 <Header01></Header01>
@@ -54,19 +59,8 @@ class IndividualProduct extends Component {
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div className="desciptionbox">
-                                <div className="paradescription">
-                                    <h6>Heading 1</h6>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum asperiores inventore accusantium. Excepturi quisquam eos magnam sapiente at suscipit ad ea. Dolor rem molestias autem nobis cupiditate nemo quos aut necessitatibus obcaecati cumque.</p>
-                                </div>
-                                <div className="paradescription">
-                                    <h6>Heading 1</h6>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum asperiores inventore accusantium. Excepturi quisquam eos magnam sapiente at suscipit ad ea. Dolor rem molestias autem nobis cupiditate nemo quos aut necessitatibus obcaecati cumque.</p>
-                                </div>
-                                <div className="paradescription">
-                                    <h6>Heading 1</h6>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum asperiores inventore accusantium. Excepturi quisquam eos magnam sapiente at suscipit ad ea. Dolor rem molestias autem nobis cupiditate nemo quos aut necessitatibus obcaecati cumque.</p>
-                                </div>
+                            <div className="desciptionbox" dangerouslySetInnerHTML={{__html: this.state.productDetails.description}}>
+                                
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -133,7 +127,8 @@ class IndividualProduct extends Component {
 }
 const mapStateToProps = state =>{
     return {
-        productDetails: state.getProductDetails.product
+        productDetails: state.getProductDetails.product,
+        productLoading: state.getProductDetails.loading
     }
 }
 export default connect(mapStateToProps, {getSingleProduct})(IndividualProduct)
