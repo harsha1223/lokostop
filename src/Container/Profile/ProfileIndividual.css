@@ -111,9 +111,9 @@
   border: 1px solid #08e5a9;
 }
 .tble_box1 {
-    width: 82%;
+    width: 97%;
     height: auto;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 0.586vw;
     margin-left: 2.5%;
     display: flex;
@@ -193,7 +193,7 @@
 }
 .button_box_1new {
     display: flex;
-    width: 90%;
+    width: 95%;
     height: 2.782vw;
     justify-content: space-between;
     margin-top: 2%;

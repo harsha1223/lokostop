@@ -8,10 +8,10 @@ export class ComingSoon extends Component {
     render() {
         return (
             <div className='outerComingPage'>
-                <img src='https://images.unsplash.com/photo-1501163268664-3fdf329d019f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'></img>
-                <img src='https://images.unsplash.com/photo-1611734828917-718f25babb2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80'></img>
-                <img src='https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'></img>
-                <img src='https://images.unsplash.com/photo-1614696131965-cc559b1ecad1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80'></img>
+                <img alt ="Reload" src='https://images.unsplash.com/photo-1501163268664-3fdf329d019f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'></img>
+                <img alt ="Reload" src='https://images.unsplash.com/photo-1611734828917-718f25babb2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80'></img>
+                <img alt ="Reload" src='https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'></img>
+                <img alt ="Reload" src='https://images.unsplash.com/photo-1614696131965-cc559b1ecad1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80'></img>
                 <div className="details_of_comingSoon" style={{ position: 'absolute' }}>
                     <div className='name__'>LOKOSTOP</div>
                     <div className='secondBoxComing'>

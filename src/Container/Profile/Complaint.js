@@ -8,6 +8,7 @@ export class Complaint extends Component {
                 <p className='complaintshead' style={{ marginTop: '2%' }}>My Complaints</p>
                 <div className="tble_box1complaint">
                     <table className="col_names1">
+                        <tbody>
                         <tr className="table_headingnew">
                             <td className="product_imagecomplaint">S.No</td>
                             <td className="product_Namecomplaint">Complaint Heading</td>
@@ -53,7 +54,7 @@ export class Complaint extends Component {
                                 View Details
                             </td>
                         </tr>
-                        
+                        </tbody>
                     </table>
                 </div>
                 <ComplaintPop />

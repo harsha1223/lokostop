@@ -23,7 +23,7 @@ export class ProfileIndividual extends Component {
                 <div className="profileOuterMainBOx">
                     <div className="firstboxprofile">
                         <div className="name_individual_Hi">
-                            <div className="image_user" style={{ height: '3vw', width: '3vw' }}><img style={{ cursor: 'pointer' }} src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></div>
+                            <div className="image_user" style={{ height: '3vw', width: '3vw' }}><img alt='reload' style={{ cursor: 'pointer' }} src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></div>
                             <div className="name_hi">
                                 <p className="himessage">Hi,</p>
                                 <p className="nameperson">ABCDEF</p>
@@ -38,11 +38,11 @@ export class ProfileIndividual extends Component {
                             <p>ACCOUNT SETTINGS</p>
                         </div>
                         <div className="settingcategory">
-                            <div class="nav flex-column nav-pills me-3 navcolor" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active pillval" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Personal Information</button>
-                                <button class="nav-link pillval" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">My Address</button>
-                                <button class="nav-link pillval" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">My wishlist</button>
-                                <button class="nav-link pillval" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">My Complaints</button>
+                            <div className="nav flex-column nav-pills me-3 navcolor" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button className="nav-link active pillval" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Personal Information</button>
+                                <button className="nav-link pillval" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">My Address</button>
+                                <button className="nav-link pillval" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">My wishlist</button>
+                                <button className="nav-link pillval" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">My Complaints</button>
                             </div>
                         </div>
                         <div className='orderboxsummary1'>
@@ -51,14 +51,15 @@ export class ProfileIndividual extends Component {
                         </div>
                     </div>
                     <div className="secondBoxprofile">
-                        <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div className="tab-content" id="v-pills-tabContent">
+                            <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                 A
                             </div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">B</div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">B</div>
+                            <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                 <div className="tble_box1">
                                     <table className="col_names1">
+                                        <tbody>
                                         <tr className="table_headingnew">
                                             <td className="product_image">PRODUCT IMAGE</td>
                                             <td className="product_Name">PRODUCT NAME</td>
@@ -69,7 +70,7 @@ export class ProfileIndividual extends Component {
                                             <td className="product_subtotalnew">SUBTOTAL</td>
                                         </tr>
                                         <tr className="table_heading1">
-                                            <td className="product_image1"><img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></td>
+                                            <td className="product_image1"><img alt='reload' src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></td>
                                             <td className="product_Name1">
                                                 <p className="product_para_1">This is the Product name in maximum 2 lines</p>
                                                 <p className="product_para_2">Tags: First tag, Second tag</p>
@@ -88,15 +89,17 @@ export class ProfileIndividual extends Component {
                                                 <IoCloseCircleSharp id="closeIcon" />
                                             </td>
                                         </tr>
-                                        <div className="button_box_1new">
-                                            <button id="continue_shopping"> Continue Shopping</button>
-                                            <button id="cartUpdate">Update Cart</button>
-                                        </div>
+                                        
+                                        </tbody>
                                     </table>
+                                    <div className="button_box_1new">
+                                        <button id="continue_shopping"> Continue Shopping</button>
+                                        <button id="cartUpdate">Update Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                <Complaint/>
+                            <div className="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                <Complaint />
                             </div>
                         </div>
                     </div>

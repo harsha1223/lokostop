@@ -14,13 +14,12 @@ export class Header02 extends Component {
                         <div className="drop">
                             <button className="dropbtn1">Home</button>
                             <div className="dropdown-content1">
-                                <Link to="#">Washing Machine</Link>
-                                <Link to="#">Link 2</Link>
-                                <Link to="#">Link 3</Link>
+                                <p>Washing Machine</p>
+                                <p>Link 2</p>
+                                <p>Link 3</p>
                             </div>
                         </div>
                     </li></Link>
-                    {/* <a href="#"><li>New Arrivals</li></a> */}
                     <Link to='/aboutUs'><li>About us</li></Link>
                     <Link to='/sendquery'><li>Send query</li></Link>
                     <Link to='/profile'><li>Complaint</li></Link>

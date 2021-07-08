@@ -14,9 +14,9 @@ export class Billinginfo extends Component {
                 <div className="detail_add_billing">
                     <div className="first_bill_box">
                         <p className="head_bill_reciever">Receiver details</p>
-                        <input id="input_box" type="text" placeholder="Full Name" />
-                        <input id="input_box" type="text" placeholder="Phone Number" />
-                        <input id="input_box" type="text" placeholder="Email Address" />
+                        <input className="input_box" type="text" placeholder="Full Name" />
+                        <input className="input_box" type="text" placeholder="Phone Number" />
+                        <input className="input_box" type="text" placeholder="Email Address" />
                         <p className="check_box">
                             <label className="containerCheck">
                             I want to get offers in my mail
@@ -35,10 +35,10 @@ export class Billinginfo extends Component {
                     <div className="second_bill_box">
                         <p className="head_bill_reciever">Receiver address</p>
                         <div className="insidebox_secondbill">
-                            <input id="second_input_box" type="text"  placeholder="Address (First Line)"/>
+                            <input className="second_input_box" type="text"  placeholder="Address (First Line)"/>
                             <div className="dropdown_box">
                                 <select  name="country" id="country_name"> 
-                                    <option  id="select_option" value="" disabled selected hidden>Country</option>
+                                    <option  id="select_option"  disabled selected hidden>Country</option>
                                     <option  value="canada">Canada</option>
                                     <option value="india">India</option>
                                     <option value="unitedstates">United States</option>
@@ -46,16 +46,16 @@ export class Billinginfo extends Component {
                             </div>
                         </div>
                         <div className="insidebox_secondbill">
-                            <input id="second_input_box" type="text"  placeholder="Address (SecondLine)"/>
+                            <input className="second_input_box" type="text"  placeholder="Address (SecondLine)"/>
                             <StateDropdown/>
                         </div>
                         <div className="insidebox_secondbill">
-                            <input id="second_input_box" type="text"  placeholder="Address (Third Line)"/>
-                            <input id="second_input_box" type="text"  placeholder="District"/>
+                            <input className="second_input_box" type="text"  placeholder="Address (Third Line)"/>
+                            <input className="second_input_box" type="text"  placeholder="District"/>
                         </div>
                         <div className="insidebox_secondbill">
-                            <input id="second_input_box" type="text"  placeholder="Pin code"/>
-                            <input id="second_input_box" type="text"  placeholder="Landmark"/>
+                            <input className="second_input_box" type="text"  placeholder="Pin code"/>
+                            <input className="second_input_box" type="text"  placeholder="Landmark"/>
                         </div>
                         <div className="finaladdress">
                             <p>Green Park (will be filled simultaneously)</p>

@@ -28,6 +28,7 @@ export class Cart extends Component {
                     </div>
                     <div className="tble_box">
                         <table className="col_names">
+                            <tbody>
                             <tr className="table_heading">
                                 <td className="product_image">PRODUCT IMAGE</td>
                                 <td className="product_Name">PRODUCT NAME</td>
@@ -38,7 +39,7 @@ export class Cart extends Component {
                                 <td className="product_subtotal">SUBTOTAL</td>
                             </tr>
                             <tr className="table_heading1">
-                                <td className="product_image1"><img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></td>
+                                <td className="product_image1"><img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt='Reload'></img></td>
                                 <td className="product_Name1">
                                     <p className="product_para_1">This is the Product name in maximum 2 lines</p>
                                     <p className="product_para_2">Tags: First tag, Second tag</p>
@@ -58,7 +59,7 @@ export class Cart extends Component {
                                 </td>
                             </tr>
                             <tr className="table_heading1">
-                                <td className="product_image1"><img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></td>
+                                <td className="product_image1"><img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZyUyMG1hY2hpbmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt ="Reload"></img></td>
                                 <td className="product_Name1">
                                     <p className="product_para_1">This is the Product name in maximum 2 lines</p>
                                     <p className="product_para_2">Tags: First tag, Second tag</p>
@@ -77,11 +78,13 @@ export class Cart extends Component {
                                     <IoCloseCircleSharp id="closeIcon" />
                                 </td>
                             </tr>
-                            <div className="button_box_1">
+                            </tbody>
+                        </table>
+                        <div className="button_box_1">
                                 <button id="continue_shopping"> Continue Shopping</button>
                                 <button id="cartUpdate">Update Cart</button>
                             </div>
-                        </table>
+
                     </div>
 
                 </div>

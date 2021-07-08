@@ -11,7 +11,7 @@ import Compare from './Container/Compare/Compare';
 import BlogMain from './Container/Blog/BlogMain';
 import IndividualProduct from './Container/ProductIndividual/IndividualProduct';
 import AboutUs from './Container/About/AboutUs';
-import Section from './Container/Section/Section' ;
+import Section from './Container/Section/Section';
 import ComingSoon from './Container/ComingSoon/ComingSoon';
 import 'semantic-ui-css/semantic.min.css';
 import Cart from './Container/Cart/Cart';
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/blogs" component={Blog}></Route>
@@ -32,14 +32,14 @@ function App() {
           <Route path="/blogIndividual" component={BlogMain}></Route>
           <Route path="/product/:id" component={IndividualProduct}></Route>
           <Route path='/aboutUs' component={AboutUs}></Route>
-          <Route path='/ComingSoon' component = {ComingSoon}></Route>
-          <Route path='/section' component ={Section}></Route>
+          <Route path='/ComingSoon' component={ComingSoon}></Route>
+          <Route path='/section' component={Section}></Route>
           <Route path='/cart' component={Cart}></Route>
-          <Route path='/payment' component ={paymentCart}></Route>
+          <Route path='/payment' component={paymentCart}></Route>
           <Route path='/profile' component={ProfileIndividual}></Route>
           <Route path='/sendquery' component={sendQuery}></Route>
           <Route path="/loader" component={Loader}></Route>
-        </Switch> 
+        </Switch>
       </Router>
     </div>
   );

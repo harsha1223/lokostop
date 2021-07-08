@@ -22,24 +22,24 @@ function FindByCategory() {
                 <p className="or">OR</p>
                 <div className="category_Search">
                     <div className="centre_first_part">
-                    <div class="dropdown">
-                            <button style={{ marginTop: '1.5%' }} class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="dropdown">
+                            <button style={{ marginTop: '1.5%' }} className="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 All categories
                             </button>
-                            <ul class="dropdown-menu" s aria-labelledby="dropdownMenuButton1">
-                                <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
-                                    <ul class="dropdown-menu dropdown-submenu">
+                            <ul className="dropdown-menu" s aria-labelledby="dropdownMenuButton1">
+                                <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
+                                    <ul className="dropdown-menu dropdown-submenu">
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} class="dropdown-item" to="#">Heading 1</Link>
+                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
                                         </li>
                                         <li></li>
                                     </ul>
@@ -48,9 +48,9 @@ function FindByCategory() {
                         </div>
                     </div>
                     <div className="centre_first_part">
-                    <div class="drop">
-                            <button class="dropbtn1" style={{marginTop:'0.5vw' , marginLeft:'2vw'}}>Brand</button>
-                            <div style={{left:'-1vw'}} class="dropdown-content1">
+                    <div className="drop">
+                            <button className="dropbtn1" style={{marginTop:'0.5vw' , marginLeft:'2vw'}}>Brand</button>
+                            <div style={{left:'-1vw'}} className="dropdown-content1">
                                 <Link to="#">Washing Machine</Link>
                                 <Link to="#">Link 2</Link>
                                 <Link to="#">Link 3</Link>

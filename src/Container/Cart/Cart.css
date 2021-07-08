@@ -27,7 +27,7 @@
 .tble_box {
   width: 96%;
   height: auto;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: 0.586vw;
   margin-left: 3.734vw;
   display: flex;
@@ -206,7 +206,7 @@
 }
 .button_box_1 {
   display: flex;
-  width: auto;
+  width: 95%;
   height: 2.782vw;
   justify-content: space-between;
   margin-top: 2%;margin-bottom: 2%;
