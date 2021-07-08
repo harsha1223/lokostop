@@ -26,7 +26,7 @@ function FindByCategory() {
                             <button style={{ marginTop: '1.5%' }} className="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 All categories
                             </button>
-                            <ul className="dropdown-menu" s aria-labelledby="dropdownMenuButton1">
+                            <ul className="dropdown-menu"  aria-labelledby="dropdownMenuButton1">
                                 <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
                                     <ul className="dropdown-menu dropdown-submenu">
                                         <li>
