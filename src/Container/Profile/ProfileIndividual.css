@@ -322,3 +322,13 @@
     margin-top: 4%; font: normal normal normal 0.98vw/1.318vw Poppins;
     text-align: right;
 }
+.image_user1{
+    height: 3vw;
+    width: 3vw;
+}
+.image_user1 img{
+    border-radius: 50%;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}

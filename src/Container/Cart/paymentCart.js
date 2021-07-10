@@ -8,6 +8,10 @@ import { FaShippingFast, FaRegClock } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { MdSettingsBackupRestore, MdPayment } from "react-icons/md";
 import { Link } from 'react-router-dom'
+import CreditCard from './CreditCard'
+import DebitCard from './DebitCard'
+import NetBank from './NetBank'
+import Wallet from './Wallet'
 export class paymentCart extends Component {
     render() {
         return (
@@ -31,114 +35,28 @@ export class paymentCart extends Component {
                             <p>PAYMENT METHOD</p>
                         </div>
                         <div className="insidepay">
-                            <div class="d-flex align-items-start" style={{ width: '100%' }}>
-                                <div class="nav flex-column nav-pills me-3 nav1new" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">CREDIT CARD</button>
-                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">DEBIT CARD</button>
-                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">NET BANKING</button>
-                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">WALLET/UPI</button>
-                                    <button class="nav-link" id="v-pills-cash-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cash" type="button" role="tab" aria-controls="v-pills-cash" aria-selected="false">CASH ON DELIVERY</button>
+                            <div className="d-flex align-items-start" style={{ width: '100%' }}>
+                                <div className="nav flex-column nav-pills me-3 nav1new" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button className="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">CREDIT CARD</button>
+                                    <button className="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">DEBIT CARD</button>
+                                    <button className="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">NET BANKING</button>
+                                    <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">WALLET/UPI</button>
+                                    <button className="nav-link" id="v-pills-cash-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cash" type="button" role="tab" aria-controls="v-pills-cash" aria-selected="false">CASH ON DELIVERY</button>
                                 </div>
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                        <div className="creditDetail">
-                                            <p className="creditpara">CREDIT CARD</p>
-                                            <input type="text" id="inputBoxCard" placeholder="CARD NUMBER" />
-                                            <div className="monthyearbox">
-                                                <input type="text" id="monthimput" placeholder="EXPIRY MONTH" />
-                                                <input type="text" id="monthimput" placeholder="EXPIRY YEAR" />
-                                            </div>
-                                            <div className="monthyearbox">
-                                                <input type="text" id="monthimput" placeholder="CVV" />
-                                                <p className="cvv">Last 3 digits on the back side of your card</p>
-                                            </div>
-                                            <input type="text" id="inputBoxCard" placeholder="NAME ON THE CARD" />
-                                        </div>
-                                        <p className="check_box1">
-                                            <label className="containerCheck">
-                                                Save the bank details for faster payments ahead
-                                                <input type="checkbox"></input>
-                                                <span className="checkMark"></span>
-                                            </label>
-                                        </p>
-                                        <button className="paynow">PAY NOW</button>
+                                <div className="tab-content" id="v-pills-tabContent">
+                                    <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <CreditCard/>
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                        <div className="creditDetail">
-                                            <p className="creditpara">DEBIT CARD</p>
-                                            <input type="text" id="inputBoxCard" placeholder="CARD NUMBER" />
-                                            <div className="monthyearbox">
-                                                <input type="text" id="monthimput" placeholder="EXPIRY MONTH" />
-                                                <input type="text" id="monthimput" placeholder="EXPIRY YEAR" />
-                                            </div>
-                                            <div className="monthyearbox">
-                                                <input type="text" id="monthimput" placeholder="CVV" />
-                                                <p className="cvv">Last 3 digits on the back side of your card</p>
-                                            </div>
-                                            <input type="text" id="inputBoxCard" placeholder="NAME ON THE CARD" />
-                                        </div>
-                                        <p className="check_box1">
-                                            <label className="containerCheck">
-                                                Save the bank details for faster payments ahead
-                                                <input type="checkbox"></input>
-                                                <span className="checkMark"></span>
-                                            </label>
-                                        </p>
-                                        <button className="paynow">PAY NOW</button>
+                                    <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <DebitCard/>
                                     </div>
-                                    <div style={{width:'34vw'}} class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                        <div className="boxdetail">
-                                            <div className="netboxmain">
-                                                <p className="netbanking">NET BANKING</p>
-                                                <div className="banklogosbox">
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo" value='sbi' ></input>
-                                                        <label for="sbi"><img id='bankimage1' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn3B59yTFdif9Ux4ijbkKWXXXZY1fhF3zWbA&usqp=CAU" alt="Reload" /></label>
-                                                    </div>
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo" value='hdfc' ></input>
-                                                        <label for="hdfc"><img id='bankimage' src="https://seekvectorlogo.net/wp-content/uploads/2018/12/hdfc-bank-vector-logo.png" alt="Reload" /></label>
-                                                    </div>
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo" value='icici' ></input>
-                                                        <label for="icici"><img id='bankimage' src="https://techstory.in/wp-content/uploads/2015/07/icici-bank-ltd-logo.jpg" alt="Reload" /></label>
-                                                    </div>
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo" value='axis' ></input>
-                                                        <label for="axis"><img id='bankimage' src="https://www.logo.wine/a/logo/Axis_Bank/Axis_Bank-Logo.wine.svg" alt="Reload" /></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button className="paynow">PAY NOW</button>
-                                        </div>
+                                    <div style={{width:'34vw'}} className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <NetBank/>
                                     </div>
-                                    <div style={{width:'34vw'}} class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                        <div className="boxdetail">
-                                            <div className="netboxmain">
-                                                <p className="netbanking">Wallet</p>
-                                                <div className="banklogosbox">
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo" value='phonepay' ></input>
-                                                        <label for="phonepay"><img id='bankimage' src="https://www.logo.wine/a/logo/PhonePe/PhonePe-Logo.wine.svg" alt="Reload" /></label>
-                                                    </div>
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo1" value='hdfc' ></input>
-                                                        <label for="hdfc"><img id='bankimage2' src="https://www.logo.wine/a/logo/Paytm/Paytm-Logo.wine.svg" alt="Reload" /></label>
-                                                    </div>
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo1" value='icici' ></input>
-                                                        <label for="icici"><img id='bankimage2' src="https://www.logo.wine/a/logo/Google_Pay/Google_Pay-Logo.wine.svg" alt="Reload" /></label>
-                                                    </div>
-                                                    <div className="bankindividual">
-                                                        <input type="radio" name="bank" id="banklogo" value='axis' ></input>
-                                                        <label for="axis"><img id='bankimage' src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/upi.png" alt="Reload" /></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button className="paynow">PAY NOW</button>
-                                        </div>
+                                    <div style={{width:'34vw'}} className="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                       <Wallet/>
                                     </div>
-                                    <div style={{width:'34vw'}} class="tab-pane fade" id="v-pills-cash" role="tabpanel" aria-labelledby="v-pills-cash-tab">
+                                    <div style={{width:'34vw'}} className="tab-pane fade" id="v-pills-cash" role="tabpanel" aria-labelledby="v-pills-cash-tab">
                                         <div className="boxdetail">
                                             <div className="netboxmain">
                                                 <p className="netbanking">Currently Unavailable</p>
@@ -148,38 +66,7 @@ export class paymentCart extends Component {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="paymethod">
-                                <ul>
-                                    <li style={{ background: 'white' }}>CREDIT CARD</li>
-                                    <Link to='/paymentDebit'><li>DEBIT CARD</li></Link>
-                                    <Link to='/paymentNet'><li>NET BANKING</li></Link>
-                                    <Link to='/paymentWallet'><li>WALLET/UPI</li></Link>
-                                    <Link to='/PaymentCash' ><li>CASH ON DELIVERY</li></Link>
-                                </ul>
-                            </div>
-                            <div className="boxdetail">
-                                <div className="creditDetail">
-                                    <p className="creditpara">CREDIT CARD</p>
-                                    <input type="text" id="inputBoxCard" placeholder="CARD NUMBER" />
-                                    <div className="monthyearbox">
-                                        <input type="text" id="monthimput" placeholder="EXPIRY MONTH" />
-                                        <input type="text" id="monthimput" placeholder="EXPIRY YEAR" />
-                                    </div>
-                                    <div className="monthyearbox">
-                                        <input type="text" id="monthimput" placeholder="CVV" />
-                                        <p className="cvv">Last 3 digits on the back side of your card</p>
-                                    </div>
-                                    <input type="text" id="inputBoxCard" placeholder="NAME ON THE CARD" />
-                                </div>
-                                <p className="check_box1">
-                                    <label className="containerCheck">
-                                        Save the bank details for faster payments ahead
-                                        <input type="checkbox"></input>
-                                        <span className="checkMark"></span>
-                                    </label>
-                                </p>
-                                <button className="paynow">PAY NOW</button>
-                            </div> */}
+                            
                         </div>
                     </div>
                     <div className="secondpaybox">

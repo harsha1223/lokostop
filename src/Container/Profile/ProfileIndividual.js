@@ -10,6 +10,7 @@ import Footer from '../Component/Footer/Footer'
 import Complaint from './Complaint';
 import PersonalInfo from './PersonalInfo';
 import Wishlist from './Wishlist';
+import AddressProfile from './AddressProfile';
 
 export class ProfileIndividual extends Component {
     render() {
@@ -24,7 +25,7 @@ export class ProfileIndividual extends Component {
                 <div className="profileOuterMainBOx">
                     <div className="firstboxprofile">
                         <div className="name_individual_Hi">
-                            <div className="image_user" style={{ height: '3vw', width: '3vw' }}><img alt='reload' style={{ cursor: 'pointer' }} src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></div>
+                            <div className="image_user1" ><img   alt='reload' style={{ cursor: 'pointer' }} src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img></div>
                             <div className="name_hi">
                                 <p className="himessage">Hi,</p>
                                 <p className="nameperson">ABCDEF</p>
@@ -56,7 +57,9 @@ export class ProfileIndividual extends Component {
                             <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                 <PersonalInfo/>
                             </div>
-                            <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">B</div>
+                            <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <AddressProfile/>
+                            </div>
                             <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                 <Wishlist/>
                             </div>

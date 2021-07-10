@@ -81,7 +81,7 @@
   color: #3d3d3d;
   margin-bottom: 0;
 }
-#inputBoxCard {
+.inputBoxCard {
   width: 100%;
   border: 0.073vw solid #08e5a9;
   height: 2.782vw;
@@ -91,7 +91,7 @@
   margin-top: 4%;
   outline: none;
 }
-#inputBoxCard::placeholder {
+.inputBoxCard::placeholder {
   color: #9d9d9d;
 }
 .monthyearbox {
@@ -101,7 +101,7 @@
   width: 100%;
   height: auto;
 }
-#monthimput {
+.monthimput {
   border: 0.073vw solid #08e5a9;
   height: 2.782vw;
   padding: 0.732vw;
@@ -110,7 +110,7 @@
   outline: none;
   width: 12.37vw;
 }
-#monthimput::placeholder {
+.monthimput::placeholder {
   color: #9d9d9d;
 }
 .cvv {

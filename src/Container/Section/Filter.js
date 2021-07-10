@@ -25,14 +25,14 @@ export class Filter extends Component {
                             <div className="accordion-body">
                                 <div className='suboptions'>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
+                                        <input className="form-check-input colorcheck" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label className="form-check-label checkfont" htmlFor="flexCheckDefault">
                                             Default checkbox
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
+                                        <input className="form-check-input colorcheck" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label className="form-check-label checkfont" htmlFor="flexCheckDefault">
                                             Default checkbox
                                         </label>
                                     </div>
@@ -50,14 +50,14 @@ export class Filter extends Component {
                             <div className="accordion-body">
                             <div className='suboptions'>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
+                                        <input className="form-check-input colorcheck" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label className="form-check-label checkfont " htmlFor="flexCheckDefault">
                                             Default checkbox
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
+                                        <input className="form-check-input colorcheck" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label className="form-check-label checkfont" htmlFor="flexCheckDefault">
                                             Default checkbox
                                         </label>
                                     </div>
@@ -75,14 +75,14 @@ export class Filter extends Component {
                             <div className="accordion-body">
                             <div className='suboptions'>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
+                                        <input className="form-check-input colorcheck" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label className="form-check-label checkfont" htmlFor="flexCheckDefault">
                                             Default checkbox
                                         </label>
                                     </div>
                                     <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
+                                        <input className="form-check-input colorcheck" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label className="form-check-label checkfont" htmlFor="flexCheckDefault">
                                             Default checkbox
                                         </label>
                                     </div>

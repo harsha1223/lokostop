@@ -131,15 +131,15 @@
   height: auto;
   width: 100%;
 }
-.form-check-input:checked {
+.colorcheck:checked {
   background-color: lightgrey;
   border: grey;
   box-shadow: none;
 }
-.form-check-input[type=checkbox] {
+.colorcheck[type=checkbox] {
   border-radius: 0;
   box-shadow: none;
 }
-.form-check-label{
+.checkfont{
   font: normal normal 200 0.778vw/1.318vw Poppins;
 }
