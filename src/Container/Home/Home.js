@@ -17,24 +17,16 @@ import MostViewedBox from '../Component/Boxes/MostViewedBox';
 import TopClients from '../Component/Boxes/TopClients';
 import Loader from '../Loader/Loader'
 import {connect} from 'react-redux'
-import {getAllProducts} from '../../Redux/Actions/ProductActions'
-import {getFooterDetails, getProductTabs} from '../../Redux/Actions/StorefrontActions'
-import {getAllCategories} from '../../Redux/Actions/CategoryActions'
-
 class Home extends Component {
     state = {
         products:[],
         productRows: []
     }
     componentDidMount(){
-        this.props.getAllProducts()
-        this.props.getFooterDetails()
-        this.props.getProductTabs()
-        this.props.getAllCategories()
         this.setState({products: this.props.products, productRows: this.props.allProductRows})
     }
     render() {
-        if(this.props.loading || this.props.footerLoading || this.props.allProductRowsLoading){
+        if(this.props.loading ||this.props.allProductRowsLoading){
             return <Loader />
         }
         else return (
@@ -92,10 +84,9 @@ const mapStateToProps = state =>{
     return {
         products: state.getProducts.products,
         loading: state.getProducts.loading,
-        footerLoading: state.getFooter.loading,
         productDetails: state.getProductDetails.product,
         allProductRows: state.getProductTabs.productGrid,
         allProductRowsLoading: state.getProductTabs.loading
     }
 }
-export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getProductTabs, getAllCategories})(Home)
+export default connect(mapStateToProps)(Home)

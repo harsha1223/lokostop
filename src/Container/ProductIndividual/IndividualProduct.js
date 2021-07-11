@@ -34,7 +34,7 @@ class IndividualProduct extends Component {
     async componentDidMount(){
         await this.props.getSingleProduct("60dc25e2037caf0022d603b8")
         this.setState({productDetails: this.props.productDetails?this.props.productDetails:this.state.productDetails})
-        console.log(this.state.productDetails)
+        // console.log(this.state.productDetails)
     }
     render() {
         if(this.props.productLoading){

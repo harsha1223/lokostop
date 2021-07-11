@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 
 export class NewArrival extends Component {
     componentDidMount(){
-        console.log(this.props.products)
+        // console.log(this.props.products)
     }
     render() {
         return (

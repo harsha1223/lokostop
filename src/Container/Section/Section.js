@@ -3,12 +3,20 @@ import Header from '../Component/Header/Header'
 import Header01 from '../Component/Header/Header01'
 import Product from '../Component/Product'
 import './Section.css'
-
 import React, { Component } from 'react'
 import Filter from './Filter'
+import { connect } from "react-redux";
+import {getCategoryProducts} from '../../Redux/Actions/CategoryActions'
+import Loader from '../Loader/Loader'
 
-export class Section extends Component {
+class Section extends Component {
+    componentDidMount(){
+        this.props.getCategoryProducts()
+    }
     render() {
+        if(this.props.loading){
+            return <Loader />
+        }
         return (
             <div>
                 <Header01></Header01>
@@ -41,5 +49,10 @@ export class Section extends Component {
         )
     }
 }
-
-export default Section
+const mapStateToProps = (state) => {
+    return {
+      products: state.getCategoryProducts.products,
+      loading: state.getCategoryProducts.loading
+    };
+  };
+export default connect(mapStateToProps, {getCategoryProducts})(Section)
