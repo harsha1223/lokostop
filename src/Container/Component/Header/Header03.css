@@ -115,7 +115,9 @@ color: #7D7D7D;
 }
 .image_userimage{
   height: 2.243vw;
-  width: 2.243vw;
-    border-radius: 50%;
-    object-fit:cover;
+  width: 2.143vw;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: -0.8vw;
+  margin-top: -0.5vw;
 }
