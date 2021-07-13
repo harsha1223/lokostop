@@ -6,7 +6,7 @@ export class Login extends Component {
     render() {
         return (
             <div>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <button type="button" className="btn imagevl" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     <img
                         alt="Reload"
                         className="image_userimage"

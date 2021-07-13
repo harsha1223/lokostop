@@ -5,29 +5,14 @@
   display: flex;
   margin-top: 3.66vw;
 }
-/* .logo1 {
-  margin-left: 0;
-  width: 12.592vw;
-  height: 7.906vw;
-  margin-top: 0;
-  font: normal normal 200 2.343vw/29px Poppins;
-  letter-spacing: 0px;
-  color: #08e5a9;
-} */
+
 .area_1 {
   height: 33.821vw;
   width: 15.666vw;
   margin-left: 2.343vw;
   margin-top: 2.489vw;
 }
-/* .area_1_para {
-  width: 214px;
-  height: 41px;
-  font: normal normal normal 15px/20px Poppins;
-  font-weight: 500;
-  margin-top: 16px;
-  color: #5d5d5d;
-} */
+
 .area_1 img {
   width: 25.842vw;
   object-fit: cover;
@@ -35,17 +20,6 @@
   cursor: pointer;
   height: 30.893vw;
 }
-
-/* .second_para_area_1 {
-  width: 214px;
-  cursor: pointer;
-  height: 121px;
-  font: normal normal 200 15px/20px Poppins;
-  color: #3d3d3d;
-} */
-/* .second_para_area_1:hover {
-  font-weight: 600;
-} */
 .area_1 a {
   text-decoration: none;
 }

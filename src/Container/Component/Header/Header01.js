@@ -12,11 +12,11 @@ class Header01 extends Component {
     categories: [],
   };
   componentDidMount() {
-    const {categories} = this.state
+    const { categories } = this.state
     const setCategories = (root) => {
-        if(root.childrenCategory.length == 0){
-            return (
-                <Link
+      if (root.childrenCategory.length == 0) {
+        return (
+          <Link
             style={{
               background: "transparent",
               color: "#1D1D1D",
@@ -24,48 +24,48 @@ class Header01 extends Component {
               justifyContent: "space-between"
             }}
             className={"dropdown-item"}
-            to={'/category/'+root.url}
+            to={'/category/' + root.url}
           >
             {root.name}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            {root.childrenCategory.length > 0 ? <IoIosArrowForward className="ForwardArrow" /> :""}           
+            {root.childrenCategory.length > 0 ? <IoIosArrowForward className="ForwardArrow" /> : ""}
           </Link>
-            )
-        }
-        else return(
-            <React.Fragment>
-            <Link
-            style={{
-              background: "transparent",
-              color: "#1D1D1D",
-              display: "flex",
-              justifyContent: "space-between"
-            }}
-            className={"dropdown-item"}
-            to={'/category/'+root.url}
-          >
-            {root.name}
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <IoIosArrowForward className="ForwardArrow" />        
-          </Link>
-          {root.childrenCategory.length > 0?
-          <ul className="dropdown-menu dropdown-submenu">
-              {root.childrenCategory.map((child, key)=>{
-             return <li  key={key}>
-                 {setCategories(child)}
-          </li>
-          })}
-        </ul>
-          : ""}       
-        </React.Fragment>
         )
+      }
+      else return (
+        <React.Fragment>
+          <Link
+            style={{
+              background: "transparent",
+              color: "#1D1D1D",
+              display: "flex",
+              justifyContent: "space-between"
+            }}
+            className={"dropdown-item"}
+            to={'/category/' + root.url}
+          >
+            {root.name}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <IoIosArrowForward className="ForwardArrow" />
+          </Link>
+          {root.childrenCategory.length > 0 ?
+            <ul className="dropdown-menu dropdown-submenu">
+              {root.childrenCategory.map((child, key) => {
+                return <li key={key}>
+                  {setCategories(child)}
+                </li>
+              })}
+            </ul>
+            : ""}
+        </React.Fragment>
+      )
     };
     this.props.categories.forEach((category) => {
       let tempData = {}
       tempData.content = setCategories(category);
       categories.push(tempData)
     });
-    this.setState({categories})
+    this.setState({ categories })
   }
   render() {
     return (
@@ -83,15 +83,15 @@ class Header01 extends Component {
               &nbsp;&nbsp; Browse categories
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              {this.state.categories.map((category,key)=>{
+              {this.state.categories.map((category, key) => {
                 return (
-              <li key={key}>
-                {category.content}               
-              </li>
+                  <li key={key}>
+                    {category.content}
+                  </li>
                 )
-            })}
+              })}
             </ul>
-          
+
           </div>
         </div>
 
@@ -109,14 +109,14 @@ class Header01 extends Component {
                 All categories
               </button>
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              {this.state.categories.map((category,key)=>{
-                return (
-              <li key={key}>
-                {category.content}               
-              </li>
-                )
-            })}
-            </ul>
+                {this.state.categories.map((category, key) => {
+                  return (
+                    <li key={key}>
+                      {category.content}
+                    </li>
+                  )
+                })}
+              </ul>
             </div>
           </div>
           <div className="centre_second_part">
@@ -142,12 +142,7 @@ class Header01 extends Component {
             </div>
           </Link>
           <div className="image_user">
-            {/* <img
-              alt="Reload"
-              className="image_userimage"
-              style={{ cursor: "pointer" }}
-              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            ></img> */}<Login/>
+            <Login />
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export class AboutUs extends Component {
                     <p>ABOUT US</p>
                     <hr />
                 </div>
-                <AboutBanner/>
+                <AboutBanner />
                 <div className="mission_about">
                     <p className="bold_about">Our Mission</p>
                     <p className="detail_about_mission">SELLING BIG BRAND PRODUCTS AT CHEAPER PRICE WITH HIGH ASSURANCE.</p>

@@ -97,7 +97,8 @@
   cursor: pointer;
   outline: none;
   font: normal normal normal 0.878vw/1.318vw Poppins;
-  color: #3d3d3d; transition-duration: 0.5s;
+  color: #3d3d3d;
+  transition-duration: 0.5s;
 }
 .add_blog:hover {
   background: #08e5a9;

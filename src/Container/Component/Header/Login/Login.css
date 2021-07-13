@@ -4,6 +4,10 @@
 .modal-content {
   margin-top: 6vw;
 }
+.imagevl{
+  padding-left: 0;
+  padding-right: 0;
+}
 .logoval {
   height: auto;
   width: auto;
