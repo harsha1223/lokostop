@@ -1,12 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import Home from './Container/Home/Home';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import PrivateRoute from './Routes/PrivateRoute';
 import ScrollToTop from './Container/Scrolltotop';
+import Home from './Container/Home/Home';
 import Blog from './Container/Blog/Blog';
 import Compare from './Container/Compare/Compare';
 import BlogMain from './Container/Blog/BlogMain';
@@ -42,19 +43,19 @@ class App extends React.Component {
         <Router>
           <ScrollToTop />
           <Switch>
-            <Route path="/" exact component={Home}></Route>
-            <Route path="/blogs" component={Blog}></Route>
-            <Route path="/compare" component={Compare}></Route>
-            <Route path="/blogIndividual" component={BlogMain}></Route>
-            <Route path="/product/:id" component={IndividualProduct}></Route>
-            <Route path='/aboutUs' component={AboutUs}></Route>
-            <Route path='/ComingSoon' component={ComingSoon}></Route>
-            {/* <Route path='/section' component={Section}></Route> */}
-            <Route path='/cart' component={Cart}></Route>
-            <Route path='/payment' component={paymentCart}></Route>
-            <Route path='/profile' component={ProfileIndividual}></Route>
-            <Route path='/sendquery' component={sendQuery}></Route>
-            <Route path='/category/:name' component={Section}></Route>
+            <Route path="/" exact component={Home} />
+            <Route path="/blogs" component={Blog} />
+            <Route path="/compare" component={Compare} />
+            <Route path="/blogIndividual" component={BlogMain} />
+            <Route path="/product/:id" component={IndividualProduct} />
+            <Route path='/aboutUs' component={AboutUs} />
+            <Route path='/ComingSoon' component={ComingSoon} />
+            {/* <Route path='/section' component={Section} /> */}
+            <Route path='/cart' component={Cart} />
+            <Route path='/payment' component={paymentCart} />
+            <PrivateRoute path='/profile' component={ProfileIndividual}></PrivateRoute>
+            <Route path='/sendquery' component={sendQuery} />
+            <Route path='/category/:name' component={Section} />
           </Switch>
         </Router>
       </div>
