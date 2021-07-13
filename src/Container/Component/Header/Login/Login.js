@@ -22,7 +22,7 @@ export class Login extends Component {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <p className="promiseword">We promise products from best brands with assurance.</p>
-                            <div className="modal-body">
+                            <div className="modal-body modalPadding">
                                 <ul className="nav nav-pills mb-3 signval" id="pills-tab" role="tablist">
                                     <li className="nav-item " role="presentation">
                                         <button className="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sign In</button>

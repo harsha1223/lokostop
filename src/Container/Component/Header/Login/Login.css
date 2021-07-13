@@ -4,9 +4,12 @@
 .modal-content {
   margin-top: 6vw;
 }
-.imagevl{
+.imagevl {
   padding-left: 0;
   padding-right: 0;
+}
+.modalPadding {
+  padding: 0;
 }
 .logoval {
   height: auto;
@@ -34,6 +37,8 @@
   display: flex;
   flex-direction: column;
   border-top: 0;
+  padding-left: 0;
+  width:35vw
 }
 .orWord {
   font-family: poppins;
@@ -43,7 +48,7 @@
   background-color: #f80000;
   color: white;
   padding: 0.8vw;
-  width: 16vw;
+  width: 20.425vw;
   margin-left: 1vw;
   margin-top: 1vw;
   font-size: 0.9vw;
@@ -53,46 +58,45 @@
   background-color: #0063ae;
   color: white;
   padding: 0.8vw;
-  width: 16vw;
+  width: 20.425vw;
   margin-left: 1vw;
   margin-top: 1vw;
   font-size: 0.9vw;
   font-family: poppins;
 }
-.signinput{
-    width: 20.425vw;
-    border: 0.073vw solid #08e5a9;
-    height: 2.782vw;
-    padding: 0.732vw;
-    font: normal normal normal 0.878vw/1.318vw Poppins;
-    cursor: pointer;
-    outline: none;
-    margin-left: 7vw;
-    margin-bottom: 2%;
+.signinput {
+  width: 20.425vw;
+  border: 0.073vw solid #08e5a9;
+  height: 2.782vw;
+  padding: 0.732vw;
+  font: normal normal normal 0.878vw/1.318vw Poppins;
+  cursor: pointer;
+  outline: none;
+  margin-left: 7vw;
+  margin-bottom: 2%;
 }
-.forgotbutton{
-    background-color: white;
-    width: auto;
-    height: auto;
-    font-family: poppins;
-    font-size: 0.8vw;
-    border: none;
-    margin-left: 20vw;
-    cursor: pointer;
+.forgotbutton {
+  background-color: white;
+  width: auto;
+  height: auto;
+  font-family: poppins;
+  font-size: 0.8vw;
+  border: none;
+  margin-left: 20vw;
+  cursor: pointer;
 }
-.signButton{
-    padding: 2%;
-    font-size: 0.9vw;
+.signButton {
+  padding: 2%;
+  font-size: 0.9vw;
   font-family: poppins;
   padding: 0.8vw;
   width: 10vw;
   margin-left: 12.5vw;
   margin-top: 1vw;
   color: white;
-  background-color: #08E5A9;
+  background-color: #08e5a9;
   border: none;
 }
-.signButton:hover{
-    color: black;
-
+.signButton:hover {
+  color: black;
 }
