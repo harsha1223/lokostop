@@ -22,7 +22,7 @@ const middleware = [thunk]
 
 const Store = createStore(
     reducers,
-    composeWithDevTools(applyMiddleware(...middleware))
+    composeWithDevTools(applyMiddleware(...middleware)),
 )
 
 export default Store;

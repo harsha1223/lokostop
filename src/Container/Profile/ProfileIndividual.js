@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from "react-redux";
+import {Redirect} from "react-router-dom"
 import Header from '../Component/Header/Header'
 import Header01 from '../Component/Header/Header01';
 import './ProfileIndividual.css'
@@ -11,9 +13,16 @@ import Complaint from './Complaint';
 import PersonalInfo from './PersonalInfo';
 import Wishlist from './Wishlist';
 import AddressProfile from './AddressProfile';
+import {logoutUser} from '../../Redux/Actions/UserActions'
 
-export class ProfileIndividual extends Component {
+class ProfileIndividual extends Component {
+    state={
+        redirect: false
+    }
     render() {
+        if(this.state.redirect){
+            return <Redirect to="/" />
+        }
         return (
             <div>
                 <Header01></Header01>
@@ -49,7 +58,10 @@ export class ProfileIndividual extends Component {
                         </div>
                         <div className='orderboxsummary1'>
                             <BiLogOut className='accountIcon'></BiLogOut>
-                            <p>LOGOUT</p>
+                            <p onClick={()=>{
+                                this.props.logoutUser()
+                                this.setState({redirect: true})
+                                }}>LOGOUT</p>
                         </div>
                     </div>
                     <div className="secondBoxprofile">
@@ -75,5 +87,5 @@ export class ProfileIndividual extends Component {
         )
     }
 }
-
-export default ProfileIndividual
+const mapStateToProps = (state) =>{}
+export default connect(mapStateToProps,{logoutUser})(ProfileIndividual)
