@@ -974,3 +974,18 @@
 /* .slider_box_two:hover{
   left: -3vw;
 } */
+
+@media (max-width: 768px){
+  .category_name_product{
+    margin-bottom: 5%;
+  }
+  @media (max-width: 425px){
+    .category_name_product{
+      font: normal normal normal 1.2vw/1.464vw Poppins;
+      margin-bottom: 6%;
+    }
+    .discount{
+      padding-top: 2%;
+    }
+  }
+}
