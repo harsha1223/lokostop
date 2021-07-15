@@ -9,16 +9,16 @@
   z-index: 1040;
   background-color: #ffffff;
 }
-.dropdown-toggle{
+.dropdown-toggle {
   font: normal normal normal 0.878vw/1.318vw Poppins;
 }
-.btn:focus{
+.btn:focus {
   outline: none;
   box-shadow: none;
 }
-.dropdown-menu{
-width: auto;
-height: auto;
+.dropdown-menu {
+  width: auto;
+  height: auto;
 }
 
 .dropdown-menu li {
@@ -155,11 +155,11 @@ height: auto;
   color: #bdbdbd;
 }
 .centre_third_part {
-width: 6.076vw;
-    display: flex;
-    cursor: pointer;
-    height: 2.750vw;
-    background: #08e5a9 0% 0% no-repeat padding-box;
+  width: 6.076vw;
+  display: flex;
+  cursor: pointer;
+  height: 2.75vw;
+  background: #08e5a9 0% 0% no-repeat padding-box;
 }
 .centre_third_part p {
   font: normal normal normal 0.878vw/1.318vw Poppins;
@@ -184,7 +184,7 @@ width: 6.076vw;
   cursor: pointer;
 }
 .Favorites p {
-  margin-top: 0.220vw;
+  margin-top: 0.22vw;
   margin-left: 0.366vw;
   font: normal normal normal 0.878vw/1.318vw Poppins;
 }
@@ -220,4 +220,98 @@ width: 6.076vw;
   margin-left: 0.5vw;
   margin-top: 0.3vw;
   font: normal normal normal 0.878vw/1.061vw Poppins;
+}
+.itemsizeval {
+  background: "transparent";
+  color: "#1D1D1D";
+  display: "flex";
+  justify-content: "space-between";
+}
+@media (max-width: 768px) {
+  .browseCat {
+    width: auto;
+    height: auto;
+    margin-left: -2vw;
+    margin-top: 0vw;
+  }
+  .Header_one_centre {
+    margin-left: 16.375vw;
+    margin-top: 1vw;
+  }
+  .dropdown-toggle {
+    padding-top: 2%;
+    padding-left: 4%;
+    margin: 0;
+    font: normal normal normal 0.978vw/1.318vw Poppins;
+  }
+  .dropdown-menu li {
+    position: relative;
+    font: normal normal normal 0.978vw/1.318vw Poppins;
+    font-weight: bold;
+  }
+  .centre_second_part input {
+    padding: 0;
+    margin-top: -6%;
+  }
+  .inputstyle {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-top: -1.5%;
+  }
+  .Header_one_right {
+    margin-top: 1.48vw;
+  }
+  .centre_second_part input {
+    font: normal normal normal 0.978vw/1.318vw Poppins;
+  }
+  .Favorites p {
+    font: normal normal normal 0.978vw/1.318vw Poppins;
+    margin-top: 0.4vw;
+  }
+  .cart p {
+    margin-top: 0.4vw;
+    font: normal normal normal 0.978vw/1.061vw Poppins;
+  }
+  
+}
+@media (max-width: 425px) {
+  .browseCat {
+    width: auto;
+    height: auto;
+    margin-left: 0vw;
+    margin-top: -1vw;
+  }
+  .dropdown-toggle {
+    padding: 0;font: normal normal normal 1vw/1.061vw Poppins;
+  }
+  .catdropdown{
+    margin-bottom: 3vw;
+  }
+  .dropdown-menu li {
+    font: normal normal normal 1.2vw/1.318vw Poppins;
+  }
+  .dropdown-item{
+    padding: 3%;
+  }
+  .inputstyle{
+    margin-top: -2vw;
+  }
+  #search{
+    margin-top: 0.94vw;
+    margin-left: 0.2vw;
+  }
+  .centre_third_part p{
+    font: normal normal normal 1vw/1.318vw Poppins;
+    margin-left: 0.5vw;
+  }
+  .Favorites p {
+    font: normal normal normal 1vw/1.318vw Poppins;
+    margin-top: 0.4vw;
+  }
+  .cart p {
+    margin-top: 0.4vw;
+    font: normal normal normal 1vw/1.061vw Poppins;
+  }
+
 }

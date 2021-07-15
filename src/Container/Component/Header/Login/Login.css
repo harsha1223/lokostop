@@ -8,6 +8,8 @@
   padding-left: 0;
   padding-right: 0;
   cursor: pointer;
+  font: normal normal normal 0.878vw/1.061vw Poppins;
+  margin-top:0.6vw;
 }
 .modalPadding {
   padding: 0;
@@ -100,4 +102,16 @@
 }
 .signButton:hover {
   color: black;
+}
+@media (max-width: 768px){
+  .imagevl {
+    font: normal normal normal 1vw/1.061vw Poppins;
+    margin-top: 0.6vw;
+  }
+}
+@media (max-width: 425px) {
+  .imagevl {
+    font: normal normal normal 1.2vw/1.061vw Poppins;
+    margin-top: 0.6vw;
+  }
 }
