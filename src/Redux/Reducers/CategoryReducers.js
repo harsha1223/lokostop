@@ -22,17 +22,17 @@ export const getAllCategoriesReducer = (state = { categories: []}, action) => {
     }
 }
 
-export const getCategoryProductsReducer = (state = { products: []}, action) => {
+export const getCategoryProductsReducer = (state = { categoryProducts: []}, action) => {
     switch(action.type){
         case actionTypes.GET_CATEGORY_PRODUCTS_REQUEST:
             return{
                 loading: true,
-                products: []
+                categoryProducts: []
             }
         case actionTypes.GET_CATEGORY_PRODUCTS_SUCCESS:
             return {
                 loading: false,
-                products: action.payload
+                categoryProducts: action.payload
             }
         case actionTypes.GET_CATEGORY_PRODUCTS_FAIL:
             return {

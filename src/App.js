@@ -50,12 +50,11 @@ class App extends React.Component {
             <Route path="/product/:id" component={IndividualProduct} />
             <Route path='/aboutUs' component={AboutUs} />
             <Route path='/ComingSoon' component={ComingSoon} />
-            {/* <Route path='/section' component={Section} /> */}
             <Route path='/cart' component={Cart} />
             <Route path='/payment' component={paymentCart} />
             <PrivateRoute path='/profile' component={ProfileIndividual}></PrivateRoute>
             <Route path='/sendquery' component={sendQuery} />
-            <Route path='/category/:name' component={Section} />
+            <Route exact path='/category/:name/:id' component={Section} />
           </Switch>
         </Router>
       </div>
