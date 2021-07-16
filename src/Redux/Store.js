@@ -6,6 +6,7 @@ import {getFooterReducer, getProductTabsReducer} from './Reducers/StorefrontRedu
 import {getAllCategoriesReducer, getCategoryProductsReducer} from './Reducers/CategoryReducers'
 import {getAllPagesReducer} from './Reducers/PageReducers'
 import {loginUser} from './Reducers/UserReducers'
+import {getMenuReducer} from './Reducers/MenuReducers'
 
 const reducers = combineReducers({
     getProducts: getAllProductsReducer,
@@ -14,6 +15,7 @@ const reducers = combineReducers({
     getProductTabs: getProductTabsReducer,
     getCategories: getAllCategoriesReducer,
     getPages: getAllPagesReducer,
+    getMenus: getMenuReducer,
     getCategoryProducts: getCategoryProductsReducer,
     loginUser: loginUser,
 })

@@ -31,8 +31,8 @@ class Home extends Component {
         }
         else return (
             <div>
-                <Header01></Header01>
-                <Header></Header>
+                <Header01 />
+                <Header />
                 <VideoContainer />
                 <div className="Free_box">
                     <div className="Free_Shipping">
@@ -64,17 +64,17 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <NewArrival products={this.state.productRows}/>
+                 <NewArrival products={this.state.productRows}/>
                 <MostViewedBox />
                 <FindByCategory />
-                <CategoryBox />
+                {/* <CategoryBox /> */}
                 <TopClients />
                 <ClientImage />
                 <VideoContainer />
                 <FeatureBox />
                 <PopularBox />
                 <SixImageSlider />
-                <Footer/>
+                <Footer/> 
             </div>
         )
     }

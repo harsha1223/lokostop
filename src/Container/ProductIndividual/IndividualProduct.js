@@ -113,10 +113,10 @@ class IndividualProduct extends Component {
                 </div>
 
                 <div className="new_arrival_box">
+                    {/* <Product />
                     <Product />
                     <Product />
-                    <Product />
-                    <Product />
+                    <Product /> */}
                 </div>
                 <FindByCategory />
                 <PopularBox />

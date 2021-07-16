@@ -25,6 +25,7 @@ import {getAllProducts} from './Redux/Actions/ProductActions'
 import {getAllCategories} from './Redux/Actions/CategoryActions'
 import {getFooterDetails, getProductTabs} from './Redux/Actions/StorefrontActions'
 import {getAllPages} from './Redux/Actions/PageActions'
+import {getMenus} from './Redux/Actions/MenuActions'
 
 class App extends React.Component {
   componentDidMount(){
@@ -33,9 +34,10 @@ class App extends React.Component {
     this.props.getProductTabs()
     this.props.getAllCategories()
     this.props.getAllPages()
+    this.props.getMenus()
   }
   render(){
-    if(this.props.footerLoading || this.props.categoriesloading){
+    if(this.props.footerLoading || this.props.categoriesloading || this.props.menuLoading){
       return <Loader />
   }
     return (
@@ -54,7 +56,7 @@ class App extends React.Component {
             <Route path='/payment' component={paymentCart} />
             <PrivateRoute path='/profile' component={ProfileIndividual}></PrivateRoute>
             <Route path='/sendquery' component={sendQuery} />
-            <Route exact path='/category/:name/:id' component={Section} />
+            <Route exact path='/category/:name/:id' render={(props)=> <Section key={Date.now()} {...props}/>}/>
           </Switch>
         </Router>
       </div>
@@ -65,8 +67,9 @@ const mapStateToProps = state =>{
   return {
       footerLoading: state.getFooter.loading,
       allProductRowsLoading: state.getProductTabs.loading,
-      categoriesloading: state.getCategories.loading
+      categoriesloading: state.getCategories.loading,
+      menuLoading: state.getMenus.loading
   }
 }
-export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getProductTabs, getAllCategories, getAllPages})(App)
+export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getProductTabs, getAllCategories, getAllPages, getMenus})(App)
 

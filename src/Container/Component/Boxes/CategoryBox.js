@@ -25,7 +25,7 @@ export class CategoryBox extends Component {
                                 <IoIosArrowForward id="Arrow_backward" />
                             </div>
                         </div>
-                        <Product />
+                        {/* <Product /> */}
                     </div>
                     <div className="category_dash">
                         <div className="particular_category_choice">
@@ -36,7 +36,7 @@ export class CategoryBox extends Component {
                                 <IoIosArrowForward id="Arrow_backward" />
                             </div>
                         </div>
-                        <Product />
+                        {/* <Product /> */}
                     </div>
                     <div className="category_dash">
                         <div className="particular_category_choice">
@@ -47,7 +47,7 @@ export class CategoryBox extends Component {
                                 <IoIosArrowForward id="Arrow_backward" />
                             </div>
                         </div>
-                        <Product />
+                        {/* <Product /> */}
                     </div>
                     <div className="category_dash">
                         <div className="particular_category_choice">
