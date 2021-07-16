@@ -17,8 +17,14 @@ class Header01 extends Component {
       if (root.childrenCategory.length == 0) {
         return (
           <Link
-            className={"dropdown-item itemsizeval"}
-            to={"/category/" + root.url}
+            style={{
+              background: "transparent",
+              color: "#1D1D1D",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+            className={"dropdown-item"}
+            to={"/category/" + root.url+"/"+root._id}
           >
             {root.name}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,7 +46,7 @@ class Header01 extends Component {
                 justifyContent: "space-between",
               }}
               className={"dropdown-item"}
-              to={"/category/" + root.url}
+              to={"/category/" + root.url+"/"+root._id}
             >
               {root.name}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

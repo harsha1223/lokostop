@@ -11,8 +11,9 @@ import Loader from '../Loader/Loader'
 
 class Section extends Component {
     componentDidMount(){
-        this.props.getCategoryProducts()
+        this.props.getCategoryProducts("-name", 0,0, this.props.match.params.id)
     }
+
     render() {
         if(this.props.loading){
             return <Loader />
@@ -37,8 +38,10 @@ class Section extends Component {
                             </select>
                         </div>
                         <div className="individualcategorybox">
-                            <Product></Product>
+                            {this.props.categoryProducts.length == 0? <div>No products found.</div>: (
+
                             <Product />
+                            )}
                         </div>
                         <button className="load_more_blogs" style={{ marginLeft: '30.015vw' }}>Load more</button>
 
@@ -51,7 +54,7 @@ class Section extends Component {
 }
 const mapStateToProps = (state) => {
     return {
-      products: state.getCategoryProducts.products,
+      categoryProducts: state.getCategoryProducts.categoryProducts,
       loading: state.getCategoryProducts.loading
     };
   };

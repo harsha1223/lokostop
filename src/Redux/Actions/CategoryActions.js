@@ -17,10 +17,16 @@ export const getAllCategories = () => async(dispatch) => {
     }
 }
 
-export const getCategoryProducts = () => async(dispatch) => {
+export const getCategoryProducts = (sortBy, skip, limit, id) => async(dispatch) => {
     try{
         dispatch({ type: actionTypes.GET_CATEGORY_PRODUCTS_REQUEST})
-        const {data} = await api.get('/category/get')
+        let findFieldsInArray = [
+            {
+                name: "categories",
+                value: [id]
+            }
+        ]
+        const {data} = await api.post('product/filter', {sortBy, skip, limit,findFieldsInArray })
         dispatch({
             type: actionTypes.GET_CATEGORY_PRODUCTS_SUCCESS,
             payload: data.data

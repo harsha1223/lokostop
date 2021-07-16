@@ -170,7 +170,7 @@
   width: 100%;
   height: 100%;
 }
-@media (max-width: 768px){
+/* @media (max-width: 768px){
   .box_one_area_2 ul li{
     font: normal normal normal 0.978vw/1.464vw Poppins;
   }
@@ -215,4 +215,4 @@
     font: normal normal normal 1.1vw/1.464vw Poppins;
     font-weight: bold;
   }
-}
+} */
