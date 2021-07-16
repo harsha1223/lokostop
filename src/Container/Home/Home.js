@@ -67,7 +67,7 @@ class Home extends Component {
                  <NewArrival products={this.state.productRows}/>
                 <MostViewedBox />
                 <FindByCategory />
-                {/* <CategoryBox /> */}
+                <CategoryBox />
                 <TopClients />
                 <ClientImage />
                 <VideoContainer />
@@ -86,7 +86,7 @@ const mapStateToProps = state =>{
         loading: state.getProducts.loading,
         productDetails: state.getProductDetails.product,
         allProductRows: state.getProductTabs.productGrid,
-        allProductRowsLoading: state.getProductTabs.loading
+        allProductRowsLoading: state.getProductTabs.loading,
     }
 }
 export default connect(mapStateToProps)(Home)

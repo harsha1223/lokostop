@@ -2,17 +2,19 @@ import './Header02.css'
 import { MdLocalPhone, MdEmail } from "react-icons/md";
 import { Link } from 'react-router-dom'
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
 
-export class Header02 extends Component {
+class Header02 extends Component {
     render() {
         return (
             <div className="Header_two">
             <div className="logo"></div>
             <div className="navbar">
                 <ul>
+                    <Link  to="/"><li>Home</li></Link>
                     <Link to="/"><li>
                         <div className="drop">
-                            <button className="dropbtn1">Home</button>
+                            <button className="dropbtn1">Dropdown</button>
                             <div className="dropdown-content1">
                                 <p>Washing Machine</p>
                                 <p>Link 2</p>
@@ -40,5 +42,9 @@ export class Header02 extends Component {
         )
     }
 }
-
-export default Header02
+const mapStateToProps = state =>{
+    return {
+        menus: state.getMenus.menus
+    }
+}
+export default connect(mapStateToProps)(Header02)

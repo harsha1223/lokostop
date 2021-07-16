@@ -26,7 +26,7 @@ export class NewArrival extends Component {
                     </div>
                 </div>
                 <div className="new_arrival_box">
-                    {/* <Product /> */}
+                    <Product />
                    
                 </div>
             </div>

@@ -10,10 +10,10 @@ export class FeatureBox extends Component {
                     <hr id="line_category"></hr>
                 </div>
                 <div className="new_arrival_box">
-                    {/* <Product />
                     <Product />
                     <Product />
-                    <Product /> */}
+                    <Product />
+                    <Product />
                 </div> 
             </div>
         )
