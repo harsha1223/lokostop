@@ -75,7 +75,7 @@ class Header01 extends Component {
     return (
       <div className="Header_one">
         <div className="Header_one_left">
-          <div className="dropdown">
+          <div className="browseCat">
             <button
               className="btn  dropdown-toggle"
               type="button"
@@ -99,7 +99,7 @@ class Header01 extends Component {
             <div className="dropdown">
               <button
                 style={{ marginTop: "1.5%" }}
-                className="btn  dropdown-toggle"
+                className="btn  dropdown-toggle catdropdown"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
@@ -118,7 +118,10 @@ class Header01 extends Component {
             </div>
           </div>
           <div className="centre_second_part">
+            <div className="inputstyle">
             <input type="text" placeholder="Enter your search key..." />
+            </div>
+            
           </div>
           <div className="centre_third_part">
             <p style={{ marginTop: "0.878vw" }}>Search</p>

@@ -170,3 +170,49 @@
   width: 100%;
   height: 100%;
 }
+@media (max-width: 768px){
+  .box_one_area_2 ul li{
+    font: normal normal normal 0.978vw/1.464vw Poppins;
+  }
+  .box_one_area_2 p {
+    font: normal normal normal 0.95vw/1.464vw Poppins;
+    font-weight: bold;
+  }
+  .second_box_profile p {
+    font: normal normal normal 0.95vw/1.464vw Poppins;
+    font-weight: bold;
+  }
+  .second_box_profile ul li{
+    font: normal normal normal 0.978vw/1.464vw Poppins;
+  }
+  .copyright{
+    font: normal normal normal 1.1vw/1.464vw Poppins;
+  }
+}
+@media (max-width: 425px){
+  .box_one_area_2 ul li{
+    font: normal normal normal 1vw/1.464vw Poppins;
+  }
+  .box_one_area_2 p {
+    font: normal normal normal 1.1vw/1.464vw Poppins;
+    font-weight: bold;
+  }
+  .second_box_profile p {
+    font: normal normal normal 1.1vw/1.464vw Poppins;
+    font-weight: bold;
+  }
+  .second_box_profile ul li{
+    font: normal normal normal 1vw/1.464vw Poppins;
+  }
+  .copyright{
+    font: normal normal normal 1.2vw/1.464vw Poppins;
+  }
+  .paymentmethod p {
+    font: normal normal normal 1.1vw/1.464vw Poppins;
+    font-weight: bold;
+  }
+  .followUs p {
+    font: normal normal normal 1.1vw/1.464vw Poppins;
+    font-weight: bold;
+  }
+}
