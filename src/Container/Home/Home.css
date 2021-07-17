@@ -554,7 +554,7 @@
 .cart_button {
   width: 11.347vw;
   height: 2.928vw;
-  padding-top: 0.5vw;
+  /* padding-top: 0.5vw; */
   font: normal normal normal 1.098vw/1.464vw Segoe UI;
   margin-top: 0;
   color: #ffffff;
@@ -981,6 +981,15 @@
   }
   #arrow_box{
     margin-top: -0.3vw;
+  }
+  .dropdown_colors{
+    width: 6.564vw;
+  }
+  .dropdown_colors option {
+      /* padding: 10vw; */
+      font-size: 1.2vw;
+      /* width: 9vw; */
+      font-family: 'Poppins';
   }
 }
 @media (max-width: 425px){

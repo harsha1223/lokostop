@@ -13,17 +13,17 @@
     border: 0.007vw solid #08e5a9;
   }
   .navbar {
-    margin-left: 24.449vw;
+    margin-left: 20.449vw;
     margin-top: 2.269vw;
     height: auto;
   }
-  .navbar ul {
+  .navbarul {
     display: flex;
     margin: 0;
     list-style: none;
     padding-left: 0;
   }
-  .navbar li {
+  .navli {
     font: normal normal normal 0.878vw/1.318vw Poppins;
     color: #3d3d3d;
     font-weight: bold;
@@ -34,7 +34,8 @@
     cursor: pointer;
   }
   
-  .navbar li::after {
+  
+  /* .navbar li::after {
     content: "";
     display: block;
     margin: auto;
@@ -46,9 +47,11 @@
   .navbar li:hover::after {
     width: 100%;
     background-color: #08e5a9;
-  }
+  } */
   .navbar a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
   }
   .Header_two_part3 {
     width: 15.373vw;
@@ -138,7 +141,7 @@
   display: block;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
     margin-top: 0;
   }
@@ -177,4 +180,4 @@
     font: normal normal normal 1.1vw/1.318vw Poppins;
     padding: 0.5vw;
    }
-} */
+}

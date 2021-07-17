@@ -227,7 +227,7 @@
   display: "flex";
   justify-content: "space-between";
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .browseCat {
     width: auto;
     height: auto;
@@ -274,8 +274,8 @@
     font: normal normal normal 0.978vw/1.061vw Poppins;
   }
   
-} */
-/* @media (max-width: 425px) {
+}
+@media (max-width: 425px) {
   .browseCat {
     width: auto;
     height: auto;
@@ -314,4 +314,4 @@
     font: normal normal normal 1vw/1.061vw Poppins;
   }
 
-} */
+}
