@@ -31,8 +31,8 @@ class Home extends Component {
         }
         else return (
             <div>
-                <Header01></Header01>
-                <Header></Header>
+                <Header01 />
+                <Header />
                 <VideoContainer />
                 <div className="Free_box">
                     <div className="Free_Shipping">
@@ -64,7 +64,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <NewArrival products={this.state.productRows}/>
+                 <NewArrival products={this.state.productRows}/>
                 <MostViewedBox />
                 <FindByCategory />
                 <CategoryBox />
@@ -74,7 +74,7 @@ class Home extends Component {
                 <FeatureBox />
                 <PopularBox />
                 <SixImageSlider />
-                <Footer/>
+                <Footer/> 
             </div>
         )
     }
@@ -86,7 +86,7 @@ const mapStateToProps = state =>{
         loading: state.getProducts.loading,
         productDetails: state.getProductDetails.product,
         allProductRows: state.getProductTabs.productGrid,
-        allProductRowsLoading: state.getProductTabs.loading
+        allProductRowsLoading: state.getProductTabs.loading,
     }
 }
 export default connect(mapStateToProps)(Home)

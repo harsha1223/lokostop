@@ -39,11 +39,13 @@ class Section extends Component {
                         </div>
                         <div className="individualcategorybox">
                             {this.props.categoryProducts.length == 0? <div>No products found.</div>: (
-
-                            <Product />
-                            )}
+                                this.props.categoryProducts.map((product, key)=>{
+                                    return <Product product={product} key={key} category={true}/>
+                                })
+                                )}
                         </div>
-                        <button className="load_more_blogs" style={{ marginLeft: '30.015vw' }}>Load more</button>
+                        {this.props.categoryProducts.length != 0?
+                                <button className="load_more_blogs" style={{ marginLeft: '30.015vw' }}>Load more</button>:""}
 
                     </div>
                 </div>

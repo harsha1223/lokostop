@@ -3,14 +3,28 @@ import { BiGitCompare, BiCart } from "react-icons/bi";
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 
-export class Product extends Component {
+class Product extends Component {
+    state={
+        product: {
+            price: 1000,
+            specialPrice: 900,
+            categories: [],
+            name: "Product ABC",
+            shortDescription: "This is a nice product"
+        }
+    }
+    componentDidMount(){
+        if(this.props.product)
+            this.setState({product: this.props.product})
+    }
     render() {
         return (
             <div className="product_details_list">
                   <Link to="product/123">  <div className="image_box">
-                        <img src="https://images.unsplash.com/photo-1583172747862-afcb755ebd13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="RELOAD" />
-                        <p className='discount'>10% off</p>
-
+                      {this.state.product.baseImage?<img src={"https://api.lokostop.in/"+this.state.product.baseImage.image} alt="RELOAD" />: <img src="https://via.placeholder.com/200" alt="RELOAD"/>}
+                        
+                        {this.state.product.specialPrice != null && this.state.product.specialPrice && this.state.product.specialPriceType == "percent"? <p className='discount'>{this.state.product.specialPrice}%off</p>: ""}
+                        {this.state.product.specialPrice != null && this.state.product.specialPrice && this.state.product.specialPriceType == "Fixed"? <p className='discount'>{Math.trunc((this.state.product.price-this.state.product.specialPrice)/this.state.product.price*100)}%off</p>: ""}
                     </div></Link>
                     <div className="add_to_cart_box">
                         <div id="div_first" className="add_to_cart_inner_box" >
@@ -28,18 +42,26 @@ export class Product extends Component {
                         </div>
 
                     </div>
-                    <Link to="product/123"> 
                     <div className="product_details">
-                        <p className="category_name_product">LED TELIVISION</p>
+                        
+                        {this.state.product.categories.map((category, key)=>{
+                            return <Link key={key} to={'/category/'+category.url+"/"+category._id}><p className="category_name_product">{category.name}</p> </Link>
+                        })}
+                        
+                    <Link to="product/123"> 
+                        
                         <p className="name_details_each_product">
-                            LG 6.5kg 5 Star Smart Inverter Fully-Automatioc Top loading Washing Machine(T65SKSF4Z)
+                            {this.state.product.name}
+                            <br/>
+                                {this.state.product.shortDescription}
                         </p>
                         <div className="price_of_product">
-                            <p className="para_price_one">25,000</p>
-                            <p className="para_price_two">Rs 22,000</p>
+                            {this.state.product.specialPrice != null && this.state.product.specialPrice? <React.Fragment><p className="para_price_one">₹ {this.state.product.price}</p>
+                            <p className="para_price_two">₹ {this.state.product.specialPrice}</p></React.Fragment>:<p className="para_price_two">₹ {this.state.product.price}</p> }
+                            
                         </div>
-                    </div>
                     </Link>
+                    </div>
 
                 </div>
         )
