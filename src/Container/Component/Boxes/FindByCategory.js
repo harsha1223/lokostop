@@ -1,88 +1,173 @@
-import React from 'react'
+import React from "react";
 import { IoIosArrowDown, IoIosArrowForward, IoIosHeart } from "react-icons/io";
 import { FiSearch } from "react-icons/fi";
-import {Link} from 'react-router-dom'
-function FindByCategory() {
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+class FindByCategory extends React.Component {
+  state = {
+    categories: [],
+    selectedCategory: {
+        url: "",
+        id: "",
+        name: ""
+    }
+  };
+  componentDidMount() {
+    const { categories } = this.state;
+    const setCategories = (root) => {
+      if (root.childrenCategory.length == 0) {
+        return (
+          <div
+            style={{
+              background: "transparent",
+              color: "#1D1D1D",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+            className={"dropdown-item"}
+            onClick={(e)=>{
+                const {selectedCategory} = this.state
+                selectedCategory.id = root._id
+                selectedCategory.name = root.name
+                selectedCategory.url = root.url
+                this.setState({selectedCategory})
+            }}
+          >
+            {root.name}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {root.childrenCategory.length > 0 ? (
+              <IoIosArrowForward className="ForwardArrow" />
+            ) : (
+              ""
+            )}
+          </div>
+        );
+      } else
+        return (
+          <React.Fragment>
+            <div
+              style={{
+                background: "transparent",
+                color: "#1D1D1D",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+              className={"dropdown-item"}
+              onClick={(e)=>{
+                const {selectedCategory} = this.state
+                selectedCategory.id = root._id
+                selectedCategory.name = root.name
+                selectedCategory.url = root.url
+                this.setState({selectedCategory})
+            }}
+            >
+              {root.name}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <IoIosArrowForward className="ForwardArrow" />
+            </div>
+            {root.childrenCategory.length > 0 ? (
+              <ul className="dropdown-menu dropdown-submenu">
+                {root.childrenCategory.map((child, key) => {
+                  return <li key={key}>{setCategories(child)}</li>;
+                })}
+              </ul>
+            ) : (
+              ""
+            )}
+          </React.Fragment>
+        );
+    };
+    this.props.categories.forEach((category) => {
+      let tempData = {};
+      tempData.content = setCategories(category);
+      categories.push(tempData);
+    });
+    this.setState({ categories });
+  }
+  render() {
     return (
-        <div>
-            <div className="find_by_category_box">
-                <p className="most_viewd_text">Find by category</p>
-                <hr id="line_category"></hr>
-
-            </div>
-            <div className="category_box">
-                <p className="offers">Open category and sort according to your preferences. Unveil offers.</p>
-                <div className="category_names">
-                    <p style={{marginTop:'1.098vw'}} className='particular_cat'>Mobile & Tablet</p>
-                    <p className='particular_cat'>Washing Machine</p>
-                    <p className='particular_cat'>Mobile & Tablet</p>
-                   
-
-                </div>
-                <p className="or">OR</p>
-                <div className="category_Search">
-                    <div className="centre_first_part">
-                    <div className="dropdown">
-                            <button style={{ marginTop: '1.5%' }} className="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                All categories
-                            </button>
-                            <ul className="dropdown-menu"  aria-labelledby="dropdownMenuButton1">
-                                <li><Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Washing Machine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='ForwardArrow' /></Link>
-                                    <ul className="dropdown-menu dropdown-submenu">
-                                        <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
-                                        </li>
-                                        <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
-                                        </li>
-                                        <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
-                                        </li>
-                                        <li>
-                                            <Link style={{ background: 'transparent', color: '#1D1D1D', textAlign: 'center' }} className="dropdown-item" to="#">Heading 1</Link>
-                                        </li>
-                                        <li></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="centre_first_part">
-                    <div className="drop">
-                            <button className="dropbtn1" style={{marginTop:'0.5vw' , marginLeft:'2vw'}}>Brand</button>
-                            <div style={{left:'-1vw'}} className="dropdown-content1">
-                                <Link to="#">Washing Machine</Link>
-                                <Link to="#">Link 2</Link>
-                                <Link to="#">Link 3</Link>
-                            </div>
-                        </div>
-                        {/* <div className="Selected_brand">
-                            <p style={{marginTop:'0.805vw'}}>Brand</p> <IoIosArrowDown id="ArrowIcon1" />
-                        </div>
-                        <div className="dropdown_list_categories">
-                            <div className="dropdown_list_items">Brand 1 </div>
-                            <div className="dropdown_list_items">Brand 2 </div>
-                            <div className="dropdown_list_items">Brand 3 </div>
-                            <div className="dropdown_list_items">Brand 4 </div>
-                            <div className="dropdown_list_items">Brand 5 </div>
-                            <div className="dropdown_list_items">Brand 6 </div>
-                            <div className="dropdown_list_items">Brand 7 </div>
-                            <div className="dropdown_list_items">Brand 8 </div>
-                        </div> */}
-                    </div>
-                    <div className="centre_second_part">
-                        <input type="text" placeholder="Budget (approximate)" />
-                    </div>
-                    <div className="find_icon">
-                        <p style={{marginTop:'0.805vw'}}>Find</p><FiSearch id='search' />
-                    </div>
-
-                </div>
-
-            </div>
-            
+      <div>
+        <div className="find_by_category_box">
+          <p className="most_viewd_text">Find by category</p>
+          <hr id="line_category"></hr>
         </div>
-    )
+        <div className="category_box">
+          <p className="offers">
+            Open category and sort according to your preferences. Unveil offers.
+          </p>
+          <div className="category_names">
+            <p style={{ marginTop: "1.098vw" }} className="particular_cat">
+              Mobile & Tablet
+            </p>
+            <p className="particular_cat">Washing Machine</p>
+            <p className="particular_cat">Mobile & Tablet</p>
+          </div>
+          <p className="or">OR</p>
+          <div className="category_Search">
+            <div className="centre_first_part">
+              <div className="dropdown">
+                <button
+                  style={{ marginTop: "1.5%" }}
+                  className="btn  dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {this.state.selectedCategory.name == ""? "All Categories": this.state.selectedCategory.name}
+                </button>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              {this.state.categories.map((category, key) => {
+                return <li key={key}>{category.content}</li>;
+              })}
+            </ul>
+             </div>
+            </div>
+            <div className="centre_first_part">
+              <div className="drop">
+                <button
+                  className="dropbtn1"
+                  style={{ marginTop: "0.5vw", marginLeft: "2vw" }}
+                >
+                  Brand
+                </button>
+                <div style={{ left: "-1vw" }} className="dropdown-content1">
+                  <Link to="#">Washing Machine</Link>
+                  <Link to="#">Link 2</Link>
+                  <Link to="#">Link 3</Link>
+                </div>
+              </div>
+              {/* <div className="Selected_brand">
+                                <p style={{marginTop:'0.805vw'}}>Brand</p> <IoIosArrowDown id="ArrowIcon1" />
+                            </div>
+                            <div className="dropdown_list_categories">
+                                <div className="dropdown_list_items">Brand 1 </div>
+                                <div className="dropdown_list_items">Brand 2 </div>
+                                <div className="dropdown_list_items">Brand 3 </div>
+                                <div className="dropdown_list_items">Brand 4 </div>
+                                <div className="dropdown_list_items">Brand 5 </div>
+                                <div className="dropdown_list_items">Brand 6 </div>
+                                <div className="dropdown_list_items">Brand 7 </div>
+                                <div className="dropdown_list_items">Brand 8 </div>
+                            </div> */}
+            </div>
+            <div className="centre_second_part">
+              <input type="text" placeholder="Budget (approximate)" />
+            </div>
+            <div className="find_icon">
+              <p style={{ marginTop: "0.805vw" }}>Find</p>
+              <FiSearch id="search" />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default FindByCategory
+const mapStateToProps = (state) => {
+  return {
+    categories: state.getCategories.categories,
+  };
+};
+export default connect(mapStateToProps)(FindByCategory);

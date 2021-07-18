@@ -16,7 +16,6 @@ export const getFooterDetails = () => async(dispatch) => {
         })
     }
 }
-
 export const getProductTabs = () => async(dispatch) => {
     try{
         dispatch({ type: actionTypes.GET_PRODUCT_TABS_REQUEST})
@@ -29,6 +28,23 @@ export const getProductTabs = () => async(dispatch) => {
     }catch(error){
         dispatch({
             type: actionTypes.GET_PRODUCT_TABS_FAIL,
+            payload: "something went wrong"
+        })
+    }
+}
+
+export const getFeatures = () => async(dispatch) => {
+    try{
+        dispatch({ type: actionTypes.GET_FEATURES_REQUEST})
+        const {data: {data}} = await api.post('/storefront/get', {selectArray: ["Features"]})
+        
+        dispatch({
+            type: actionTypes.GET_FEATURES_SUCCESS,
+            payload: data[0]
+        })
+    }catch(error){
+        dispatch({
+            type: actionTypes.GET_FEATURES_FAIL,
             payload: "something went wrong"
         })
     }

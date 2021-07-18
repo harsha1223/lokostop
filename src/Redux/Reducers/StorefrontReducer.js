@@ -43,3 +43,25 @@ export const getProductTabsReducer = (state = { productGrid: {}}, action) => {
             return state;
     }
 }
+
+export const getFeaturesReducer = (state = { features: {}}, action) => {
+    switch(action.type){
+        case actionTypes.GET_FEATURES_REQUEST:
+            return{
+                loading: true,
+                features: { }
+            }
+        case actionTypes.GET_FEATURES_SUCCESS:
+            return {
+                loading: false,
+                features: action.payload
+            }
+        case actionTypes.GET_FEATURES_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            }
+        default:
+            return state;
+    }
+}
