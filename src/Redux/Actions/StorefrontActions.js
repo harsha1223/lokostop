@@ -49,3 +49,20 @@ export const getFeatures = () => async(dispatch) => {
         })
     }
 }
+
+export const getLogos = () => async(dispatch) => {
+    try{
+        dispatch({ type: actionTypes.GET_LOGO_REQUEST})
+        const {data: {data}} = await api.post('/storefront/get', {selectArray: ["Logo"]})
+        
+        dispatch({
+            type: actionTypes.GET_LOGO_SUCCESS,
+            payload: data[0]
+        })
+    }catch(error){
+        dispatch({
+            type: actionTypes.GET_LOGO_FAIL,
+            payload: "something went wrong"
+        })
+    }
+}

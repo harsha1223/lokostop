@@ -65,3 +65,25 @@ export const getFeaturesReducer = (state = { features: {}}, action) => {
             return state;
     }
 }
+
+export const getLogosReducer = (state = { logos: {}}, action) => {
+    switch(action.type){
+        case actionTypes.GET_LOGO_REQUEST:
+            return{
+                loading: true,
+                logos: { }
+            }
+        case actionTypes.GET_LOGO_SUCCESS:
+            return {
+                loading: false,
+                logos: action.payload
+            }
+        case actionTypes.GET_LOGO_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            }
+        default:
+            return state;
+    }
+}
