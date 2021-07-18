@@ -17,16 +17,18 @@ import MostViewedBox from '../Component/Boxes/MostViewedBox';
 import TopClients from '../Component/Boxes/TopClients';
 import Loader from '../Loader/Loader'
 import {connect} from 'react-redux'
+import {getFeatures} from '../../Redux/Actions/StorefrontActions'
 class Home extends Component {
     state = {
         products:[],
         productRows: []
     }
     componentDidMount(){
+        this.props.getFeatures()
         this.setState({products: this.props.products, productRows: this.props.allProductRows})
     }
     render() {
-        if(this.props.loading ||this.props.allProductRowsLoading){
+        if(this.props.loading ||this.props.allProductRowsLoading || this.props.featuresLoading){
             return <Loader />
         }
         else return (
@@ -34,15 +36,25 @@ class Home extends Component {
                 <Header01 />
                 <Header />
                 <VideoContainer />
+                {this.props.allFeatures.Features && this.props.allFeatures.Features.SectionStatus? 
                 <div className="Free_box">
-                    <div className="Free_Shipping">
+                    {this.props.allFeatures.Features.Features.filter(feature=>{
+                        if(feature.Icon != "" && feature.SubTitle != "" && feature.Title != "")
+                            return true
+                        return false
+                    }).map((feature,key)=>{
+                        return (
+                            <div className="Free_Shipping" key={key}>
                         <FaShippingFast id="shipping_Icon" />
                         <div className="shipping_text">
-                            <p className="shipping_text1">Free shipping</p>
-                            <p className="shipping_text2">On orders over Rs. 30,000</p>
+                            <p className="shipping_text1">{feature.Title}</p>
+                            <p className="shipping_text2">{feature.SubTitle}</p>
                         </div>
                     </div>
-                    <div className="Free_return">
+                        )
+                    })}
+                    
+                    {/* <div className="Free_return">
                         <MdSettingsBackupRestore id="shipping_Icon" />
                         <div className="shipping_text">
                             <p className="shipping_text1">Free returns</p>
@@ -62,8 +74,9 @@ class Home extends Component {
                             <p className="shipping_text1">Support 24/7</p>
                             <p className="shipping_text2">Contact us 24 hours a day</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
+                : ""}
                  <NewArrival products={this.state.productRows}/>
                 <MostViewedBox />
                 <FindByCategory />
@@ -87,6 +100,8 @@ const mapStateToProps = state =>{
         productDetails: state.getProductDetails.product,
         allProductRows: state.getProductTabs.productGrid,
         allProductRowsLoading: state.getProductTabs.loading,
+        featuresLoading: state.getFeatures.loading,
+        allFeatures: state.getFeatures.features
     }
 }
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps, {getFeatures})(Home)
