@@ -86,21 +86,21 @@ export class paymentCart extends Component {
                                     <p className="shipping_text2">On orders over Rs. 30,000</p>
                                 </div>
                             </div>
-                            <div className="Free_return">
+                            <div className="Free_Shipping">
                                 <MdSettingsBackupRestore id="shipping_Icon" />
                                 <div className="shipping_text">
                                     <p className="shipping_text1">Free returns</p>
                                     <p className="shipping_text2">Returns are free within 9 days</p>
                                 </div>
                             </div>
-                            <div className="Secure_payment">
+                            <div className="Free_Shipping">
                                 <MdPayment id="shipping_Icon" />
                                 <div className="shipping_text">
                                     <p className="shipping_text1">100% Secure Payments</p>
                                     <p className="shipping_text2">Your payment are safe with us</p>
                                 </div>
                             </div>
-                            <div className="Support">
+                            <div className="Free_Shipping">
                                 <FaRegClock id="shipping_Icon" />
                                 <div className="shipping_text">
                                     <p className="shipping_text1">Support 24/7</p>

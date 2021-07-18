@@ -81,7 +81,9 @@ class Header02 extends Component {
     render() {
         return (
             <div className="Header_two">
-            <div className="logo"></div>
+            <div className="logo">
+                <img src="https://www.logo.wine/a/logo/Lacoste/Lacoste-Logo.wine.svg" alt="Reload" />
+            </div>
             <div className="navbar">
                 <ul>
                     {/* {this.state.menus.map((menu,key)=>{

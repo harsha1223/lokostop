@@ -103,7 +103,7 @@
   display: flex;
 }
 .centre_first_part {
-  width: 8.565vw;
+  width: auto;
   height: 2.782vw;
   border: 0.073vw solid #08e5a9;
   cursor: pointer;

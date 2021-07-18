@@ -100,14 +100,14 @@ class FindByCategory extends React.Component {
               Mobile & Tablet
             </p>
             <p className="particular_cat">Washing Machine</p>
-            <p className="particular_cat">Mobile & Tablet</p>
+            
           </div>
           <p className="or">OR</p>
           <div className="category_Search">
             <div className="centre_first_part">
-              <div className="dropdown">
+              <div className="dropdown" style={{width:'auto'}}>
                 <button
-                  style={{ marginTop: "1.5%" }}
+                  style={{ marginTop: "1.5%" ,width:'auto' }}
                   className="btn  dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton1"
@@ -127,7 +127,7 @@ class FindByCategory extends React.Component {
               <div className="drop">
                 <button
                   className="dropbtn1"
-                  style={{ marginTop: "0.5vw", marginLeft: "2vw" }}
+                  style={{ marginTop: "0.5vw" }}
                 >
                   Brand
                 </button>

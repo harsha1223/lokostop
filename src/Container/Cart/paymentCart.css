@@ -174,9 +174,11 @@
   justify-content: space-evenly;
 }
 .Free_boxpay{
-    border: 0.007vw solid #DDDDDD;
-    margin-top: 1.903vw;
-    align-items: center;
-    height: 25.549vw;
-    padding: 2.123vw 0.659vw 0 0.659vw;
+  border: 0.007vw solid #DDDDDD;
+  margin-top: 1.903vw;
+  align-items: center;
+  height: 25.549vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
 }

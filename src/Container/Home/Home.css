@@ -9,18 +9,20 @@
 }
 .Free_box {
   width: 79.649vw;
-  height: 5.637vw;
+  height: auto;
   border: 0.073vw solid #dddddd;
   margin-top: 1.171vw;
   margin-left: 10.176vw;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1vw;
 }
 .Free_Shipping {
   width: 17.716vw;
   height: 3.294vw;
-  margin-left: 2.343vw;
-  margin-top: 1.171vw;
   display: flex;
+  margin: 1vw;
 }
 .Free_return {
   width: 17.277vw;
@@ -648,11 +650,12 @@
 }
 .category_Search {
   height: 2.782vw;
-  width: 42.826vw;
+  width: fit-content;
   border: 0.007vw solid #08e5a9;
   margin-top: 1.245vw;
   margin-left: 25.622vw;
   display: flex;
+
 }
 .Selected_brand {
   display: flex;
@@ -711,7 +714,7 @@
   height: 0;
   margin-top: 1.171vw;
   width: 5.564vw;
-  border: 0.073vw solid #dddddd;
+  border: 0.073vw solid gray;
 }
 
 #arrow_box_1 {

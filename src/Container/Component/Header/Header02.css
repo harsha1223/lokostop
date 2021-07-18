@@ -10,7 +10,10 @@
     height: 4.758vw;
     margin-left: 2.343vw;
     margin-top: 0.586vw;
-    border: 0.007vw solid #08e5a9;
+  }
+  .logo img{
+    width: 100%;
+    height: 100%;
   }
   .navbar {
     margin-left: 20.449vw;

@@ -17,7 +17,7 @@ export class MostViewedBox extends Component {
                 <div className="most_viewed_compare">
                     <div className="image_box_second_one">
                         <img src="https://images.unsplash.com/photo-1583172747862-afcb755ebd13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="RELOAD" />
-                        <p className='discount_one'>10% off</p>
+                        {/* <p className='discount_one'>10% off</p> */}
                     </div>
                     <div className="comparing_products_details">
                         <p className="compare_product_details_cat">WASHING MACHINE</p>
@@ -72,7 +72,7 @@ export class MostViewedBox extends Component {
                     </div>
                     <div className="image_box_second">
                         <img src="https://images.unsplash.com/photo-1583172747862-afcb755ebd13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="RELOAD" />
-                        <p className='discount_one'>10% off</p>
+                        {/* <p className='discount_one'>10% off</p> */}
                     </div>
 
                 </div>
