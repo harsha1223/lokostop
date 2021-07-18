@@ -2,12 +2,12 @@ import './Header02.css'
 import { MdLocalPhone, MdEmail } from "react-icons/md";
 import { Link } from 'react-router-dom'
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import { IoIosArrowForward, IoIosHeart } from "react-icons/io";
 class Header02 extends Component {
     render() {
         return (
-           <div className="Header_two">
+            <div className="Header_two">
             <div className="logo"></div>
             <div className="navbar">
                 <ul>
@@ -66,7 +66,7 @@ class Header02 extends Component {
         )
     }
 }
-const mapStateToProps = state =>{
+const mapStateToProps = state => {
     return {
         menus: state.getMenus.menus
     }
