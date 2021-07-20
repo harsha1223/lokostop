@@ -229,3 +229,8 @@
     border: 0.073vw solid #BDBDBD;
     margin-top: 6%;
 }
+@media (max-width: 768px){
+  .countrybox_edit{
+    margin-top: -1vw;
+  }
+}

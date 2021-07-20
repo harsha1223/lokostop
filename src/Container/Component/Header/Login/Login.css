@@ -3,6 +3,8 @@
 }
 .modal-content {
   margin-top: 6vw;
+  /* width: 77%;
+    margin-left: 5vw; */
 }
 .imagevl {
   padding-left: 0;
@@ -108,10 +110,20 @@
     font: normal normal normal 1vw/1.061vw Poppins;
     margin-top: 0.6vw;
   }
+  .modal-content{
+    width: 58%;
+    margin-left: 13vw;    padding-left: 1vw;
+  }
 }
 @media (max-width: 425px) {
   .imagevl {
     font: normal normal normal 1.2vw/1.061vw Poppins;
     margin-top: 0.6vw;
+  }
+}
+@media (min-width: 769px) and (max-width:1200px ) {
+  .modal-content{
+    width: 73%;
+    margin-left: 6vw;
   }
 }

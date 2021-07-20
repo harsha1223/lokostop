@@ -37,16 +37,19 @@ export class Billinginfo extends Component {
                         <div className="insidebox_secondbill">
                             <input className="second_input_box" type="text"  placeholder="Address (First Line)"/>
                             <div className="dropdown_box">
+                                <div className="countrybox_edit">
                                 <select  name="country" id="country_name"> 
                                     <option  id="select_option"  disabled selected hidden>Country</option>
                                     <option  value="canada">Canada</option>
                                     <option value="india">India</option>
                                     <option value="unitedstates">United States</option>
                                 </select>
+                                </div>
                             </div>
                         </div>
                         <div className="insidebox_secondbill">
                             <input className="second_input_box" type="text"  placeholder="Address (SecondLine)"/>
+                            
                             <StateDropdown/>
                         </div>
                         <div className="insidebox_secondbill">

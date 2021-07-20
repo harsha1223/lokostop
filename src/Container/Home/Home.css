@@ -107,7 +107,7 @@
 }
 .list_names ul li {
   font: normal normal normal 0.878vw/1.318vw Poppins;
-  color: #bdbdbd;
+  color: gray;;
   text-align: center;
   cursor: pointer;
 }
@@ -977,7 +977,9 @@
 /* .slider_box_two:hover{
   left: -3vw;
 } */
-
+.budgetbox{
+  margin-top: -0.5vw;
+}
 @media (max-width: 768px){
   .category_name_product{
     margin-bottom: 5%;
@@ -993,6 +995,21 @@
       font-size: 1.2vw;
       /* width: 9vw; */
       font-family: 'Poppins';
+  }
+  .new_Arrivals{
+    margin-left: 4.343vw;
+  }
+  .most_view_box{
+    margin-left: 3.343vw;
+  }
+  .most_viewed_compare{
+    margin-left: 3.782vw;
+  }
+  .find_by_category_box{
+    margin-left: 3.343vw;
+  }
+  #arrow_box_1{
+    margin-top: 0;
   }
 }
 @media (max-width: 425px){

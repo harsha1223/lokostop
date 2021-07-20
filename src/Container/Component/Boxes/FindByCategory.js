@@ -127,7 +127,6 @@ class FindByCategory extends React.Component {
               <div className="drop">
                 <button
                   className="dropbtn1"
-                  style={{ marginTop: "0.5vw" }}
                 >
                   Brand
                 </button>
@@ -152,7 +151,10 @@ class FindByCategory extends React.Component {
                             </div> */}
             </div>
             <div className="centre_second_part">
+              <div className="budgetbox">
               <input type="text" placeholder="Budget (approximate)" />
+              </div>
+             
             </div>
             <div className="find_icon">
               <p style={{ marginTop: "0.805vw" }}>Find</p>
