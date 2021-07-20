@@ -344,3 +344,19 @@
     height: 1.9vw;
     }
   }
+  @media(max-width:425px){
+      .image_user1{
+        margin-top: -1.2vw;
+      }
+      .product_quantity1newcomplaint{
+          margin-left: -9%;
+      }
+      .dropdown_colors1 {
+        width: 8.3vw;
+        height: 1.9vw;
+        border: white;
+    }
+    .complaintbutton {
+        width: 14vw;
+    }
+  }

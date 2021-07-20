@@ -120,6 +120,11 @@
     font: normal normal normal 1.2vw/1.061vw Poppins;
     margin-top: 0.6vw;
   }
+  .modal-content {
+    width: 41%;
+    margin-left: 26vw;
+    padding-left: 1vw;
+}
 }
 @media (min-width: 769px) and (max-width:1200px ) {
   .modal-content{

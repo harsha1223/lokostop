@@ -14,7 +14,7 @@ export class SixImageSlider extends Component {
                         {/* <img style={{ width: "26.940vw" }} src="https://images.unsplash.com/photo-1542372358-5d022764bd6c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdhc2hpbmclMjBtYWNoaW5lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" /> */}
                         <img style={{ width: "28.647vw" }} src="https://images.unsplash.com/photo-1547082299-de196ea013d6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
                         <img style={{ width: "38.565vw" }} src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
-                        <img style={{ width: "31.577vw" }} src="https://images.unsplash.com/photo-1575571536958-38aa1227786a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+                        <img style={{ width: "33.577vw" }} src="https://images.unsplash.com/photo-1575571536958-38aa1227786a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGVsZWN0cm9uaWNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
 
                     </div>
                 </div>

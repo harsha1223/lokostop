@@ -392,3 +392,13 @@ cursor: pointer;
   font: normal normal normal 1.098vw/1.684vw Poppins;
   color: #8d8d8d;
 }
+@media(max-width:425px){
+  .product_individual_detail_line{
+    margin-bottom: 1vw;
+    margin-top: 0;
+  }
+  .pay_via{margin-bottom: 2vw;}
+  .roundCircle img{
+    margin-top: -3vw;
+  }
+}
