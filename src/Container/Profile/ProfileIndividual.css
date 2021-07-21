@@ -360,3 +360,8 @@
         width: 14vw;
     }
   }
+  @media (max-width:375px){
+    .complaintbutton {
+        width: 15vw;
+    }
+  }

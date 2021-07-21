@@ -41,7 +41,7 @@ export class ClientImage extends Component {
                     </div>
                     <div className="image_2">
                         <p className="image_2_1"><img src="https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
-                        <p style={{ marginTop: "1.830vw" }} className="image_2_1"><img src="https://images.unsplash.com/photo-1596036435403-cdb01867592d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
+                        <p  className="image_2_1"><img src="https://images.unsplash.com/photo-1596036435403-cdb01867592d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="RELOAD" /></p>
                     </div>
                 </div>
         )

@@ -238,4 +238,9 @@
   .countrybox_edit {
     margin-top: -2.5vw;
 }
+@media(max-width:375px){
+  .countrybox_edit {
+    margin-top: -3.5vw;
+}
+}
 }

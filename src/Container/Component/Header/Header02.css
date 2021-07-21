@@ -183,4 +183,12 @@
     font: normal normal normal 1.1vw/1.318vw Poppins;
     padding: 0.5vw;
    }
+   @media(max-width:375px){
+     .logo{
+       margin-top: 0;
+     }
+     .navbar{
+      margin-left: 18.269vw;
+     }
+   }
 }

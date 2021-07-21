@@ -152,3 +152,20 @@
     width: auto;
   }
 }
+@media(max-width:375px){
+  .colorcheck[type=checkbox] {
+    font-size: 3.5vw;
+}
+.checkfont {
+  font: normal normal 200 1vw/1.318vw Poppins;
+}
+.accordion-body {
+  padding: 1% 8%;
+}
+accordion-button:not(.collapsed) {
+  color: #9d9d9d;
+  background-color: white;
+  font: normal normal 200 1vw/1.318vw Poppins;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+}
