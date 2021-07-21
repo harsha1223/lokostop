@@ -117,3 +117,9 @@
     color: #1D1D1D;
     border: 0.073vw solid #BDBDBD;outline: none;
 }
+@media(max-width:425px){
+  .add_to_cart_compare p{
+    font: normal normal normal 0.9vw/1.464vw Segoe UI;
+    padding-top: 0;
+  }
+}

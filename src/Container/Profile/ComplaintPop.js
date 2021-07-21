@@ -18,7 +18,8 @@ export class ComplaintPop extends Component {
                         <div className="modal-body">
                             
                         </div>
-                        <div style={{borderTop:'none' , margin:'auto'}}  className="modal-footer">
+                        <div style={{borderTop:'none' , paddingBottom: "1vw",
+                                paddingLeft: "0"}}  className="modal-footer">
                             <button type="button" className="btn cancelBlog" data-bs-dismiss="modal">Cancel Complaint</button>
                             <button type="button" className="btn shareblog">Share Complaint</button>
                         </div>

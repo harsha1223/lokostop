@@ -104,3 +104,7 @@
   background: #08e5a9;
   font: normal normal normal 0.978vw/1.318vw Poppins;
 }
+@media (max-width: 768px){
+  .add_blog
+  {width: 94.315vw;}
+}

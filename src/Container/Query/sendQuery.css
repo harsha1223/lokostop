@@ -54,3 +54,8 @@
     font: normal normal normal 0.952vw/1.464vw Poppins;
     color: #1d1d1d;    
 }
+@media(max-width: 768px){
+    .sendquerybox{
+        margin-left: 3.5%;
+    }
+}

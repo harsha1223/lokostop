@@ -23,6 +23,9 @@ export class Blog extends Component {
                     <Link style={{ textDecoration: 'none' }} to="blogIndividual">
                         <SingleBlog/>
                     </Link>
+                    <Link style={{ textDecoration: 'none' }} to="blogIndividual">
+                        <SingleBlog/>
+                    </Link>
                     
 
                 </div>

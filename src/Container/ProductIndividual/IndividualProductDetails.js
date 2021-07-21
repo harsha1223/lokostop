@@ -112,7 +112,6 @@ export class IndividualProductDetails extends Component {
                 <p className="color_text"> Qty:</p>
                 <select
                   className="dropdown_colors"
-                  style={{ width: "3.734vw" }}
                 >
                   <option value="WH">01</option>
                   <option value="BL">02</option>
@@ -170,10 +169,10 @@ export class IndividualProductDetails extends Component {
               className="Free_box"
               style={{
                 width: "46.633vw",
-                height: "9.736vw",
+                // height: "auto",
                 margin: "0",
-                display: "flex",
-                flexWrap: "wrap",
+                // display: "flex",
+                // flexWrap: "wrap",
               }}
             >
               <div className="Free_Shipping">

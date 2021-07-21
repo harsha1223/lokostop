@@ -40,3 +40,15 @@
 .shareblog:hover {
   color: #ffffff;
 }
+@media(max-width:425px){
+  .cancelBlog{
+    width: 15.299vw;
+    height: 3.782vw;
+    font: normal normal normal 1vw/1.318vw Poppins;
+  }
+  .shareblog{
+    width: 14.299vw;
+    height: 3.782vw;
+    font: normal normal normal 1vw/1.318vw Poppins;
+  }
+}

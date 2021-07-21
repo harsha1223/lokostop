@@ -104,7 +104,7 @@ class FindByCategory extends React.Component {
           </div>
           <p className="or">OR</p>
           <div className="category_Search">
-            <div className="centre_first_part">
+            <div className="centre_first_part1">
               <div className="dropdown" style={{width:'auto'}}>
                 <button
                   style={{ marginTop: "1.5%" ,width:'auto' }}
@@ -123,11 +123,10 @@ class FindByCategory extends React.Component {
             </ul>
              </div>
             </div>
-            <div className="centre_first_part">
+            <div className="centre_first_part1">
               <div className="drop">
                 <button
                   className="dropbtn1"
-                  style={{ marginTop: "0.5vw" }}
                 >
                   Brand
                 </button>
@@ -151,8 +150,11 @@ class FindByCategory extends React.Component {
                                 <div className="dropdown_list_items">Brand 8 </div>
                             </div> */}
             </div>
-            <div className="centre_second_part">
+            <div className="centre_second_part2">
+              <div className="budgetbox">
               <input type="text" placeholder="Budget (approximate)" />
+              </div>
+             
             </div>
             <div className="find_icon">
               <p style={{ marginTop: "0.805vw" }}>Find</p>

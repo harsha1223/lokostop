@@ -71,7 +71,6 @@
   width: 46.925vw;
   height: auto;
   margin-top: 0.6vw;
-  text-decoration: underline;
   font: normal normal normal 0.952vw/1.464vw Poppins;
   color: #3d3d3d;
   margin-bottom: 0;
@@ -392,4 +391,14 @@ cursor: pointer;
   margin-left: 25.406vw;
   font: normal normal normal 1.098vw/1.684vw Poppins;
   color: #8d8d8d;
+}
+@media(max-width:425px){
+  .product_individual_detail_line{
+    margin-bottom: 1vw;
+    margin-top: 0;
+  }
+  .pay_via{margin-bottom: 2vw;}
+  .roundCircle img{
+    margin-top: -3vw;
+  }
 }

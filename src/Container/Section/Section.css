@@ -143,3 +143,12 @@
 .checkfont{
   font: normal normal 200 0.778vw/1.318vw Poppins;
 }
+.accordion-button::after{
+  height: 0;
+  width: 0;
+}
+@media(max-width: 768px){
+  .dropSort{
+    width: auto;
+  }
+}
