@@ -58,4 +58,11 @@
     .sendquerybox{
         margin-left: 3.5%;
     }
+    .sendinput{
+        width: 40.425vw;
+        margin-bottom: 1.5%;
+    }
+    .textarea{
+        margin-bottom: 1%;
+    }
 }

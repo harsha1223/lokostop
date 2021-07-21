@@ -106,5 +106,14 @@
 }
 @media (max-width: 768px){
   .add_blog
-  {width: 94.315vw;}
+  {width: 90.315vw;
+  margin-left: 5.343vw;}
+  .blog_main{
+    width: 88.388vw;
+    justify-content: space-between;
+    margin-left: 6.343vw;
+  }
+  .load_more_blogs{
+    margin-top: 4.196vw;
+  }
 }

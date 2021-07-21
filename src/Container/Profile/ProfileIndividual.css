@@ -343,6 +343,9 @@
         width: 5.3vw;
     height: 1.9vw;
     }
+    .firstboxprofile{
+        width: 17.255vw;
+    }
   }
   @media(max-width:425px){
       .image_user1{

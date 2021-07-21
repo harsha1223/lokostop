@@ -100,6 +100,14 @@ class FindByCategory extends React.Component {
               Mobile & Tablet
             </p>
             <p className="particular_cat">Washing Machine</p>
+            <p className="particular_cat">Tv</p>
+            <p className="particular_cat">Washing Machine</p>
+            <p className="particular_cat">Tv</p>
+            <p className="particular_cat">Washing Machine</p>
+            <p className="particular_cat">Tv</p>
+            <p className="particular_cat">Washing Machine</p>
+            <p className="particular_cat">Tv</p>
+            <p className="particular_cat">Washing Machine</p>
             
           </div>
           <p className="or">OR</p>
@@ -136,19 +144,7 @@ class FindByCategory extends React.Component {
                   <Link to="#">Link 3</Link>
                 </div>
               </div>
-              {/* <div className="Selected_brand">
-                                <p style={{marginTop:'0.805vw'}}>Brand</p> <IoIosArrowDown id="ArrowIcon1" />
-                            </div>
-                            <div className="dropdown_list_categories">
-                                <div className="dropdown_list_items">Brand 1 </div>
-                                <div className="dropdown_list_items">Brand 2 </div>
-                                <div className="dropdown_list_items">Brand 3 </div>
-                                <div className="dropdown_list_items">Brand 4 </div>
-                                <div className="dropdown_list_items">Brand 5 </div>
-                                <div className="dropdown_list_items">Brand 6 </div>
-                                <div className="dropdown_list_items">Brand 7 </div>
-                                <div className="dropdown_list_items">Brand 8 </div>
-                            </div> */}
+              
             </div>
             <div className="centre_second_part2">
               <div className="budgetbox">

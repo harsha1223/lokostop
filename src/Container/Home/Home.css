@@ -242,12 +242,12 @@
 
 .category_name_product {
   margin-top: 0;
-  height: 1.098vw;
+  height: auto;
   width: 18.521vw;
   text-align: center;
-  text-decoration: underline #3d3d3d;
+  text-decoration: none #3d3d3d;
   font-family: "poppins";
-  font-size: xx-small;
+  font-size: 1vw;
   color: #1d1d1d;
   margin-bottom: 0;
 }
@@ -688,6 +688,7 @@
   display: flex;
   width: 92.899vw;
   height: auto;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .category_dash {
@@ -1006,6 +1007,27 @@
   .category_name_product {
     margin-bottom: 5%;
   }
+  .category_dash_outer_box {
+    margin-left: 12.734vw;
+    width: 78.899vw;
+    justify-content: space-between;
+  }
+  .category_dash {
+    margin-bottom: 1vw;
+  }
+  .category_names {
+    width: 83.63vw;
+    justify-content: space-between;
+    margin-left: 4vw;
+  }
+  .new_arrival_box {
+    width: 76.242vw;
+    margin-left: 14.416vw;
+    justify-content: space-between;
+  }
+  .product_details_list {
+    margin-bottom: 1vw;
+  }
   .star {
     margin-top: -1vw;
   }
@@ -1013,7 +1035,7 @@
     margin-top: -0.3vw;
   }
   .dropdown_colors {
-    width: 6.564vw;
+    width: 6.564vw;height: 1.691vw;
   }
   .dropdown_colors option {
     /* padding: 10vw; */
@@ -1029,8 +1051,20 @@
   }
   .most_viewed_compare {
     margin-left: 3.782vw;
+    height: auto;
+  }
+  .image_box_second_one{
+    height: 33.381vw;
+  }
+  .image_box_second{
+    height: 33.381vw;
+  }
+  .comparing_products_details{
+    height: auto;
   }
   .find_by_category_box {
+    justify-content: space-between;
+    display: flex;
     margin-left: 3.343vw;
   }
   #arrow_box_1 {
@@ -1040,13 +1074,17 @@
     padding: 0;
     margin-top: -6%;
   }
+  .particular_popular_categories{
+    margin: 0.732vw;
+    margin-bottom: 2vw;
+  }
 }
 @media (max-width: 425px) {
   .category_name_product {
     font: normal normal normal 1.2vw/1.464vw Poppins;
     margin-bottom: 6%;
   }
-  .image_2_1{
+  .image_2_1 {
     margin-top: -2.17vw;
   }
   .centre_second_part2 input {
