@@ -141,7 +141,7 @@
   margin-left: 2.416vw;
   margin-top: 1.903vw;
   display: flex;
-  margin-bottom: 6vw;
+  margin-bottom: 1vw;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -546,7 +546,7 @@
   padding-left: 0.659vw;
   color: #3d3d3d;
   box-shadow: 0px 3px 6px #00000029;
-  outline: none;
+  outline: none;background: white;
 }
 .buttons_compare {
   width: 26.867vw;
@@ -904,7 +904,7 @@
 .particular_popular_categories {
   width: 20.059vw;
   margin: 0.732vw;
-  height: 34.407vw;
+  height:auto
 }
 .image_popular {
   width: 20.059vw;
@@ -1080,6 +1080,19 @@
   }
 }
 @media (max-width: 425px) {
+ .image_box_second_one {
+  height: 36.381vw;
+}
+.category_names {
+  width: 66.63vw;
+  justify-content: space-between;
+  margin-left: 14vw;
+}
+ .new_arrival_box {
+    width: 59.242vw;
+    margin-left: 23.416vw;
+    justify-content: space-between;
+}
   .category_name_product {
     font: normal normal normal 1.2vw/1.464vw Poppins;
     margin-bottom: 6%;
@@ -1166,13 +1179,24 @@
   }
   .or {
     font: normal normal 600 1.3vw/1.684vw Poppins;
+    
+    margin-top: 2vw;
+
   }
+  .category_dash_outer_box {
+    margin-left: 22.734vw;
+    width: 58.899vw;
+    justify-content: space-between;
+}
 }
 @media (max-width: 375px) {
   #arrow_box {
-    margin-top: -2.3vw;
+    margin-top: -1.9vw;
   }
   .list_names ul {
     margin-left: -5.709vw;
+  }
+  #arrow_box_1{
+    margin-top: -1.5vw;
   }
 }

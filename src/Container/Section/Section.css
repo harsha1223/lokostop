@@ -79,7 +79,7 @@
 }
 .dropSort {
   height: auto;
-  width: 16.641vw;
+  width: 17.641vw;
   margin-top: 1.025vw;
   display: flex;
   margin-left: 54.173vw;
@@ -95,13 +95,14 @@
   font: normal normal normal 0.952vw/1.464vw Poppins;
   margin-left: 0.366vw;
   border: none;
+  background: white;
   outline: none;
   width: auto;
   font-weight: 500;
   cursor: pointer;
 }
 .individualcategorybox {
-  width: 100%;
+  width: 100%;margin-bottom: 3vw;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -152,12 +153,28 @@
     width: auto;
   }
 }
+@media(max-width:425px){
+  .form-check-input {
+    margin-top: 2.4vw;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.sortIndividual{margin-top: -0.1vw;}
+.checkfont {
+  font: normal normal 200 0.9vw/1.318vw Poppins;
+  width: auto;
+  margin-left: -2vw;
+}
+}
 @media(max-width:375px){
   .colorcheck[type=checkbox] {
     font-size: 3.5vw;
 }
 .checkfont {
   font: normal normal 200 1vw/1.318vw Poppins;
+}
+.form-check-input {
+  margin-top: 2.9vw;
 }
 .accordion-body {
   padding: 1% 8%;

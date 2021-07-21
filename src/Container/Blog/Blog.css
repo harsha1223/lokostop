@@ -116,4 +116,12 @@
   .load_more_blogs{
     margin-top: 4.196vw;
   }
+  
+}
+@media (max-width:425px){
+  .blog_main {
+    width: 60.388vw;
+    justify-content: space-between;
+    margin-left: 23.343vw;
+}
 }

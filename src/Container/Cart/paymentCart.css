@@ -20,21 +20,23 @@
   width: 100%;
   display: flex;
 }
-.nav-link{
+.nav-link {
   margin-top: 10%;
   padding: 1vw;
   font: normal normal normal 0.878vw/1.318vw Poppins;
   color: #3d3d3d;
   border-radius: none;
 }
-.nav1new{
+.nav1new {
   height: 100%;
   width: 15vw;
-    background: #DDDDDD;
+  background: #dddddd;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  color:#3d3d3d;;
-  background-color: white;border-radius: none;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #3d3d3d;
+  background-color: white;
+  border-radius: none;
 }
 .paymethod {
   width: 29%;
@@ -163,22 +165,34 @@
 }
 #payline {
   width: 21vw;
-  color: #5d5d5d;
+  color: #5d5d5d;margin: 0;
 }
 .paymntbox_card {
   width: 100%;
   height: auto;
-  margin-top: 3%;color: #5d5d5d;
+  margin-top: 3%;
+  color: #5d5d5d;
   font: normal normal normal 1.098vw/1.684vw Poppins;
   display: flex;
   justify-content: space-evenly;
 }
-.Free_boxpay{
-  border: 0.007vw solid #DDDDDD;
+.Free_boxpay {
+  border: 0.007vw solid #dddddd;
   margin-top: 1.903vw;
   align-items: center;
   height: 25.549vw;
   display: flex;
   flex-direction: column;
   padding: 1vw;
+}
+@media (max-width: 425px) {
+  .secondpay_1box {
+    padding: 3%;
+  }
+  .Free_boxpay {
+    margin-top: -4px;
+  }
+  .creditDetail {
+    margin-left: 7%;
+  }
 }

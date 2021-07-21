@@ -401,4 +401,9 @@ cursor: pointer;
   .roundCircle img{
     margin-top: -3vw;
   }
+  .individualproduct_detail_outer_box{
+    margin-left: 10.49vw;
+    margin-top: 2.928vw;
+    margin-bottom: 3vw;
+  }
 }

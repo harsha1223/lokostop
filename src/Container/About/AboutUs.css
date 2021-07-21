@@ -96,3 +96,10 @@
   font: normal normal 200 1.098vw/1.684vw Poppins;
   color: #3d3d3d;
 }
+@media(max-width:425px){
+  .categories_black_about ul {
+    width: 72.704vw;
+    margin-left: 12vw;
+    justify-content: space-between;
+}
+}

@@ -155,6 +155,35 @@
 @media(max-width:425px){
   .button_blog_one{
     margin-top: 2vw;
+  }
+  .button_blog_two{
+    margin-top: 2vw;
+  }
+  .inner_box_blogs_two{
+    display: none;
+  }
+  .inner_box_blogs_one{
+    width: 100%;
+  }
+  .first_blog_one_comp{
+    width: 100%;
+  }
+  .first_heading_blog_box_one{
+    width: 77.444vw;
+  }
+  .first_blog_second_component{
+    width: 100%;
+  }
+  .image_blog_individual{
+    width: 77.246vw;
+  }
+  .para_individual_blog{
+    text-align: justify;
+    width: 98%;
+  }
+  .buttons_blog{
+    
+    margin-left: 37.183vw;
 
   }
 }

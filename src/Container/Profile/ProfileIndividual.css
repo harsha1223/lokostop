@@ -287,7 +287,7 @@
     height: 1.391vw;
     font: normal normal normal 0.878vw/1.318vw Poppins;
     padding-left: 0.659vw;
-    color: #3d3d3d;
+    color: #3d3d3d;background: white;
     box-shadow: 0px 3px 6px #00000029;
     outline: none;
 }
@@ -366,5 +366,8 @@
   @media (max-width:375px){
     .complaintbutton {
         width: 15vw;
+    }
+    .image_user1 {
+        margin-top: -2.2vw;
     }
   }
