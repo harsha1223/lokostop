@@ -23,7 +23,7 @@ class Product extends Component {
                   <Link to="product/123">  <div className="image_box">
                       {this.state.product.baseImage?<img src={"https://api.lokostop.in/"+this.state.product.baseImage.image} alt="RELOAD" />: <img src="https://via.placeholder.com/200" alt="RELOAD"/>}
                         
-                        {this.state.product.specialPrice != null && this.state.product.specialPrice && this.state.product.specialPriceType == "percent"? <p className='discount'>{this.state.product.specialPrice}%off</p>: ""}
+                        {this.state.product.specialPrice != null && this.state.product.specialPrice && this.state.product.specialPriceType == "Percent"? <p className='discount'>{this.state.product.specialPrice}%off</p>: ""}
                         {this.state.product.specialPrice != null && this.state.product.specialPrice && this.state.product.specialPriceType == "Fixed"? <p className='discount'>{Math.trunc((this.state.product.price-this.state.product.specialPrice)/this.state.product.price*100)}%off</p>: ""}
                     </div></Link>
                     <div className="add_to_cart_box">
@@ -44,9 +44,9 @@ class Product extends Component {
                     </div>
                     <div className="product_details">
                         
-                        {this.state.product.categories.map((category, key)=>{
+                        {this.props.category?this.state.product.categories.map((category, key)=>{
                             return <Link key={key} to={'/category/'+category.url+"/"+category._id}><p className="category_name_product">{category.name}</p> </Link>
-                        })}
+                        }):""}
                         
                     <Link to="product/123"> 
                         

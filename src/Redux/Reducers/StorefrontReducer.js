@@ -22,17 +22,17 @@ export const getFooterReducer = (state = { footerData: {}}, action) => {
     }
 }
 
-export const getProductTabsReducer = (state = { productGrid: {}}, action) => {
+export const getProductTabsReducer = (state = { allTabs: [{SectionStatus: false},{SectionStatus: false}, {SectionStatus: false}], loading: true}, action) => {
     switch(action.type){
         case actionTypes.GET_PRODUCT_TABS_REQUEST:
             return{
                 loading: true,
-                productGrid: { }
+                allTabs: [{SectionStatus: false},{SectionStatus: false}, {SectionStatus: false}]
             }
         case actionTypes.GET_PRODUCT_TABS_SUCCESS:
             return {
                 loading: false,
-                productGrid: action.payload
+                allTabs: action.payload
             }
         case actionTypes.GET_PRODUCT_TABS_FAIL:
             return {

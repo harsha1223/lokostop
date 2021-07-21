@@ -10,9 +10,15 @@ import Login from "./Login/Login";
 class Header01 extends Component {
   state = {
     categories: [],
+    categories2: [],
+    selectedCategory: {
+      url: "",
+      id: "",
+      name: ""
+  }
   };
   componentDidMount() {
-    const { categories } = this.state;
+    const { categories, categories2 } = this.state;
     const setCategories = (root) => {
       if (root.childrenCategory.length == 0) {
         return (
@@ -64,12 +70,78 @@ class Header01 extends Component {
           </React.Fragment>
         );
     };
+    const setCategories2 = (root) => {
+      if (root.childrenCategory.length == 0) {
+        return (
+          <div
+            style={{
+              background: "transparent",
+              color: "#1D1D1D",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+            className={"dropdown-item"}
+            onClick={(e)=>{
+                const {selectedCategory} = this.state
+                selectedCategory.id = root._id
+                selectedCategory.name = root.name
+                selectedCategory.url = root.url
+                this.setState({selectedCategory})
+            }}
+          >
+            {root.name}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {root.childrenCategory.length > 0 ? (
+              <IoIosArrowForward className="ForwardArrow" />
+            ) : (
+              ""
+            )}
+          </div>
+        );
+      } else
+        return (
+          <React.Fragment>
+            <div
+              style={{
+                background: "transparent",
+                color: "#1D1D1D",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+              className={"dropdown-item"}
+              onClick={(e)=>{
+                const {selectedCategory} = this.state
+                selectedCategory.id = root._id
+                selectedCategory.name = root.name
+                selectedCategory.url = root.url
+                this.setState({selectedCategory})
+            }}
+            >
+              {root.name}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <IoIosArrowForward className="ForwardArrow" />
+            </div>
+            {root.childrenCategory.length > 0 ? (
+              <ul className="dropdown-menu dropdown-submenu">
+                {root.childrenCategory.map((child, key) => {
+                  return <li key={key}>{setCategories2(child)}</li>;
+                })}
+              </ul>
+            ) : (
+              ""
+            )}
+          </React.Fragment>
+        );
+    };
     this.props.categories.forEach((category) => {
       let tempData = {};
+      let tempData2 = {};
       tempData.content = setCategories(category);
+      tempData2.content = setCategories2(category);
       categories.push(tempData);
+      categories2.push(tempData2)
     });
-    this.setState({ categories });
+    this.setState({ categories, categories2 });
   }
   render() {
     return (
@@ -105,13 +177,13 @@ class Header01 extends Component {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                All categories
+                {this.state.selectedCategory.name == ""? "All Categories": this.state.selectedCategory.name}
               </button>
               <ul
                 className="dropdown-menu"
                 aria-labelledby="dropdownMenuButton1"
               >
-                {this.state.categories.map((category, key) => {
+                {this.state.categories2.map((category, key) => {
                   return <li key={key}>{category.content}</li>;
                 })}
               </ul>

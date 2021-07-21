@@ -6,9 +6,9 @@ import { connect } from 'react-redux'
 import { IoIosArrowForward, IoIosHeart } from "react-icons/io";
 class Header02 extends Component {
     state = {
-        menus: []
+        menus: [],
     }
-    // componentDidMount() {
+    componentDidMount() {
     //     const { menus } = this.state
     //     const setCategories = (root) => {
     //         if (root.childrenMenu.length == 0) {
@@ -77,12 +77,12 @@ class Header02 extends Component {
     //     //     menus.push(tempData);
     //     //   });
     //       this.setState({ menus });
-    // }
+    }
     render() {
         return (
             <div className="Header_two">
             <div className="logo">
-                <img src="https://www.logo.wine/a/logo/Lacoste/Lacoste-Logo.wine.svg" alt="Reload" />
+                <img src={this.props.logos && this.props.logos.Logo?"https://api.lokostop.in/"+this.props.logos.Logo.HeaderLogo.image:""} alt="Reload" />
             </div>
             <div className="navbar">
                 <ul>
@@ -116,7 +116,8 @@ class Header02 extends Component {
 }
 const mapStateToProps = state => {
     return {
-        menus: state.getMenus.menus
+        menus: state.getMenus.menus,
+        logos: state.getLogos.logos
     }
 }
 export default connect(mapStateToProps)(Header02)

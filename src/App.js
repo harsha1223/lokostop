@@ -32,7 +32,6 @@ class App extends React.Component {
     // this.props.getAllProducts()
     this.props.getFooterDetails()
     this.props.getLogos()
-    this.props.getProductTabs()
     this.props.getAllCategories()
     this.props.getAllPages()
     this.props.getMenus()
@@ -67,11 +66,10 @@ class App extends React.Component {
 const mapStateToProps = state =>{
   return {
       footerLoading: state.getFooter.loading,
-      allProductRowsLoading: state.getProductTabs.loading,
       categoriesloading: state.getCategories.loading,
       menuLoading: state.getMenus.loading,
       logoLoading: state.getLogos.loading
   }
 }
-export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getProductTabs, getAllCategories, getAllPages, getMenus, getLogos})(App)
+export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getAllCategories, getAllPages, getMenus, getLogos})(App)
 

@@ -1,8 +1,7 @@
 import Product from '../Product';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import React, { Component } from 'react'
-
-export class NewArrival extends Component {
+class NewArrival extends Component {
     componentDidMount(){
         // console.log(this.props.products)
     }
