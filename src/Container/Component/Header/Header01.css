@@ -315,3 +315,8 @@
   }
 
 }
+@media(max-width:375px){
+  .inputstyle {
+    margin-top: -2.5vw;
+}
+}

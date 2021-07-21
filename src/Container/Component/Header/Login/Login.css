@@ -123,7 +123,18 @@
   .modal-content {
     width: 41%;
     margin-left: 26vw;
-    padding-left: 1vw;
+}
+.signface{
+  font-size: 1vw;
+}
+.signgoogle{
+  font-size: 1vw;
+}
+.btn-close{
+  font-size: 1.5vw;
+}
+.googleface{
+  padding-left: 2vw;
 }
 }
 @media (min-width: 769px) and (max-width:1200px ) {
