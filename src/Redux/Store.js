@@ -5,7 +5,7 @@ import { getAllProductsReducer, getProductDetailsReducer} from './Reducers/Produ
 import {getFooterReducer, getProductTabsReducer, getFeaturesReducer, getLogosReducer} from './Reducers/StorefrontReducer'
 import {getAllCategoriesReducer, getCategoryProductsReducer} from './Reducers/CategoryReducers'
 import {getAllPagesReducer} from './Reducers/PageReducers'
-import {loginUser} from './Reducers/UserReducers'
+import {loginUser, getUserDetailsReducer} from './Reducers/UserReducers'
 import {getMenuReducer} from './Reducers/MenuReducers'
 
 const reducers = combineReducers({
@@ -20,6 +20,7 @@ const reducers = combineReducers({
     getMenus: getMenuReducer,
     getCategoryProducts: getCategoryProductsReducer,
     loginUser: loginUser,
+    getUser: getUserDetailsReducer
 })
 
 const middleware = [thunk]

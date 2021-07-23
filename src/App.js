@@ -26,7 +26,8 @@ import {getAllCategories} from './Redux/Actions/CategoryActions'
 import {getFooterDetails, getProductTabs, getLogos} from './Redux/Actions/StorefrontActions'
 import {getAllPages} from './Redux/Actions/PageActions'
 import {getMenus} from './Redux/Actions/MenuActions'
-
+import {getUser} from './Redux/Actions/UserActions'
+import {getUser as getUserId } from './Utils/Local'
 class App extends React.Component {
   componentDidMount(){
     // this.props.getAllProducts()
@@ -35,9 +36,12 @@ class App extends React.Component {
     this.props.getAllCategories()
     this.props.getAllPages()
     this.props.getMenus()
+    if(getUserId()){
+      this.props.getUser(getUserId())
+    }
   }
   render(){
-    if(this.props.footerLoading || this.props.categoriesloading || this.props.menuLoading || this.props.logoLoading){
+    if(this.props.footerLoading || this.props.categoriesloading || this.props.menuLoading || this.props.logoLoading || this.props.userLoading){
       return <Loader />
   }
     return (
@@ -68,8 +72,9 @@ const mapStateToProps = state =>{
       footerLoading: state.getFooter.loading,
       categoriesloading: state.getCategories.loading,
       menuLoading: state.getMenus.loading,
-      logoLoading: state.getLogos.loading
+      logoLoading: state.getLogos.loading,
+      userLoading: state.getUser.loading
   }
 }
-export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getAllCategories, getAllPages, getMenus, getLogos})(App)
+export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getAllCategories, getAllPages, getMenus, getLogos, getUser})(App)
 

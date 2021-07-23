@@ -233,7 +233,7 @@ class Header01 extends Component {
 const mapStateToProps = (state) => {
   return {
     categories: state.getCategories.categories,
-    user: state.loginUser.user,
+    user: state.getUser.user,
   };
 };
 export default connect(mapStateToProps)(Header01);

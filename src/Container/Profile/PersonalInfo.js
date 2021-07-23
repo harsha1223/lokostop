@@ -88,7 +88,7 @@ class PersonalInfo extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    user: state.loginUser.user,
+    user: state.getUser.user,
   };
 };
 export default connect(mapStateToProps)(PersonalInfo);
