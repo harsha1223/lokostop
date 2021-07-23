@@ -238,9 +238,44 @@
   .countrybox_edit {
     margin-top: -2.5vw;
 }
+.first_bill_box{
+  height: fit-content;
+}
+#country_name{
+  font: normal normal normal 1vw/1.318vw Poppins;
+  margin-top: 2.5vw;
+}
+.finaladdress p{
+  font: normal normal normal 1vw/1.7vw Poppins;
+}
+.save_cont_billing{
+  width: 14.299vw;
+    height: 4.782vw;
+    font: normal normal normal 1vw/1.318vw Poppins;
+}
+.input_box{
+  width: 100%;
+  border: 0.073vw solid #08e5a9;
+  height: 3.782vw;
+  padding: 0.732vw;
+  font: normal normal normal 1vw/1.318vw Poppins;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 4%;
+}
+.dropdown_box{height: 3.782vw;}
+.containerCheck{font: normal normal normal 1vw/1.318vw Poppins;}
+.second_input_box{
+  height: 3.782vw;
+    padding: 0.732vw;
+    font: normal normal normal 1vw/1.318vw Poppins;
+}
+}
 @media(max-width:375px){
   .countrybox_edit {
     margin-top: -3.5vw;
 }
+#country_name{
+  margin-top: 3.5vw;
 }
 }

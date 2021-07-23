@@ -18,9 +18,9 @@ export class paymentCart extends Component {
             <div>
                 <Header01 />
                 <Header />
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text"> PAYMENT</p>
-                    <hr id="line_blogs"></hr>
+                <div className="Heading_about">
+                    <p>PAYMENT</p>
+                    <hr />
                 </div>
                 <Link to='/cart'>
                     <div className="goblog">

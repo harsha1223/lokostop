@@ -1397,7 +1397,13 @@
     color: #5d5d5d;
     cursor: pointer;
   }
-  
+  .discount_amount{
+    margin-left: 0.952vw;
+    margin-top: 0.3vw;
+    height: 1.391vw;
+    text-align: left;
+    font: normal normal bold 1vw/1.464vw Poppins;
+  }
 }
 @media (max-width: 375px) {
   #arrow_box {

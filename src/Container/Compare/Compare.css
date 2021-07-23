@@ -118,8 +118,33 @@
     border: 0.073vw solid #BDBDBD;outline: none;
 }
 @media(max-width:425px){
+  .button_box{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 11.347vw;
+    margin-top: 3.441vw;
+    margin-left: 4.454vw;
+  }
+  .add_to_cart_compare{
+    height: 3.343vw;
+  }
   .add_to_cart_compare p{
     font: normal normal normal 0.9vw/1.464vw Segoe UI;
-    padding-top: 0;
+    padding-top: 2px;
   }
+  .specification_box_one p{
+    font: normal normal bold 1.2vw/1.464vw Poppins;
+  }
+  .specification_box_one ul li{
+    font: normal normal normal 1.2vw/1.464vw Poppins;
+    height: auto;
+  }
+}
+@media(max-width:375px){
+  .add_to_cart_compare p {
+    font: normal normal normal 0.9vw/1.464vw Segoe UI;
+    padding-top: 2px;
+    width: auto;
+    padding-left: 0vw;}
 }

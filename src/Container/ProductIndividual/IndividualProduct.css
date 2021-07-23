@@ -406,4 +406,23 @@ cursor: pointer;
     margin-top: 2.928vw;
     margin-bottom: 3vw;
   }
+  .name_of_the_particular_product{
+    font: normal normal normal 1.564vw/1.830vw Poppins;
+  }
+  .category_of_that_particular_product{
+    font: normal normal normal 1.1vw/1.464vw Poppins;
+  }
+  .details_box_margin {
+    margin-left: 0.952vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 4%;
+    height: 22vw;
+    margin-top: -0.366vw;
+}
+.big_image{
+  width: 27.965vw;
+  height: 35.015vw;
+}
 }

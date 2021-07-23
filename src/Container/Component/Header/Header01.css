@@ -333,4 +333,7 @@
   .inputstyle {
     margin-top: -2.5vw;
   }
+  .dropdown-toggle{
+    margin-bottom: 1vw;
+  }
 }

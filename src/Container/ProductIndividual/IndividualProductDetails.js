@@ -8,10 +8,10 @@ export class IndividualProductDetails extends Component {
   render() {
     return (
       <div>
-        <div className="find_by_category_box">
-          <p className="most_viewd_text"> PRODUCT DETAILS</p>
-          <hr id="line_product"></hr>
-        </div>
+        <div className="Heading_about">
+                    <p>PRODUCT DETAILS</p>
+                    <hr />
+                </div>
         <div className="individualproduct_detail_outer_box">
             {this.props.productDetails.additionalImages.length > 0 ?
           <div className="similar_product_images">
@@ -121,7 +121,7 @@ export class IndividualProductDetails extends Component {
             <div className="save_box">
               <p
                 className="delivery_text"
-                style={{ width: "6.955vw", marginLeft: "0" }}
+                style={{ width: "auto", marginLeft: "0" }}
               >
                 {" "}
                 Product Code:
@@ -182,7 +182,7 @@ export class IndividualProductDetails extends Component {
                   <p className="shipping_text2">On orders over Rs. 30,000</p>
                 </div>
               </div>
-              <div className="Free_return">
+              <div className="Free_Shipping">
                 <MdSettingsBackupRestore id="shipping_Icon" />
                 <div className="shipping_text">
                   <p className="shipping_text1">Free returns</p>
@@ -191,7 +191,7 @@ export class IndividualProductDetails extends Component {
                   </p>
                 </div>
               </div>
-              <div className="Secure_payment">
+              <div className="Free_Shipping">
                 <MdPayment id="shipping_Icon" />
                 <div className="shipping_text">
                   <p className="shipping_text1">100% Secure Payments</p>
@@ -200,7 +200,7 @@ export class IndividualProductDetails extends Component {
                   </p>
                 </div>
               </div>
-              <div className="Support">
+              <div className="Free_Shipping">
                 <FaRegClock id="shipping_Icon" />
                 <div className="shipping_text">
                   <p className="shipping_text1">Support 24/7</p>

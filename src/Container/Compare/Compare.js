@@ -17,9 +17,9 @@ export class Compare extends Component {
             <div>
                 <Header01></Header01>
                 <Header />
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text"> COMPARE PRODUCTS</p>
-                    <hr id="line_compare"></hr>
+                <div className="Heading_about">
+                    <p>COMPARE</p>
+                    <hr />
                 </div>
                 <div className="product_display_comparing">
                     <p className="contact_details_compare" style={{ marginTop: '11.713vw' }}> Connect to shop: +91-9809890982</p>
