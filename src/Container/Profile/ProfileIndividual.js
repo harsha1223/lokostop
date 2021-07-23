@@ -87,5 +87,8 @@ class ProfileIndividual extends Component {
         )
     }
 }
-const mapStateToProps = (state) =>{}
+const mapStateToProps = (state) =>{
+    return {
+    }
+}
 export default connect(mapStateToProps,{logoutUser})(ProfileIndividual)
