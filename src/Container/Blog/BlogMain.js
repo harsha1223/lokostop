@@ -14,9 +14,9 @@ export class BlogMain extends Component {
             <div>
                 <Header01></Header01>
                 <Header />
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text"> BLOGS</p>
-                    <hr id="line_blogs"></hr>
+                <div className="Heading_about">
+                    <p>BLOGS</p>
+                    <hr />
                 </div>
                 <Link to='/blogs'>
                     <div className="goblog"> <IoIosArrowBack id="blog_icon" />  <p>Go back to blogs</p></div>

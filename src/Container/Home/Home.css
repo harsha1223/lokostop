@@ -546,7 +546,8 @@
   padding-left: 0.659vw;
   color: #3d3d3d;
   box-shadow: 0px 3px 6px #00000029;
-  outline: none;background: white;
+  outline: none;
+  background: white;
 }
 .buttons_compare {
   width: 26.867vw;
@@ -904,7 +905,7 @@
 .particular_popular_categories {
   width: 20.059vw;
   margin: 0.732vw;
-  height:auto
+  height: auto;
 }
 .image_popular {
   width: 20.059vw;
@@ -1003,10 +1004,17 @@
   outline: none;
   font: normal normal normal 0.878vw/1.318vw Poppins;
 }
+.Bicartnew {
+  color: white;
+  margin-left: 0.952vw;
+  margin-top: 0.512vw;
+  font-size: 1.3vw;
+}
 @media (max-width: 768px) {
   .category_name_product {
     margin-bottom: 5%;
   }
+
   .category_dash_outer_box {
     margin-left: 12.734vw;
     width: 78.899vw;
@@ -1035,7 +1043,8 @@
     margin-top: -0.3vw;
   }
   .dropdown_colors {
-    width: 6.564vw;height: 1.691vw;
+    width: 6.564vw;
+    height: 1.691vw;
   }
   .dropdown_colors option {
     /* padding: 10vw; */
@@ -1053,13 +1062,13 @@
     margin-left: 3.782vw;
     height: auto;
   }
-  .image_box_second_one{
+  .image_box_second_one {
     height: 33.381vw;
   }
-  .image_box_second{
+  .image_box_second {
     height: 33.381vw;
   }
-  .comparing_products_details{
+  .comparing_products_details {
     height: auto;
   }
   .find_by_category_box {
@@ -1074,25 +1083,151 @@
     padding: 0;
     margin-top: -6%;
   }
-  .particular_popular_categories{
+  .particular_popular_categories {
     margin: 0.732vw;
     margin-bottom: 2vw;
   }
 }
 @media (max-width: 425px) {
- .image_box_second_one {
-  height: 36.381vw;
+  .compare_product_details_cat {
+    font: normal normal normal 1.3vw/1.684vw Poppins;
+  }
+  .text_rating {
+    font: normal normal normal 1vw/1.83vw Poppins;
+  }
+  .time_delivery {
+    font: normal normal normal 1vw/2.3vw Poppins;
+  }
+  .image_box_second_one {
+    height: 41.381vw;
+  }
+  .how_much_discount {
+    margin-left: 2.952vw;
+    margin-top: -0.5vw;
+  }
+  .our_price_text {
+    font: normal normal normal 1.2vw/2.4vw Poppins;
+    width: auto;
+  }
+  .delivery_text {
+    font: normal normal normal 1.2vw/2.4vw Poppins;
+    width: auto;
+  }
+  .color_text {
+    font: normal normal normal 1.2vw/2vw Poppins;
+    width: auto;
+  }
+  .view_details {
+    font: normal normal normal 1.2vw/1.318vw Poppins;
+  }
+  .save_text {
+    font: normal normal normal 1.2vw/2.4vw Poppins;
+    width: auto;
+  }
+  .discount_text_product {
+    font: normal normal normal 1.2vw/1.464vw Poppins;
+  }
+  .mrp_text {
+    font: normal normal normal 1.2vw/1.464vw Poppins;
+  }
+  .image_box_second {
+    height: 41.381vw;
+  }
+  .price_of_the_product {
+    font: normal normal normal 1.2vw/1.464vw Poppins;
+  }
+  .Bicartnew {
+    margin-top: 0.812vw;
+    font-size: 1.7vw;
+  }
+  .most_viewd_text {
+    width: auto;
+    font: italic normal bold 1.9vw/2.196vw Poppins;
+  }
+  .find_by_category_box {
+    width: fit-content;
+    justify-content: none;
+  }
+  .Compare_Icon {
+    height: 3.343vw;
+    width: 3.635vw;
+    cursor: pointer;
+    color: #9d9d9d;
+    margin: 0;
+  }
+  .Fav_icon {
+    width: 3.269vw;
+    height: 3vw;
+    margin: 0;
+    cursor: pointer;
+  }
+  .add_to_cart_text_icon {
+    width: 12.347vw;
+    height: 3.343vw;
+    margin-left: 0;
+    display: flex;
+    background-color: #021fb2;
+  }
+  .add_to_cart_text_icon p {
+    width: 6.808vw;
+    height: 1.464vw;
+    text-align: center;
+    font: normal normal normal 1.1vw/2.4vw Segoe UI;
+    color: #ffffff;
+    margin-left: 1.318vw;
+  }
+  #line_category {
+    width: 65.258vw;
+  }
+  .add_to_cart_box {
+    height: auto;
+    margin-top: 2.732vw;
+    display: block;
+    width: auto;
+  }
+  .price_of_product {
+    height: auto;
+  }
+  .add_to_cart_inner_box {
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .product_details_list {
+    width: auto;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+  }
+  .image_box {
+    width: 25.205vw;
+    height: 25.351vw;
+  }
+  .product_details {
+    margin-top: 2vw;
+    width: auto;
+    margin-left: 0.878vw;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+  }
+  .particular_category_choice{width: 24.912vw;
+    height: 2.05vw;
+    display: flex;
 }
-.category_names {
-  width: 66.63vw;
-  justify-content: space-between;
-  margin-left: 14vw;
-}
- .new_arrival_box {
-    width: 59.242vw;
-    margin-left: 23.416vw;
+  .category_names {
+    width: 77.63vw;
+    justify-content: space-evenly;
+    margin-left: 8vw;
+  }
+  .new_arrival_box {
+    width: 69.242vw;
+    margin-left: 17.416vw;
     justify-content: space-between;
-}
+  }
   .category_name_product {
     font: normal normal normal 1.2vw/1.464vw Poppins;
     margin-bottom: 6%;
@@ -1108,7 +1243,9 @@
   }
   #arrow_box_1 {
     margin-top: -1vw;
+    margin-left: 2.586vw;
   }
+  .category_dash{width: fit-content;}
   .find_icon {
     height: 5.782vw;
     width: 7vw;
@@ -1121,7 +1258,7 @@
     height: 5.782vw;
   }
   .particular_category_choice p {
-    font: normal normal normal 1.3vw/2.196vw Poppins;
+    font: normal normal normal 1.5vw/2.196vw Poppins;    font-weight: bold;
   }
   .centre_first_part1 {
     height: 5.782vw;
@@ -1130,7 +1267,30 @@
     height: 5.782vw;
   }
   .discount {
-    padding-top: 2%;
+    padding: 2%;
+    height: 2.5vw;
+    font-size: 1.2vw;
+    width: 5vw;
+  }
+  .start_buying{margin-left: 41.508vw;
+    margin-top: 1.318vw;
+    width: 18.057vw;
+    height: 4.928vw;
+    background: #08e5a9;
+    font: normal normal normal 1.3vw/1.464vw Poppins;
+    color: #1d1d1d;
+    outline: none;
+    border: #08e5a9;}
+  .clients_name{
+    width: 87.315vw;
+    height: auto;
+    border: 0.073vw solid #bdbdbd;
+    margin-top: 1.83vw;
+    margin-left: 6.343vw;
+    flex-wrap: wrap;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-around;
   }
   #arrow_box {
     margin-top: -1.3vw;
@@ -1152,13 +1312,23 @@
     font: normal normal normal 0.9vw/1.318vw Poppins;
   }
   .name_details_each_product {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
   }
   .para_price_one {
-    font-size: 1vw;
+    font-size: 1.3vw;
   }
   .para_price_two {
-    font-size: 1.125vw;
+    font-size: 1.4vw;
+  }
+  #line_view {
+    width: 63.059vw;
+  }
+  .most_view_box {
+    width: 93.009vw;
+    height: 2.562vw;
+    margin-left: 3.343vw;
+    margin-top: 2.928vw;
+    display: flex;
   }
   .star {
     margin-top: -2vw;
@@ -1172,22 +1342,62 @@
     width: 13.347vw;
   }
   .offers {
-    font: normal normal 200 1.1vw/1.684vw Poppins;
+    font: normal normal 200 1.3vw/1.684vw Poppins;
   }
   .particular_cat {
-    padding-top: 0.3vw;
+    padding: 2vw;
+    padding-top: 6px;    width: 18.641vw;
+    height: 4.782vw;
   }
   .or {
     font: normal normal 600 1.3vw/1.684vw Poppins;
-    
-    margin-top: 2vw;
 
+    margin-top: 2vw;
   }
   .category_dash_outer_box {
-    margin-left: 22.734vw;
-    width: 58.899vw;
+    width: 69.242vw;
+    margin-left: 17.416vw;
     justify-content: space-between;
-}
+  }
+  .particular_popular_categories{
+    margin: 0.732vw;
+    margin-bottom: 2vw;
+    width: auto;
+  }
+  .image_popular{
+    width: 26.059vw;
+    height: 26.644vw;
+  }
+  .name_popular_cat{
+    height: auto;
+    width: auto;
+    font: normal normal normal 1.4vw/1.684vw Poppins;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin-top: 0;
+    margin-left: 1.098vw;
+  }
+  .view_all{
+    width: auto;
+    height: 1.391vw;
+    text-align: right;
+    text-decoration: underline;
+    font: normal normal normal 1.2vw/1.464vw Poppins;
+    font-weight: 500;
+    color: #3d3d3d;
+    margin-top: -0.732vw;
+    cursor: pointer;
+  }
+  .cat_details_pop{
+    width: 16.105vw;
+    margin-left: 1.098vw;
+    height: 1.391vw;
+    font: normal normal normal 1.2vw/1.464vw Poppins;
+    font-weight: 400;
+    color: #5d5d5d;
+    cursor: pointer;
+  }
+  
 }
 @media (max-width: 375px) {
   #arrow_box {
@@ -1196,7 +1406,7 @@
   .list_names ul {
     margin-left: -5.709vw;
   }
-  #arrow_box_1{
+  #arrow_box_1 {
     margin-top: -1.5vw;
   }
 }

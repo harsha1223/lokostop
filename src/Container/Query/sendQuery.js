@@ -9,9 +9,9 @@ export class sendQuery extends Component {
             <div>
                 <Header01></Header01>
                 <Header></Header>
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text"> Ask Here</p>
-                    <hr id="line_blogs"></hr>
+                <div className="Heading_about">
+                    <p>ASK HERE</p>
+                    <hr />
                 </div>
                 <div className="sendquerybox">
                     <p className="sendtext">

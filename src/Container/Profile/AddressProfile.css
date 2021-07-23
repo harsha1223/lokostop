@@ -17,6 +17,12 @@
   border-radius: 0;
   box-shadow: none;
 }
+@media (max-width:768px){
 .fontP{
     font: normal normal 200 0.9vw/1.318vw Poppins;
+}}
+@media(max-width:425px){
+  .fontP{
+    font: normal normal 200 1.2vw/1.318vw Poppins;
+  }
 }

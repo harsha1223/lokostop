@@ -14,9 +14,9 @@ export class Blog extends Component {
             <div>
                 <Header01 />
                 <Header />
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text"> BLOGS</p>
-                    <hr id="line_blogs"></hr>
+                <div className="Heading_about">
+                    <p>BLOGS</p>
+                    <hr />
                 </div>
                 <AddBlog></AddBlog>
                 <div className="blog_main">

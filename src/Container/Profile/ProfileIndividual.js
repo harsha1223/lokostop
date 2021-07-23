@@ -27,9 +27,9 @@ class ProfileIndividual extends Component {
             <div>
                 <Header01></Header01>
                 <Header></Header>
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text">MY PROFILE</p>
-                    <hr style={{ marginLeft: '-4vw' }} id="line_blogs"></hr>
+                <div className="Heading_about">
+                    <p>PROFILE</p>
+                    <hr />
                 </div>
                 <div className="profileOuterMainBOx">
                     <div className="firstboxprofile">

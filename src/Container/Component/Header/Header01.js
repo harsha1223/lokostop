@@ -155,7 +155,7 @@ class Header01 extends Component {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <FiMenu id="MenuIcon" />
+              {/* <FiMenu id="MenuIcon" /> */}
               &nbsp;&nbsp; Browse categories
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">

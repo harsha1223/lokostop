@@ -31,12 +31,7 @@ class Product extends Component {
                             <BiGitCompare className="Compare_Icon" />
                             <div className="add_to_cart_text_icon">
                                 <p style={{marginTop:'0.439vw'}}>ADD TO CART</p>
-                                <BiCart style={{
-                                    color: 'white',
-                                    marginLeft: '0.952vw',
-                                    marginTop: '0.512vw',
-                                    fontSize: '1.3vw'
-                                }} />
+                                <BiCart className="Bicartnew" />
                             </div>
                             <FaRegHeart className="Fav_icon" style={{ color: "#9d9d9d" }} />
                         </div>

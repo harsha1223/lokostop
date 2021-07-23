@@ -15,9 +15,9 @@ export class Cart extends Component {
             <div>
                 <Header01 />
                 <Header></Header>
-                <div className="find_by_category_box">
-                    <p className="most_viewd_text">CART</p>
-                    <hr id="line_blogs"></hr>
+                <div className="Heading_about">
+                    <p>CART</p>
+                    <hr />
                 </div>
                 <p className='No_of_product'>2 Items</p>
                 <div className="total_items_cart">
