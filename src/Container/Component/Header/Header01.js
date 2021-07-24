@@ -204,13 +204,13 @@ class Header01 extends Component {
         <div className="Header_one_right">
           <div className="Favorites">
             <IoIosHeart id="Heart" />
-            <span id="count">0</span>
+            <span id="count">{this.props.wishlist.length}</span>
             <p>Favorites</p>
           </div>
           <Link to="/Cart">
             <div style={{ color: "#1D1D1D" }} className="cart">
               <FiShoppingCart id="Cart" />
-              <span id="count">0</span>
+              <span id="count"></span>
               <p>Cart</p>
             </div>
           </Link>
@@ -234,6 +234,7 @@ const mapStateToProps = (state) => {
   return {
     categories: state.getCategories.categories,
     user: state.getUser.user,
+    wishlist: state.userWishlist.wishlist
   };
 };
 export default connect(mapStateToProps)(Header01);

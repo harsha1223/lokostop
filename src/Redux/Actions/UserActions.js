@@ -13,6 +13,27 @@ export const loginUser = (email, password) => async(dispatch) => {
             type: actionTypes.GET_LOGIN_SUCCESS,
             payload: data.data
         })
+        window.location.reload()
+    }catch(error){
+        dispatch({
+            type: actionTypes.GET_LOGIN_FAIL,
+            payload: "something went wrong"
+        })
+    }
+}
+
+
+export const registerUser = (user) => async(dispatch) => {
+    try{
+        dispatch({ type: actionTypes.GET_LOGIN_REQUEST})
+        const {data} = await api.post('/users/', {data: user, isCustomer: true})
+        setAuthToken(data.data.token);
+        setUser(data.data._id)
+        dispatch({
+            type: actionTypes.GET_LOGIN_SUCCESS,
+            payload: data.data
+        })
+        window.location.reload()
     }catch(error){
         dispatch({
             type: actionTypes.GET_LOGIN_FAIL,
@@ -29,6 +50,9 @@ export const logoutUser = () => async(dispatch) => {
         removeUser()
         dispatch({
             type: actionTypes.GET_LOGOUT_SUCCESS,
+        })
+        dispatch({
+            type: actionTypes.REMOVE_USER_DETAILS_SUCCESS,
         })
     }catch(error){
         dispatch({

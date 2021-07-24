@@ -50,8 +50,13 @@ export const getUserDetailsReducer = (state = { user: {}}, action) => {
                 loading: false,
                 error: action.payload
             }
+        case actionTypes.REMOVE_USER_DETAILS_SUCCESS:{
+            return {
+                loading: false,
+                user: {}
+            }
+        }
         default:
             return state;
     }
 }
-

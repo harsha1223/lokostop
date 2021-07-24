@@ -1,22 +1,39 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./Login.css";
-import SignUp from "./SignUp";
-import { loginUser } from "../../../../Redux/Actions/UserActions";
+import { loginUser, registerUser } from "../../../../Redux/Actions/UserActions";
 class Login extends Component {
   state = {
     data: {
       Email: "",
       Password: "",
     },
+    user: {
+      "First Name": "",
+      "Last Name": "",
+      "Email": "",
+      "Password": "",
+      "Confirm": "",
+      Roles:[],
+      Permissions:[],
+    }
   };
-  setData = (key, val) =>{
-    const {data} = this.state;
+  setData = (key, val) => {
+    const { data } = this.state;
     data[key] = val;
-    this.setState({data})
-  }
-  signIn = () =>{
+    this.setState({ data });
+  };
+  setUser = (key, val) => {
+    const { user } = this.state;
+    user[key] = val;
+    this.setState({ user });
+  };
+  signIn = () => {
     this.props.loginUser(this.state.data.Email, this.state.data.Password);
+    document.querySelector("#staticBackdrop").click();
+  };
+  signUp = () =>{
+    this.props.registerUser(this.state.user);
     document.querySelector("#staticBackdrop").click();
   }
   render() {
@@ -26,7 +43,6 @@ class Login extends Component {
           className="imagevl"
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
-          
         >
           Login
         </div>
@@ -102,7 +118,9 @@ class Login extends Component {
                         type="text"
                         placeholder="Email-address"
                         value={this.state.data.Email}
-                        onChange={(e)=>this.setData(e.target.name, e.target.value)}
+                        onChange={(e) =>
+                          this.setData(e.target.name, e.target.value)
+                        }
                       />
                       <input
                         className="signinput"
@@ -110,13 +128,21 @@ class Login extends Component {
                         type="password"
                         placeholder="Password"
                         value={this.state.data.Password}
-                        onChange={(e)=>this.setData(e.target.name, e.target.value)}
+                        onChange={(e) =>
+                          this.setData(e.target.name, e.target.value)
+                        }
                       />
                       <button className="forgotbutton">forgot password?</button>
-                      <button className="signButton"  type="submit" onClick={(e)=>{
+                      <button
+                        className="signButton"
+                        type="submit"
+                        onClick={(e) => {
                           e.preventDefault();
-                          this.signIn()
-                      }}>SIGN - IN</button>
+                          this.signIn();
+                        }}
+                      >
+                        SIGN - IN
+                      </button>
                     </div>
                   </div>
                   <div
@@ -125,7 +151,62 @@ class Login extends Component {
                     role="tabpanel"
                     aria-labelledby="pills-profile-tab"
                   >
-                    <SignUp />
+                    <div>
+                      <input
+                        className="signinput"
+                        type="text"
+                        name="First Name"
+                        placeholder="First Name"
+                        value={this.state.user["First Name"]}
+                        onChange={(e) =>{
+                          this.setUser(e.target.name, e.target.value)
+                        }}
+                      />
+                      <input
+                        className="signinput"
+                        type="text"
+                        name="Last Name"
+                        placeholder="Last Name"
+                        value={this.state.user["Last Name"]}
+                        onChange={(e) =>{
+                          this.setUser(e.target.name, e.target.value)
+                        }}
+                      />
+                      <input
+                        className="signinput"
+                        type="email"
+                        placeholder="Email-address"
+                        name="Email"
+                        value={this.state.user.Email}
+                        onChange={(e) =>{
+                          this.setUser(e.target.name, e.target.value)
+                        }}
+                      />
+                      <input
+                        className="signinput"
+                        type="text"
+                        name="Password"
+                        placeholder="Enter Password"
+                        value={this.state.user.Password}
+                        onChange={(e) =>{
+                          this.setUser(e.target.name, e.target.value)
+                        }}
+                      />
+                      <input
+                        className="signinput"
+                        type="text"
+                        name="Confirm"
+                        value={this.state.user.Confirm}
+                        placeholder="Re-enter password"
+                        onChange={(e) =>{
+                          this.setUser(e.target.name, e.target.value)
+                        }}
+                      />
+                      <button className="signButton" onClick={(e) => {
+                          e.preventDefault();
+                          this.signUp();
+                        }}>SIGN - UP</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -150,4 +231,4 @@ const mapStateToProps = (state) => {
     user: state.loginUser.user,
   };
 };
-export default connect(mapStateToProps, { loginUser })(Login);
+export default connect(mapStateToProps, { loginUser, registerUser })(Login);

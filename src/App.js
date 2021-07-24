@@ -27,6 +27,7 @@ import {getFooterDetails, getProductTabs, getLogos} from './Redux/Actions/Storef
 import {getAllPages} from './Redux/Actions/PageActions'
 import {getMenus} from './Redux/Actions/MenuActions'
 import {getUser} from './Redux/Actions/UserActions'
+import {getWishlist} from './Redux/Actions/WishlistActions'
 import {getUser as getUserId } from './Utils/Local'
 class App extends React.Component {
   componentDidMount(){
@@ -38,6 +39,7 @@ class App extends React.Component {
     this.props.getMenus()
     if(getUserId()){
       this.props.getUser(getUserId())
+      this.props.getWishlist()
     }
   }
   render(){
@@ -76,5 +78,5 @@ const mapStateToProps = state =>{
       userLoading: state.getUser.loading
   }
 }
-export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getAllCategories, getAllPages, getMenus, getLogos, getUser})(App)
+export default connect(mapStateToProps, {getAllProducts, getFooterDetails, getAllCategories, getAllPages, getMenus, getLogos, getUser, getWishlist})(App)
 
