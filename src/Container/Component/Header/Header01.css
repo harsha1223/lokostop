@@ -331,9 +331,22 @@
 }
 @media (max-width: 375px) {
   .inputstyle {
-    margin-top: -2.5vw;
+    margin-top: -2.3vw;
   }
   .dropdown-toggle{
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
   }
+  .browseCat{
+    margin-top: 0;
+  }
+  #count{background-color: #08e5a9;
+    border-radius: 100%;
+    width: 1.5vw;
+    height: 1.5vw;
+    text-align: center;
+    position: relative;
+    margin-left: 1vw;
+    padding-top: 0.5vw;
+    font: normal normal normal 1.1vw/1.061vw Poppins;}
+  
 }

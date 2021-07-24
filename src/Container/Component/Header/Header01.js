@@ -210,7 +210,7 @@ class Header01 extends Component {
           <Link to="/Cart">
             <div style={{ color: "#1D1D1D" }} className="cart">
               <FiShoppingCart id="Cart" />
-              <span id="count"></span>
+              <span id="count">0</span>
               <p>Cart</p>
             </div>
           </Link>

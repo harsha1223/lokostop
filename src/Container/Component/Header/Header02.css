@@ -15,6 +15,10 @@
   width: 100%;
   height: 100%;
 }
+.hamburg{
+  display:none;
+}
+
 .navbar {
   margin-left: 20.449vw;
   margin-top: 2.269vw;
@@ -60,8 +64,8 @@
   height: 2.782vw;
   display: grid;
   grid-template-rows: 1.318vw 1.464vw;
-  margin-top: 1.684vw;
-  margin-left: 15.445vw;
+  margin-left: 66vw;
+  margin-top: -5vw;
 }
 .mobile_part {
   display: flex;
@@ -162,7 +166,8 @@
     margin-top: 0;
   }
   .Header_two_part3 {
-    margin-left: 13vw;
+    margin-left: 66vw;
+    margin-top: -5vw;
   }
   .navbar li {
     font: normal normal normal 0.978vw/1.318vw Poppins;
@@ -177,7 +182,47 @@
   }
 }
 @media (max-width: 425px) {
-  
+  .closing{
+    display:none;
+  }
+  .logo {
+    margin-left: 2vw;
+    margin-top: 0.586vw;    width: 11.199vw;
+    height: 4.758vw;
+  }
+  .hamburg{
+    margin-top:-10px;
+    margin-left: 322px;
+    display:flex;
+  }
+  .menu{
+    z-index: 2;
+    position:absolute;
+    margin-left:275px;
+    top:47px;
+    width:150px;    background: rgb(8, 229, 169,1);
+    height:100%;
+   
+  }
+  .menul{
+    display: flex;
+    flex-direction: column;
+    top: 2vw;
+    height: auto;
+    margin: 0vw 10vw;
+    padding: 0;
+    position: absolute;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+    color: #3d3d3d;
+  }
+  .menul li{
+    font-size: 2vw;
+    font-family: 'Poppins';
+    margin-bottom: 2vw;
+    color: black;
+  }
   .navbar {
     padding-top: 0;
     margin-left: 21.269vw;
@@ -206,28 +251,44 @@
   .Header_two {
     height: 6.857vw;
   }
-  /* .navvvvul {
-    padding: 0;
-    position: fixed;
-    width: 22%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 11vw;
-    display: none;
-    left: 0;
-    text-align: center;
-    transition: all 0.5s;
-  } */
-  /* #check{
-    display: block;
-  } */
- 
+  
 }
 @media (max-width: 375px) {
+  .closing{
+    display:none;
+  }
+  .hamburg{
+    margin-top:-11px;
+    margin-left:75vw;
+    display:flex;
+  }
   .logo {
+    margin-left:5px;
     margin-top: 0;
   }
   .navbar {
     margin-left: 18.269vw;
   }
+  .menul{
+    display: flex;
+    flex-direction: column;
+    top: 2vw;
+    height: auto;
+    margin: 0vw 7vw;
+    padding: 0;
+    position: absolute;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+    color: #3d3d3d;
+  }
+  .menu{
+    z-index: 2;
+    position: absolute;
+    margin-left: 275px;
+    top: 41px;
+    width: 100px;    background: rgb(8, 229, 169,1);
+    height: 100%;
+  }
+  
 }

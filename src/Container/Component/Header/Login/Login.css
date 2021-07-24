@@ -116,6 +116,43 @@
   }
 }
 @media (max-width: 425px) {
+
+  .orWord{font-size: 1.2vw;}
+  .signButton{
+    font-size: 1.2vw;
+    font-family: poppins;
+    padding: 0.8vw;
+    width: 11vw;
+    height: 3vw;
+    margin-left: 12.5vw;
+    margin-top: 1vw;
+    color: white;
+    background-color: #08e5a9;
+    border: none;
+  }
+  .signinput{
+    width: 20.425vw;
+    border: 0.073vw solid #08e5a9;
+    height: 3.782vw;
+    padding: 0.732vw;
+    font: normal normal normal 1vw/1.318vw Poppins;
+    cursor: pointer;
+    outline: none;
+    margin-left: 8vw;
+  }
+  .forgotbutton{
+    background-color: white;
+    width: auto;
+    height: auto;
+    font-family: poppins;
+    font-size: 1vw;
+    border: none;
+    margin-left: 18vw;
+    cursor: pointer;
+  }
+  .signbottom{
+    margin-top: -3vw;
+  }
   .imagevl {
     font: normal normal normal 1.2vw/1.061vw Poppins;
     margin-top: 0.6vw;
@@ -124,20 +161,39 @@
     width: 41%;
     margin-left: 26vw;
 }
+.promiseword{
+  margin-left: 3.7vw;
+    font-family: poppins;
+    font-size: 1.1vw;
+    margin-bottom: 0;
+}
+.logoval{
+  height: auto;
+  width: auto;
+  margin-left: 12vw;
+  font-weight: 900;
+  font-family: poppins;
+  font-size: 1.7vw;
+  color: #08e5a9;
+}
 .signface{
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 .signgoogle{
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 .btn-close{
   font-size: 1.5vw;
 }
 .googleface{
   padding-left: 2vw;
+  margin-left: 1vw;
 }
 }
 @media (min-width: 769px) and (max-width:1200px ) {
+  .signbuttonfont{
+    font-size: 1.2vw;
+  }
   .modal-content{
     width: 73%;
     margin-left: 6vw;
